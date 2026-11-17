@@ -777,6 +777,7 @@ return [
     'settings.about.agent_worker_token_budget' => 'tokens per worker',
     'settings.about.brave_search_api_key' => 'Brave Search key',
     'settings.about.digest_time' => 'daily digest time HH:MM (empty — off)',
+    'settings.about.group_free_daily_tokens' => 'tokens a day per group while the agent joins in by itself in the free mode (0 — no limit)',
     'settings.about.job_token_budget' => 'tokens per job run',
     'settings.about.llm_cheap_model' => 'cheap model for simple tasks and classification',
     'settings.about.llm_context_window' => 'context window, tokens',

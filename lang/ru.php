@@ -779,6 +779,7 @@ return [
     'settings.about.agent_worker_token_budget' => 'токенов у воркера',
     'settings.about.brave_search_api_key' => 'ключ Brave Search',
     'settings.about.digest_time' => 'время ежедневной сводки ЧЧ:ММ (пусто — выключена)',
+    'settings.about.group_free_daily_tokens' => 'токенов в день на группу, пока агент в свободном режиме вмешивается сам (0 — без лимита)',
     'settings.about.job_token_budget' => 'токенов на запуск задания',
     'settings.about.llm_cheap_model' => 'дешёвая модель для простых задач и классификации',
     'settings.about.llm_context_window' => 'окно контекста, токенов',
