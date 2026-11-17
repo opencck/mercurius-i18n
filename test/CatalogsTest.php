@@ -53,8 +53,8 @@ final class CatalogsTest extends TestCase
     public function testShapeJoinsPluralFormsAndListsPlaceholders(): void
     {
         self::assertSame(
-            ['a' => ['name'], 'n' => ['count', 'who']],
-            Catalogs::shape(['a' => 'Hi {name}', 'n.one' => '{count} от {who}', 'n.many' => '{count} от {who}']),
+            ['a' => ['name'], 'n' => ['count', 'who'], 'p' => ['%s', '%d', '%%']],
+            Catalogs::shape(['a' => 'Hi {name}', 'n.one' => '{count} от {who}', 'n.many' => '{count} от {who}', 'p' => 'Запуск %s: %d токенов, 100%%']),
         );
     }
 }
