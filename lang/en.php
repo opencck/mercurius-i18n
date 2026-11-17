@@ -400,6 +400,7 @@ return [
     'media.intake.not_extracted' => 'No text: %s',
     'media.intake.not_set' => 'The %1$s model is not set, so the content is not available to me. Tell the user so and offer options: the owner sets a model with /set %2$s <model> (or I do with the settings tool, with their approval); a model with %3$s input from the OpenRouter or OpenAI catalog fits (a cheap one — for example google/gemini-3.8-flash), or an own model at an address (MEDIA_ENDPOINTS).',
     'media.intake.not_utf8' => 'Not UTF-8 text — the content is not shown.',
+    'media.intake.replied' => ' (from the message this one replies to)',
     'media.intake.seconds' => '%d s',
     'media.intake.set_later' => 'A %s model is set, but processing of this kind comes in the next version — the content is not available to me yet.',
     'media.intake.timeout' => 'the document took longer than 30 s',
