@@ -63,6 +63,7 @@ return [
     'agent.channel_run_observer.nothing_to_add' => 'Мне нечего добавить.',
     'agent.channel_run_observer.running_tool' => 'Выполняю %s …',
     'agent.channel_run_observer.vypolnyayu' => 'Выполняю %s: %s …',
+    'agent.delivery.recovered' => "♻️ Ответ восстановлен: при отправке был сбой или перезапуск, поэтому он может повторять уже пришедшее.\n\n",
     'agent.host_key_cards.doveryaem' => 'Доверяем.',
     'agent.host_key_cards.doveryat' => 'Доверять',
     'agent.host_key_cards.klyuch_hosta_servera_izmenilsya_byl' => "⚠ Ключ хоста сервера «%s» (%s) изменился.\nБыл: %s\nСтал: %s\nПодключения к нему отклоняются. Если смена ожидаема — удалите сервер и добавьте снова; если нет — возможна подмена.",

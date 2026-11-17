@@ -62,6 +62,7 @@ return [
     'agent.channel_run_observer.nothing_to_add' => 'I have nothing to add.',
     'agent.channel_run_observer.running_tool' => 'Running %s …',
     'agent.channel_run_observer.vypolnyayu' => 'Running %s: %s …',
+    'agent.delivery.recovered' => "♻️ Recovered answer: the send failed or the agent restarted, so it may repeat what already arrived.\n\n",
     'agent.host_key_cards.doveryaem' => 'Trusted.',
     'agent.host_key_cards.doveryat' => 'Trust',
     'agent.host_key_cards.klyuch_hosta_servera_izmenilsya_byl' => "⚠ The host key of server “%s” (%s) has changed.\nWas: %s\nNow: %s\nConnections to it are rejected. If the change is expected, remove the server and add it again; if not, it may be an impersonation.",
