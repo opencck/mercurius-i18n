@@ -8,7 +8,7 @@ declare(strict_types=1);
  */
 return [
     // agent
-    'agent.agent_loop.actions_note' => '[Done in this run: %s]',
+    'agent.agent_loop.actions_note' => '[System note, not the user\'s words: in the answer above the agent really did — %s]',
     'agent.agent_loop.continue_note' => 'The answer was cut off at the length limit. Continue exactly from the cut-off point, with no repetition and no preamble.',
     'agent.agent_loop.deystvie_ne_vypolneno' => ' Action not performed.',
     'agent.agent_loop.deystvie_trebuet_podtverzhdeniya_vladelt' => 'The action needs the owner\'s approval, and it cannot be requested right now. Not performed.',
@@ -26,6 +26,7 @@ return [
     'agent.agent_loop.ostanovleno_vladeltsem' => 'Stopped by the owner.',
     'agent.agent_loop.otkazano_vladeltsem' => 'Denied by the owner',
     'agent.agent_loop.stopped_note' => 'The task was stopped by the owner with the /stop command. Do not continue it until the owner asks again.',
+    'agent.agent_loop.text_action' => 'You described an action in words but called no tool — nothing was done. Only the system writes such notes, after a real call. If the action is needed, call the tool now; if not, say plainly that you did not do it.',
     'agent.agent_loop.tokenov' => 'tokens',
     'agent.agent_loop.vladelets_ne_otvetil_vovremya_molchanie' => 'The owner did not answer in time; silence is not consent. The action was not performed.',
     'agent.agent_loop.vorkeru_neobratimye_deystviya_nedostupny' => 'Irreversible actions are not available to a worker, even with a saved permission. Not performed: describe in the result what needs to be done, and the orchestrator will decide.',

@@ -9,7 +9,7 @@ declare(strict_types=1);
  */
 return [
     // agent
-    'agent.agent_loop.actions_note' => '[Сделано в этом запуске: %s]',
+    'agent.agent_loop.actions_note' => '[Служебная заметка системы, не реплика пользователя: в ответе выше агент действительно выполнил — %s]',
     'agent.agent_loop.continue_note' => 'Ответ оборвался на лимите длины. Продолжи ровно с места обрыва, без повторов и вступлений.',
     'agent.agent_loop.deystvie_ne_vypolneno' => ' Действие не выполнено.',
     'agent.agent_loop.deystvie_trebuet_podtverzhdeniya_vladelt' => 'Действие требует подтверждения владельца, а запросить его сейчас нельзя. Не выполнено.',
@@ -27,6 +27,7 @@ return [
     'agent.agent_loop.ostanovleno_vladeltsem' => 'Остановлено владельцем.',
     'agent.agent_loop.otkazano_vladeltsem' => 'Отказано владельцем',
     'agent.agent_loop.stopped_note' => 'Задача остановлена владельцем по команде /stop. Не продолжай её, пока владелец не попросит снова.',
+    'agent.agent_loop.text_action' => 'Ты описал действие текстом, но инструмент не вызывал — ничего не выполнено. Такие заметки пишет только система после настоящего вызова. Если действие нужно — вызови инструмент сейчас; если нет — честно скажи, что не сделал.',
     'agent.agent_loop.tokenov' => 'токенов',
     'agent.agent_loop.vladelets_ne_otvetil_vovremya_molchanie' => 'Владелец не ответил вовремя — молчание не согласие. Действие не выполнено.',
     'agent.agent_loop.vorkeru_neobratimye_deystviya_nedostupny' => 'Воркеру необратимые действия недоступны, даже по сохранённому разрешению. Не выполнено: опиши в итоге, что нужно сделать, — решит оркестратор.',
