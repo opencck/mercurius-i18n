@@ -388,11 +388,16 @@ return [
     'mcp.stdio.timeout' => 'The MCP server did not answer %s in time.',
 
     // media
+    'media.action.speech' => 'transcribe',
+    'media.action.video' => 'video',
+    'media.action.vision' => 'look',
     'media.input.speech' => 'audio',
     'media.input.video' => 'video',
     'media.input.vision' => 'images',
+    'media.intake.by_model' => 'Model %s:',
     'media.intake.cut' => "\n(the first %1\$d characters, all of it — %2\$s)",
     'media.intake.failed' => 'the file did not download',
+    'media.intake.failed_models' => 'The models failed: %s',
     'media.intake.forwarded' => 'forwarded',
     'media.intake.kb' => '%d KB',
     'media.intake.mb' => '%s MB',
@@ -401,6 +406,9 @@ return [
     'media.intake.not_extracted' => 'No text: %s',
     'media.intake.not_set' => 'The %1$s model is not set, so the content is not available to me. Tell the user so and offer options: the owner sets a model with /set %2$s <model> (or I do with the settings tool, with their approval); a model with %3$s input from the OpenRouter or OpenAI catalog fits (a cheap one — for example google/gemini-3.8-flash), or an own model at an address (MEDIA_ENDPOINTS).',
     'media.intake.not_utf8' => 'Not UTF-8 text — the content is not shown.',
+    'media.intake.off' => 'Not processed: the participant chose so (media_prefs).',
+    'media.intake.on_request' => 'Processed on request: the media tool, action %s.',
+    'media.intake.principles' => 'Principles of choosing a model — the owner\'s: %s; the participant\'s: %s. For details choose the model by them (media, the model parameter).',
     'media.intake.replied' => ' (from the message this one replies to)',
     'media.intake.seconds' => '%d s',
     'media.intake.set_later' => 'A %s model is set, but processing of this kind comes in the next version — the content is not available to me yet.',
@@ -434,6 +442,8 @@ return [
     'media.prefs.own_rules' => '; the participant\'s principles: %s',
     'media.prefs.owner_rules' => '; the owner\'s principles: %s',
     'media.prefs.preferred' => '; the participant\'s preferred model: %s',
+    'media.prompt.describe' => 'Describe the image briefly, up to 80 words. Copy any text on it word for word.',
+    'media.prompt.video' => 'Describe briefly, up to 100 words, what happens in the video. Speech and text on screen — word for word.',
 
     // model
     'model.fallback_models.model_ne_otvetila' => 'model %s did not respond — %s',

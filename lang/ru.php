@@ -389,11 +389,16 @@ return [
     'mcp.stdio.timeout' => 'MCP-сервер не ответил вовремя на %s.',
 
     // media
+    'media.action.speech' => 'transcribe',
+    'media.action.video' => 'video',
+    'media.action.vision' => 'look',
     'media.input.speech' => 'звука',
     'media.input.video' => 'видео',
     'media.input.vision' => 'изображений',
+    'media.intake.by_model' => 'Модель %s:',
     'media.intake.cut' => "\n(показаны первые %1\$d символов, целиком — %2\$s)",
     'media.intake.failed' => 'файл не скачался',
+    'media.intake.failed_models' => 'Модели не справились: %s',
     'media.intake.forwarded' => 'переслано',
     'media.intake.kb' => '%d КБ',
     'media.intake.mb' => '%s МБ',
@@ -402,6 +407,9 @@ return [
     'media.intake.not_extracted' => 'Текст не извлечён: %s',
     'media.intake.not_set' => 'Модель %1$s не назначена, поэтому содержимое мне недоступно. Скажи об этом пользователю и предложи варианты: владелец назначает модель командой /set %2$s <модель> (или я — инструментом settings, с его подтверждением); подойдёт модель с вводом %3$s из каталога OpenRouter или OpenAI (дешёвая — например, google/gemini-3.8-flash) или своя модель по адресу (MEDIA_ENDPOINTS).',
     'media.intake.not_utf8' => 'Не текст UTF-8 — содержимое не показано.',
+    'media.intake.off' => 'Не обрабатываю: так решил участник (media_prefs).',
+    'media.intake.on_request' => 'Обработка — по запросу: инструмент media, действие %s.',
+    'media.intake.principles' => 'Принципы выбора модели — владельца: %s; участника: %s. Для подробностей выбирай модель по ним (media, параметр model).',
     'media.intake.replied' => ' (из сообщения, на которое этот ответ)',
     'media.intake.seconds' => '%d с',
     'media.intake.set_later' => 'Модель %s назначена, но обработка этого вида появится в следующей версии — пока содержимое мне недоступно.',
@@ -435,6 +443,8 @@ return [
     'media.prefs.own_rules' => '; принципы участника: %s',
     'media.prefs.owner_rules' => '; принципы владельца: %s',
     'media.prefs.preferred' => '; предпочтительная модель участника: %s',
+    'media.prompt.describe' => 'Опиши изображение коротко, до 80 слов, по-русски. Текст на изображении перепиши дословно.',
+    'media.prompt.video' => 'Опиши коротко, до 100 слов, по-русски, что происходит в видео. Речь и текст в кадре — дословно.',
 
     // model
     'model.fallback_models.model_ne_otvetila' => 'модель %s не ответила — %s',
