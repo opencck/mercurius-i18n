@@ -1203,6 +1203,7 @@ return [
     'tool.media.more' => "\n(more — extract with offset %d)",
     'tool.media.no_frames' => 'No frames of the video: %s',
     'tool.media.no_path' => 'path is needed — a file in the sandbox.',
+    'tool.media.no_video_module' => 'Without a video model a video is taken apart by the media-video module (ffmpeg), and it is not running. Tell the owner: a video model is set in MEDIA_VIDEO_MODELS, and the module is turned on by adding media-video to COMPOSE_PROFILES and setting MEDIA_VIDEO_TOKEN in .env, then docker compose up -d.',
     'tool.media.nothing' => 'Neither frames nor speech came out.',
     'tool.media.offset' => 'From which character to read the text of a document',
     'tool.media.path' => 'The path of the file in the sandbox',

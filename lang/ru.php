@@ -1205,6 +1205,7 @@ return [
     'tool.media.more' => "\n(дальше — extract с offset %d)",
     'tool.media.no_frames' => 'Кадры видео не получены: %s',
     'tool.media.no_path' => 'Нужен path — файл в песочнице.',
+    'tool.media.no_video_module' => 'Видео без модели видео разбирает модуль media-video (ffmpeg), а он не запущен. Скажи владельцу: модель видео задаётся в MEDIA_VIDEO_MODELS, а модуль включается так — добавить media-video в COMPOSE_PROFILES и задать MEDIA_VIDEO_TOKEN в .env, затем docker compose up -d.',
     'tool.media.nothing' => 'Ни кадров, ни речи не получено.',
     'tool.media.offset' => 'С какого символа читать текст документа',
     'tool.media.path' => 'Путь к файлу в песочнице',
