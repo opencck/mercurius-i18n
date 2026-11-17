@@ -697,6 +697,7 @@ return [
     'service.doctor.otvet' => 'response ',
     'service.doctor.owner_timezone_ne_raspoznan' => 'OWNER_TIMEZONE is not recognized: ',
     'service.doctor.primeneno_iz_migratsiy_perezapustite_pri' => '%d of %d migrations applied — restart the application',
+    'service.doctor.profile' => '; is the module in COMPOSE_PROFILES?',
     'service.doctor.pust_vyklyuchen' => ' is empty — off',
     'service.doctor.quiet_hours_s_do_naprimer' => 'QUIET_HOURS is "from-to", for example 23-8; there are no quiet hours right now',
     'service.doctor.sandbox' => 'Sandbox',

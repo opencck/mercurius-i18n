@@ -699,6 +699,7 @@ return [
     'service.doctor.otvet' => 'ответ ',
     'service.doctor.owner_timezone_ne_raspoznan' => 'OWNER_TIMEZONE не распознан: ',
     'service.doctor.primeneno_iz_migratsiy_perezapustite_pri' => 'применено %d из %d миграций — перезапустите приложение',
+    'service.doctor.profile' => '; модуль в COMPOSE_PROFILES?',
     'service.doctor.pust_vyklyuchen' => ' пуст — выключен',
     'service.doctor.quiet_hours_s_do_naprimer' => 'QUIET_HOURS — «с-до», например 23-8; сейчас тихих часов нет',
     'service.doctor.sandbox' => 'Песочница',
