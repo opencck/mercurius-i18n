@@ -51,6 +51,7 @@ return [
     'agent.approval_service.razresheno_vladeltsem' => 'Allowed by the owner.',
     'agent.approval_service.razresheno_vladeltsem_i_zapomneno' => 'Allowed by the owner and remembered: %s.',
     'agent.approval_service.razreshit' => 'Allow',
+    'agent.approval_service.refused_in_a_row' => 'The owner has already refused this action three times in a row (refusals: %d) — no card was sent. Do not repeat it: do it another way or ask the owner in words.',
     'agent.approval_service.sohranennye_razresheniya' => "Saved permissions\n\n",
     'agent.approval_service.tselikom_v_fayle_vyshe' => '(in full, in the file above)',
     'agent.approval_service.uchastnik' => 'participant ',

@@ -52,6 +52,7 @@ return [
     'agent.approval_service.razresheno_vladeltsem' => 'Разрешено владельцем.',
     'agent.approval_service.razresheno_vladeltsem_i_zapomneno' => 'Разрешено владельцем и запомнено: %s.',
     'agent.approval_service.razreshit' => 'Разрешить',
+    'agent.approval_service.refused_in_a_row' => 'Владелец уже трижды подряд отказал в этом действии (отказов: %d) — карточка не отправлена. Не повторяй его: сделай по-другому или спроси владельца словами.',
     'agent.approval_service.sohranennye_razresheniya' => "Сохранённые разрешения\n\n",
     'agent.approval_service.tselikom_v_fayle_vyshe' => '(целиком — в файле выше)',
     'agent.approval_service.uchastnik' => 'участник ',
