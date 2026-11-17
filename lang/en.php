@@ -1205,7 +1205,7 @@ return [
     'tool.run_command.php_s_composer_python3_node' => 'php with composer, python3, node with npm, go). Each command is independent: variables and cd are not kept between calls ',
     'tool.run_command.rabochiy_katalog_prevysil_limit_osvobodi' => 'The working directory exceeded the limit — free up space.',
     'tool.run_command.sekundy' => 'Seconds',
-    'tool.run_command.sohranyayutsya_vyvod_kod_vyhoda_stdout' => '. The output is the exit code, stdout and stderr (long output is shortened).',
+    'tool.run_command.sohranyayutsya_vyvod_kod_vyhoda_stdout' => 'are kept. The output is the exit code, stdout and stderr (a long output is shortened). python3 has python-pptx, python-docx and openpyxl (presentations, documents, tables). Do not pass a multi-line script by heredoc (<<EOF): such a command cannot be parsed and waits for the owner\'s approval — write it with write_file and run python3 file.py. Send the finished file with send_file.',
     'tool.run_command.vypolnyaet_komandu_bash_v_tvoem' => 'Runs a bash command in your sandbox working directory (git, curl, ',
     'tool.sandbox.pesochnitsa_nedostupna_dlya_uchastnika' => 'The sandbox is not available to the participant.',
     'tool.send_content.about' => 'Sends what the messenger carries besides text and files — to this chat (the same topic) or to a participant (to): location (latitude, longitude); contact (phone, first_name, last_name); poll (question, options 2–10, anonymous, multiple); article (title, text in Markdown) — a titled formatted text. Files, photos, music and video — with send_file.',

@@ -1207,7 +1207,7 @@ return [
     'tool.run_command.php_s_composer_python3_node' => 'php с composer, python3, node с npm, go). Каждая команда независима: переменные и cd между вызовами не ',
     'tool.run_command.rabochiy_katalog_prevysil_limit_osvobodi' => 'Рабочий каталог превысил лимит — освободи место.',
     'tool.run_command.sekundy' => 'Секунды',
-    'tool.run_command.sohranyayutsya_vyvod_kod_vyhoda_stdout' => 'сохраняются. Вывод — код выхода, stdout и stderr (длинный вывод сокращается).',
+    'tool.run_command.sohranyayutsya_vyvod_kod_vyhoda_stdout' => 'сохраняются. Вывод — код выхода, stdout и stderr (длинный вывод сокращается). Для python3 уже есть python-pptx, python-docx и openpyxl (презентации, документы, таблицы). Многострочный скрипт не передавай через heredoc (<<EOF): такую команду нельзя разобрать, и она ждёт подтверждения владельца, — запиши его write_file и запусти python3 файл.py. Готовый файл пришли send_file.',
     'tool.run_command.vypolnyaet_komandu_bash_v_tvoem' => 'Выполняет команду bash в твоём рабочем каталоге песочницы (есть git, curl, ',
     'tool.sandbox.pesochnitsa_nedostupna_dlya_uchastnika' => 'Песочница недоступна для участника.',
     'tool.send_content.about' => 'Присылает то, что умеет мессенджер кроме текста и файлов, — в этот чат (ту же тему) или участнику (to): location (latitude, longitude) — геопозиция; contact (phone, first_name, last_name) — контакт; poll (question, options 2–10, anonymous, multiple) — опрос; article (title, text в Markdown) — статья с заголовком и разметкой. Файлы, фото, музыку и видео — через send_file.',
