@@ -1258,6 +1258,7 @@ return [
     'tool.git.no_secret' => 'The secret "%s" is not available: it does not exist or is not yours. Ask the owner to add the token to the vault.',
     'tool.git.origin' => 'https address of the git server the token is for',
     'tool.git.origin_bad' => 'A secret needs origin: the https address of the git server, without a user or password.',
+    'tool.git.read_programs' => 'The repository config has filters or diff programs (filter.*, diff.*.textconv/command): a read would start them without approval. Run the command with run_command — it goes through a card — or remove these settings.',
     'tool.git.refused' => 'The option %s starts a program and is refused.',
     'tool.git.secret' => 'name of the vault secret with the repository token',
     'tool.git.secret_commands' => 'With a secret git runs only for the commands that talk to the address: %s.',
