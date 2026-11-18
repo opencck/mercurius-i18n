@@ -954,6 +954,7 @@ return [
     'service.trace_reports.proveryayuschih_otklonili_otvet' => 'Проверяющих: %d, отклонили ответ: %d',
     'service.trace_reports.rashod_za_dn' => 'Расход за %d дн.',
     'service.trace_reports.razbor_zapuska_trace_nomer' => 'Разбор запуска: /trace <номер>',
+    'service.trace_reports.remote' => 'соседу «%s», задача %s: его запуск %s, %s, %d токенов, %s',
     'service.trace_reports.s' => '%.1f с',
     'service.trace_reports.s_2' => '%d с',
     'service.trace_reports.samye_dorogie_zapuski' => 'Самые дорогие запуски:',
@@ -1083,6 +1084,8 @@ return [
     'settings.settings_service.zadan' => 'задан',
 
     // skill
+    'skill.builtin.local' => 'Встроенный скилл обновился в коде. Сейчас действует ваша версия v%d — принять обновление вместо неё?',
+    'skill.builtin.reason' => 'встроенный скилл из репозитория',
     'skill.bundle.bad_name' => 'Имя скилла «%s» не подходит: строчные латинские буквы, цифры, точка, дефис, подчёркивание.',
     'skill.bundle.bad_path' => 'Путь %s выходит за каталог скилла.',
     'skill.bundle.file_too_big' => 'Файл %s больше %d КБ.',
@@ -1556,6 +1559,8 @@ return [
     'tool.settings.sekret_vladelets_kladet_ego_komandoy' => '%s — секрет: владелец кладёт его командой /secret <имя> <значение> или /set %s <значение>, а сюда передай имя в secret.',
     'tool.settings.vmesto_value_secret_imya_sekreta' => 'вместо value — secret: имя секрета, который владелец сохранил командой /secret <имя> <значение>, сами ключи в диалог не пиши; ',
     'tool.skill_import.description' => 'Взять обычный скилл другого агента (SKILL.md с файлами references/, scripts/ и др.): каталог на GitHub (https://github.com/<владелец>/<репозиторий>/tree/<ветка>/<каталог>) или архив .zip/.tar.gz. Скилл проверяется и уходит владельцу карточкой; пользоваться им можно после одобрения. reason — зачем он нужен.',
+    'tool.skill_import.need' => 'Нужен url (каталог GitHub или ссылка на архив) или path (архив в песочнице).',
+    'tool.skill_import.path' => 'архив скилла в твоей папке песочницы (zip, tar.gz) — например присланный в чат: inbox/…',
     'tool.skill_propose.card_files' => 'Файлы скилла:',
     'tool.skill_propose.files' => 'файлы скилла рядом с SKILL.md — путь => текст (references/…, templates/…); подробности, которые нужны не каждый раз, — сюда, а в тексте — указатель',
     'tool.skill_propose.files_bad' => 'Файлы скилла: не больше %d, текст до 50 000 символов, без секретов и скрытых символов.',

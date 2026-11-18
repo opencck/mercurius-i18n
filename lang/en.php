@@ -952,6 +952,7 @@ return [
     'service.trace_reports.proveryayuschih_otklonili_otvet' => 'Reviewers: %d, rejected the answer: %d',
     'service.trace_reports.rashod_za_dn' => 'Spending over %d days',
     'service.trace_reports.razbor_zapuska_trace_nomer' => 'Run breakdown: /trace <number>',
+    'service.trace_reports.remote' => 'neighbour "%s", task %s: its run %s, %s, %d tokens, %s',
     'service.trace_reports.s' => '%.1f s',
     'service.trace_reports.s_2' => '%d s',
     'service.trace_reports.samye_dorogie_zapuski' => 'Most expensive runs:',
@@ -1081,6 +1082,8 @@ return [
     'settings.settings_service.zadan' => 'set',
 
     // skill
+    'skill.builtin.local' => 'The built-in skill was updated in the code. Your version v%d is active now: accept the update instead?',
+    'skill.builtin.reason' => 'a built-in skill from its repository',
     'skill.bundle.bad_name' => 'The skill name "%s" does not fit: lowercase Latin letters, digits, dot, hyphen, underscore.',
     'skill.bundle.bad_path' => 'The path %s leaves the skill directory.',
     'skill.bundle.file_too_big' => 'The file %s is larger than %d KB.',
@@ -1554,6 +1557,8 @@ return [
     'tool.settings.sekret_vladelets_kladet_ego_komandoy' => '%s is a secret: the owner stores it with /secret <name> <value> or /set %s <value>, and here pass the name in secret.',
     'tool.settings.vmesto_value_secret_imya_sekreta' => 'instead of value — secret: the name of the secret the owner saved with /secret <name> <value>, do not write the keys themselves in the conversation; ',
     'tool.skill_import.description' => 'Bring in an ordinary skill of another agent (SKILL.md with references/, scripts/ and other files): a directory on GitHub (https://github.com/<owner>/<repo>/tree/<branch>/<directory>) or a .zip/.tar.gz archive. The skill is checked and goes to the owner as a card; it can be used after approval. reason — why it is needed.',
+    'tool.skill_import.need' => 'A url (a GitHub directory or an archive link) or a path (an archive in the sandbox) is needed.',
+    'tool.skill_import.path' => 'an archive of a skill in your sandbox folder (zip, tar.gz), for example one sent to the chat: inbox/…',
     'tool.skill_propose.card_files' => 'Files of the skill:',
     'tool.skill_propose.files' => 'files of the skill next to SKILL.md: path => text (references/…, templates/…); details that are not needed every time go here, and the text points to them',
     'tool.skill_propose.files_bad' => 'Files of a skill: at most %d, text up to 50,000 characters, no secrets or hidden characters.',
