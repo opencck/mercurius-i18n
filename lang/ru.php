@@ -26,6 +26,7 @@ return [
     'agent.agent_loop.ostanovleno_hodov_tokenov_vremya_s' => "\n\nОстановлено: %s. Ходов: %d, токенов: %d, время: %d с.",
     'agent.agent_loop.ostanovleno_vladeltsem' => 'Остановлено владельцем.',
     'agent.agent_loop.otkazano_vladeltsem' => 'Отказано владельцем',
+    'agent.agent_loop.same_result' => 'Результат тот же, что у вызова %s, — смотри его выше.',
     'agent.agent_loop.stopped_note' => 'Задача остановлена владельцем по команде /stop. Не продолжай её, пока владелец не попросит снова.',
     'agent.agent_loop.text_action' => 'Ты описал действие текстом, но инструмент не вызывал — ничего не выполнено. Такие заметки пишет только система после настоящего вызова. Если действие нужно — вызови инструмент сейчас; если нет — честно скажи, что не сделал.',
     'agent.agent_loop.tokenov' => 'токенов',
