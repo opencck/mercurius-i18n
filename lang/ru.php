@@ -153,6 +153,15 @@ return [
     'agent.stop_reason.otvet_modeli_obryvalsya_na_seredine' => 'ответ модели обрывался на середине вызова инструмента',
     'agent.stop_reason.vnutrennyaya_oshibka' => 'внутренняя ошибка',
 
+    // api
+    'api.keys.issued' => "Ключ WebSocket API для %s (показываю один раз, сохраните):\n\n%s\n\nПодключение: GET /api/ws с заголовком Authorization: Bearer <ключ>.",
+    'api.keys.list' => 'Ключи WebSocket API (номер, название, участник):',
+    'api.keys.no_key' => 'Такого действующего ключа нет.',
+    'api.keys.none' => 'Ключей WebSocket API нет. Выдать: /apikey new <номер участника> [название].',
+    'api.keys.revoked' => 'Ключ отозван: с ним больше не подключиться.',
+    'api.keys.usage' => '/apikey — ключи WebSocket API: list — список; new <номер участника> [название] — новый ключ (покажу один раз); revoke <номер ключа> — отозвать. Номер участника — в /participants или у агента.',
+    'api.keys.used' => 'входил',
+
     // app
     'app.consolidation.davno_ne_prigozhdalis_nuzhny_li' => "Давно не пригождались — нужны ли ещё (если нет — /forget <номер>):\n",
     'app.consolidation.fakt_povtoryaet_predlozhil_zabyt_kartoch' => 'Факт #%d повторяет #%d — предложил забыть #%d (карточка №%d).',

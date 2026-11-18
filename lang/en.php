@@ -152,6 +152,15 @@ return [
     'agent.stop_reason.otvet_modeli_obryvalsya_na_seredine' => 'the model\'s reply was cut off in the middle of a tool call',
     'agent.stop_reason.vnutrennyaya_oshibka' => 'internal error',
 
+    // api
+    'api.keys.issued' => "A key of the WebSocket API for %s (shown once, keep it):\n\n%s\n\nConnect: GET /api/ws with the header Authorization: Bearer <key>.",
+    'api.keys.list' => 'Keys of the WebSocket API (number, name, participant):',
+    'api.keys.no_key' => 'There is no such working key.',
+    'api.keys.none' => 'No keys of the WebSocket API. Issue one: /apikey new <participant number> [name].',
+    'api.keys.revoked' => 'The key is revoked: it connects no more.',
+    'api.keys.usage' => '/apikey — keys of the WebSocket API: list; new <participant number> [name] — a new key (shown once); revoke <key number>. The participant number is in /participants or ask the agent.',
+    'api.keys.used' => 'last used',
+
     // app
     'app.consolidation.davno_ne_prigozhdalis_nuzhny_li' => "Haven't been useful for a long time — are they still needed (if not, /forget <number>):\n",
     'app.consolidation.fakt_povtoryaet_predlozhil_zabyt_kartoch' => 'Fact #%d repeats #%d — proposed forgetting #%d (card #%d).',
