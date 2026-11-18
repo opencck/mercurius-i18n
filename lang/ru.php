@@ -222,6 +222,7 @@ return [
     'commandpolicy.command_classifier.komandu_ne_udalos_razobrat' => 'команду не удалось разобрать',
     'commandpolicy.command_classifier.ne_v_spiske_chitayuschih' => '%s %s не в списке читающих',
     'commandpolicy.command_classifier.ne_v_spiske_chitayuschih_komand' => '%s не в списке читающих команд',
+    'commandpolicy.command_classifier.not_in_grammar' => 'Аргумент «%s» у %s не входит в грамматику чтения: команда считается изменением.',
     'commandpolicy.command_classifier.povyshenie_prav' => 'повышение прав (%s)',
     'commandpolicy.command_classifier.pustaya_komanda' => 'пустая команда',
     'commandpolicy.command_classifier.rekursivnoe_udalenie_kornya' => 'рекурсивное удаление корня',

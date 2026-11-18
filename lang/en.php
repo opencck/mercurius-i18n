@@ -221,6 +221,7 @@ return [
     'commandpolicy.command_classifier.komandu_ne_udalos_razobrat' => 'could not parse the command',
     'commandpolicy.command_classifier.ne_v_spiske_chitayuschih' => '%s %s is not in the list of read-only commands',
     'commandpolicy.command_classifier.ne_v_spiske_chitayuschih_komand' => '%s is not in the list of read-only commands',
+    'commandpolicy.command_classifier.not_in_grammar' => 'The argument "%s" of %s is not in the read grammar: the command counts as a change.',
     'commandpolicy.command_classifier.povyshenie_prav' => 'privilege escalation (%s)',
     'commandpolicy.command_classifier.pustaya_komanda' => 'empty command',
     'commandpolicy.command_classifier.rekursivnoe_udalenie_kornya' => 'recursive deletion of the root',
