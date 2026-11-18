@@ -656,8 +656,9 @@ return [
     'run.model_calls.other' => '{count} model calls',
 
     // sandbox
+    'sandbox.command_runner.nul' => 'The command has a NUL byte in it — such a command is not run.',
     'sandbox.command_runner.slishkom_mnogo_odnovremennyh_komand_ne' => 'Too many simultaneous commands (no more than %d).',
-    'sandbox.command_runner.umask_077_cd_1_echo' => 'umask 077; cd -- "$1" || { echo "Directory $1 is unavailable." >&2; exit 2; }; eval "$2"',
+    'sandbox.command_runner.umask_077_cd_1_echo' => 'IFS= read -r -d \'\' c || exit 2; umask 077; cd -- "$1" || { echo "Directory $1 is unavailable." >&2; exit 2; }; eval "$c"',
     'sandbox.executor_server.net_dostupa' => 'No access.',
     'sandbox.executor_server.net_takoy_operatsii' => 'No such operation.',
     'sandbox.executor_server.vnutrennyaya_oshibka_pesochnitsy' => 'Internal sandbox error.',

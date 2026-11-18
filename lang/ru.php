@@ -658,8 +658,9 @@ return [
     'run.model_calls.one' => '{count} вызов модели',
 
     // sandbox
+    'sandbox.command_runner.nul' => 'В команде есть нулевой байт — такую команду не запускаю.',
     'sandbox.command_runner.slishkom_mnogo_odnovremennyh_komand_ne' => 'Слишком много одновременных команд (не больше %d).',
-    'sandbox.command_runner.umask_077_cd_1_echo' => 'umask 077; cd -- "$1" || { echo "Каталог $1 недоступен." >&2; exit 2; }; eval "$2"',
+    'sandbox.command_runner.umask_077_cd_1_echo' => 'IFS= read -r -d \'\' c || exit 2; umask 077; cd -- "$1" || { echo "Каталог $1 недоступен." >&2; exit 2; }; eval "$c"',
     'sandbox.executor_server.net_dostupa' => 'Нет доступа.',
     'sandbox.executor_server.net_takoy_operatsii' => 'Нет такой операции.',
     'sandbox.executor_server.vnutrennyaya_oshibka_pesochnitsy' => 'Внутренняя ошибка песочницы.',
