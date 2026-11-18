@@ -110,6 +110,7 @@ return [
     'agent.project_context.v_rabote' => ' — in progress',
     'agent.project_context.zakryt' => 'closed',
     'agent.prompt_builder.administrator' => 'administrator',
+    'agent.prompt_builder.channel_ws' => 'Channel: the WebSocket API (not Telegram): the participant writes from their own program; buttons and files work, groups and topics do not.',
     'agent.prompt_builder.drugoy_agent_bez_imeni' => 'another agent without a name',
     'agent.prompt_builder.kontekst_sobesednik_dialog_nachat' => "Context:\n- Interlocutor: %s, %s.\n- Conversation started: %s.",
     'agent.prompt_builder.pamyat_sloy_1_spravochnye_dannye' => "Memory (layer 1), reference data:\n",

@@ -111,6 +111,7 @@ return [
     'agent.project_context.v_rabote' => ' — в работе',
     'agent.project_context.zakryt' => 'закрыт',
     'agent.prompt_builder.administrator' => 'администратор',
+    'agent.prompt_builder.channel_ws' => 'Канал: WebSocket API (не Telegram) — собеседник пишет из своей программы; кнопки и файлы работают, группы и темы — нет.',
     'agent.prompt_builder.drugoy_agent_bez_imeni' => 'другой агент без имени',
     'agent.prompt_builder.kontekst_sobesednik_dialog_nachat' => "Контекст:\n- Собеседник: %s, %s.\n- Диалог начат: %s.",
     'agent.prompt_builder.pamyat_sloy_1_spravochnye_dannye' => "Память (слой 1), справочные данные:\n",
