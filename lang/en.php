@@ -1020,6 +1020,7 @@ return [
     'settings.about.agent_tool_timeout' => 'seconds per tool call',
     'settings.about.agent_worker_max_turns' => 'model calls per worker',
     'settings.about.agent_worker_token_budget' => 'tokens per worker',
+    'settings.about.agent_worker_tools' => 'The white list of worker tools, comma-separated (`name*` for a prefix); a tool not on it is not given to a worker even if the orchestrator names it',
     'settings.about.brave_search_api_key' => 'Brave Search key',
     'settings.about.digest_time' => 'daily digest time HH:MM (empty — off)',
     'settings.about.eval_judge_model' => 'the judge of the evaluation set: a model of another family than the agent\'s',

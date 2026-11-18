@@ -1022,6 +1022,7 @@ return [
     'settings.about.agent_tool_timeout' => 'секунд на вызов инструмента',
     'settings.about.agent_worker_max_turns' => 'вызовов модели у воркера',
     'settings.about.agent_worker_token_budget' => 'токенов у воркера',
+    'settings.about.agent_worker_tools' => 'Белый список инструментов воркера через запятую (`имя*` — по началу имени); чего нет в списке, воркеру не дают, даже если оркестратор назвал',
     'settings.about.brave_search_api_key' => 'ключ Brave Search',
     'settings.about.digest_time' => 'время ежедневной сводки ЧЧ:ММ (пусто — выключена)',
     'settings.about.eval_judge_model' => 'судья набора проверочных задач — модель другой семьи, чем модель агента',
