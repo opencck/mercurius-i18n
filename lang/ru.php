@@ -352,6 +352,7 @@ return [
     'improve.kind.idea' => 'идея для доработки',
     'improve.kind.prompt' => 'правило в промпт',
     'improve.kind.setting' => 'настройка',
+    'improve.none_open' => 'Нерешённых предложений нет.',
     'improve.notes.list' => 'Версии заметок к промпту (▶ — действует):',
     'improve.notes.no_version' => 'Такой версии нет.',
     'improve.notes.none' => 'Заметок к промпту нет: агент работает по базовому промпту.',

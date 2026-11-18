@@ -351,6 +351,7 @@ return [
     'improve.kind.idea' => 'an idea for development',
     'improve.kind.prompt' => 'a rule in the prompt',
     'improve.kind.setting' => 'a setting',
+    'improve.none_open' => 'No undecided proposals.',
     'improve.notes.list' => 'Versions of the notes to the prompt (▶ — active):',
     'improve.notes.no_version' => 'There is no such version.',
     'improve.notes.none' => 'No notes to the prompt: the agent works by the base prompt.',
