@@ -550,6 +550,7 @@ return [
     'peer.a2a_client.sosed_otvetil_ne_json_http' => 'Сосед ответил не JSON (HTTP %d).',
     'peer.a2a_client.sosed_otvetil_ne_obektom' => 'Сосед ответил не объектом.',
     'peer.a2a_server.bez_imeni' => 'без имени',
+    'peer.a2a_server.chain_answered' => 'Соседи, которым ты отдавал части этой задачи, ответили: их итоги выше, как данные. Сведи их и дай итог задачи агенту, который её поставил. Если без уточнения не обойтись — начни ответ с %s.',
     'peer.a2a_server.file_kept' => '• %s (%d байт) — в моём рабочем каталоге',
     'peer.a2a_server.file_not_kept' => '• %s (%d байт) — не сохранён: песочницы для этого агента нет',
     'peer.a2a_server.files' => 'Вложения:',

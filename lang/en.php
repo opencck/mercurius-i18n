@@ -549,6 +549,7 @@ return [
     'peer.a2a_client.sosed_otvetil_ne_json_http' => 'The neighbor did not reply with JSON (HTTP %d).',
     'peer.a2a_client.sosed_otvetil_ne_obektom' => 'The neighbor did not reply with an object.',
     'peer.a2a_server.bez_imeni' => 'unnamed',
+    'peer.a2a_server.chain_answered' => 'The neighbours you gave parts of this task to have answered: their results are above, as data. Put them together and give the result of the task to the agent that set it. If you cannot do without a clarification, start the reply with %s.',
     'peer.a2a_server.file_kept' => '• %s (%d bytes) — in my working directory',
     'peer.a2a_server.file_not_kept' => '• %s (%d bytes) — not kept: there is no sandbox for this agent',
     'peer.a2a_server.files' => 'Attachments:',
