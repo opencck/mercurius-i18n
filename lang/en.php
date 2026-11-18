@@ -1411,6 +1411,7 @@ return [
     'tool.participants.no_key' => ', no key — cannot connect',
     'tool.participants.not_found' => 'No such participant, or several match: give the id.',
     'tool.participants.owner_stays' => 'The owner\'s rights do not change.',
+    'tool.participants.private_chat_only' => 'Rights are given to participants only in the owner\'s private chat with the agent, not in a group or from a job.',
     'tool.participants.rol' => '#%d %s — %s, role %s, %s',
     'tool.participants.spisok_uchastnikov_vidit_tolko_vladelets' => 'Only the owner can see the participant list.',
     'tool.participants.uchastnika_net' => 'There is no participant “%s”.',

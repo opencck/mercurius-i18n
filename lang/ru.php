@@ -1413,6 +1413,7 @@ return [
     'tool.participants.no_key' => ', без ключа — подключиться не может',
     'tool.participants.not_found' => 'Участник не найден или найдено несколько: укажи id.',
     'tool.participants.owner_stays' => 'Права владельца не меняются.',
+    'tool.participants.private_chat_only' => 'Права участникам выдаются только в личном чате владельца с агентом, не в группе и не из задания.',
     'tool.participants.rol' => '#%d %s — %s, роль %s, %s',
     'tool.participants.spisok_uchastnikov_vidit_tolko_vladelets' => 'Список участников видит только владелец.',
     'tool.participants.uchastnika_net' => 'Участника «%s» нет.',
