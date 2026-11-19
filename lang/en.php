@@ -410,6 +410,7 @@ return [
     'infrastructure.postgres_memory_store.zavershen' => '; finished: ',
 
     // job
+    'job.daily_digest.memory_waiting' => 'Memory: %d wait for a decision, the oldest %d days — /memory',
     'job.daily_digest.prosrocheno' => 'Overdue',
     'job.daily_digest.segodnya' => 'Today',
     'job.daily_digest.svodka_na' => '🗓 Summary for %s',

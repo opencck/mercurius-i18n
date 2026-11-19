@@ -411,6 +411,7 @@ return [
     'infrastructure.postgres_memory_store.zavershen' => '; завершён: ',
 
     // job
+    'job.daily_digest.memory_waiting' => 'Память: ждут решения %d, старейшему %d дн. — /memory',
     'job.daily_digest.prosrocheno' => 'Просрочено',
     'job.daily_digest.segodnya' => 'Сегодня',
     'job.daily_digest.svodka_na' => '🗓 Сводка на %s',
