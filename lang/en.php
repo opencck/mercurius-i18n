@@ -175,6 +175,7 @@ return [
     'agent.stop_reason.otvet_dan' => 'answer given',
     'agent.stop_reason.otvet_modeli_obryvalsya_na_seredine' => 'the model\'s reply was cut off in the middle of a tool call',
     'agent.stop_reason.vnutrennyaya_oshibka' => 'internal error',
+    'agent.tool_use_guidance' => "# Act through tools\nYou MUST use your tools to take action — do not describe what you would do or plan to do without actually doing it. When you say you will perform an action (e.g. 'I will check the file', 'I will run the build', 'I will create the project'), you MUST make the tool call in the same response. Never end your turn with a promise of future action — execute it now.\nKeep working until the task is actually complete. Do not stop with a summary of what you plan to do next. If you have tools that can accomplish the task, use them instead of telling the user what you would do.\nEvery response either contains tool calls that make progress or delivers a final result. Responses that only describe intentions without acting are not acceptable.",
 
     // api
     'api.keys.issued' => "A key of the WebSocket API for %s (shown once, keep it):\n\n%s\n\nConnect: GET /api/ws with the header Authorization: Bearer <key>.",
@@ -1134,6 +1135,7 @@ return [
     'settings.about.agent_run_timeout' => 'seconds per run',
     'settings.about.agent_token_budget' => 'tokens per run',
     'settings.about.agent_tool_timeout' => 'seconds per tool call',
+    'settings.about.agent_tool_use_guidance' => 'the rule to act through tools for models that tend to answer in prose: auto — by the list of families (gpt, codex, gemini, gemma, grok, glm, qwen, deepseek, muse), on — every model, off — none, or your own parts of model names, comma-separated',
     'settings.about.agent_worker_max_turns' => 'model calls per worker',
     'settings.about.agent_worker_token_budget' => 'tokens per worker',
     'settings.about.agent_worker_tools' => 'The white list of worker tools, comma-separated (`name*` for a prefix); a tool not on it is not given to a worker even if the orchestrator names it',
