@@ -279,7 +279,7 @@ return [
     'delegation.background_delegations.zapusk_orkestrator_ili_uchastnik_bolshe' => 'The orchestrator run or participant no longer exists.',
     'delegation.delegate_task_tool.chto_sdelat_konkretno_i_samodostatochno' => 'What to do, concrete and self-contained',
     'delegation.delegate_task_tool.context_of' => 'The conversation\'s context for the worker: project — the active project\'s card and tasks, participant — the core memory of the person (in a private chat only). Without it the worker is isolated and knows only goal and context.',
-    'delegation.delegate_task_tool.deli_tolko_kogda_chasti_nezavisimy' => 'Split only when the parts are independent and each needs real work: each worker has its own overhead ',
+    'delegation.delegate_task_tool.deli_tolko_kogda_chasti_nezavisimy' => 'A guide: one part — do not delegate, do it yourself; 2–4 — comparisons and independent subtasks; 5 is the ceiling. Split only when the parts are independent and each needs real work: each worker has its own overhead ',
     'delegation.delegate_task_tool.fon_kotoryy_nuzhen_vorkeru' => 'The background the worker needs',
     'delegation.delegate_task_tool.fonovoe_delegirovanie_nachato_zadach_otc' => 'Background delegation #%d started: %d tasks. The report will arrive in this conversation as a separate message when all ',
     'delegation.delegate_task_tool.instrumenty_vorkera' => 'Worker tools',

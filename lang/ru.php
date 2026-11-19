@@ -280,7 +280,7 @@ return [
     'delegation.background_delegations.zapusk_orkestrator_ili_uchastnik_bolshe' => 'Запуск-оркестратор или участник больше не существует.',
     'delegation.delegate_task_tool.chto_sdelat_konkretno_i_samodostatochno' => 'Что сделать, конкретно и самодостаточно',
     'delegation.delegate_task_tool.context_of' => 'Контекст беседы для воркера: project — карточка и задачи активного проекта, participant — ядро памяти собеседника (только в личном чате). Без поля — воркер изолирован и знает только goal и context.',
-    'delegation.delegate_task_tool.deli_tolko_kogda_chasti_nezavisimy' => 'Дели, только когда части независимы и каждая требует заметной работы: у каждого воркера свои накладные ',
+    'delegation.delegate_task_tool.deli_tolko_kogda_chasti_nezavisimy' => 'Ориентир: одна часть — не делегируй, сделай сам; 2–4 — сравнения и независимые подзадачи; 5 — потолок. Дели, только когда части независимы и каждая требует заметной работы: у каждого воркера свои накладные ',
     'delegation.delegate_task_tool.fon_kotoryy_nuzhen_vorkeru' => 'Фон, который нужен воркеру',
     'delegation.delegate_task_tool.fonovoe_delegirovanie_nachato_zadach_otc' => 'Фоновое делегирование #%d начато: задач %d. Отчёт придёт в эту беседу отдельным сообщением, когда все ',
     'delegation.delegate_task_tool.instrumenty_vorkera' => 'Инструменты воркера',
