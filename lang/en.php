@@ -553,6 +553,11 @@ return [
     // memory
     'memory.file.head' => 'Your memory file MEMORY.md (in the work folder; you edit it like any file):',
     'memory.file.over' => 'MEMORY.md takes %d characters with a limit of %d: above is only its head. Compress the file to the limit: merge repeats, drop what is out of date or already in the facts — and rewrite it (write_file).',
+    'memory.forgotten' => '(forgotten)',
+    'memory.provenance.agent' => 'the agent\'s conclusion',
+    'memory.provenance.owner_confirmed' => 'confirmed',
+    'memory.provenance.owner_said' => 'said',
+    'memory.provenance.tool' => 'from a tool',
 
     // model
     'model.fallback_models.model_ne_otvetila' => 'model %s did not respond — %s',
@@ -933,6 +938,9 @@ return [
     'service.memory_commands.fakta_net' => 'There is no fact #%s.',
     'service.memory_commands.faktov_poka_net' => 'No facts yet.',
     'service.memory_commands.forget_nomer_zabyt_fakt_nasovsem' => '/forget <number> — forget a fact for good. /consolidate — check memory now.',
+    'service.memory_commands.found' => 'Found in memory:',
+    'service.memory_commands.nothing_found' => 'Nothing in memory for these words.',
+    'service.memory_commands.page' => 'Facts, page %d of %d (newest first):',
     'service.memory_commands.poslednie_fakty' => "Latest facts:\n",
     'service.memory_commands.proverka_pamyati_ne_nastroena' => 'Memory check is not configured.',
     'service.memory_commands.ukazhite_nomer_fakta_forget_12' => 'Give the fact number: /forget 12',

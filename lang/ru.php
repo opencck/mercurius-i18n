@@ -554,6 +554,11 @@ return [
     // memory
     'memory.file.head' => 'Твой файл памяти MEMORY.md (в рабочей папке; правишь его как любой файл):',
     'memory.file.over' => 'MEMORY.md занимает %d символов при пределе %d: выше — только его начало. Сожми файл до предела: объедини повторы, убери устаревшее и то, что уже есть в фактах, — и перезапиши его (write_file).',
+    'memory.forgotten' => '(забыто)',
+    'memory.provenance.agent' => 'вывод агента',
+    'memory.provenance.owner_confirmed' => 'подтверждено',
+    'memory.provenance.owner_said' => 'сказано',
+    'memory.provenance.tool' => 'из инструмента',
 
     // model
     'model.fallback_models.model_ne_otvetila' => 'модель %s не ответила — %s',
@@ -935,6 +940,9 @@ return [
     'service.memory_commands.fakta_net' => 'Факта #%s нет.',
     'service.memory_commands.faktov_poka_net' => 'Фактов пока нет.',
     'service.memory_commands.forget_nomer_zabyt_fakt_nasovsem' => '/forget <номер> — забыть факт насовсем. /consolidate — проверить память сейчас.',
+    'service.memory_commands.found' => 'Найдено в памяти:',
+    'service.memory_commands.nothing_found' => 'По этим словам в памяти ничего нет.',
+    'service.memory_commands.page' => 'Факты, страница %d из %d (новые первыми):',
     'service.memory_commands.poslednie_fakty' => "Последние факты:\n",
     'service.memory_commands.proverka_pamyati_ne_nastroena' => 'Проверка памяти не настроена.',
     'service.memory_commands.ukazhite_nomer_fakta_forget_12' => 'Укажите номер факта: /forget 12',
