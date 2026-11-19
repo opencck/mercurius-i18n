@@ -501,6 +501,7 @@ return [
     'mcp.mcp_manager.stdio_off' => 'stdio-серверы MCP запускаются в песочнице, а она выключена (SANDBOX_TOKEN).',
     'mcp.mcp_tool.instrument_mcp_soobschil_ob_oshibke' => 'Инструмент MCP сообщил об ошибке.',
     'mcp.mcp_tool.pusto' => '(пусто)',
+    'mcp.osv.blocked' => 'Сервер не одобрен: у пакета %s (%s) есть известные предупреждения о вредоносном коде в OSV: %s. Если это ошибка, проверь пакет и выбери другую версию.',
     'mcp.stdio.closed' => 'Процесс MCP-сервера закрыт.',
     'mcp.stdio.ended' => 'Процесс MCP-сервера завершился (код %d)',
     'mcp.stdio.ended_short' => 'Процесс MCP-сервера недоступен: ',

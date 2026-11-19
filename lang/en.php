@@ -500,6 +500,7 @@ return [
     'mcp.mcp_manager.stdio_off' => 'stdio MCP servers run in the sandbox, and it is off (SANDBOX_TOKEN).',
     'mcp.mcp_tool.instrument_mcp_soobschil_ob_oshibke' => 'The MCP tool reported an error.',
     'mcp.mcp_tool.pusto' => '(empty)',
+    'mcp.osv.blocked' => 'The server is not approved: package %s (%s) has known malware advisories in OSV: %s. If this is a mistake, check the package and pick another version.',
     'mcp.stdio.closed' => 'The MCP server process is closed.',
     'mcp.stdio.ended' => 'The MCP server process ended (code %d)',
     'mcp.stdio.ended_short' => 'The MCP server process is not available: ',
