@@ -1097,6 +1097,7 @@ return [
     'service.trace_reports.by_topic' => 'темам',
     'service.trace_reports.delegation_version_row' => '%s — запусков %d, с делегированием %d (%s), запусков воркеров %d, %s',
     'service.trace_reports.delegirovanie_za_dn' => 'Делегирование за %d дн.',
+    'service.trace_reports.from_leader' => 'Задача соседа %s: его запуск %s, его задача %s.',
     'service.trace_reports.general_topic' => 'общая тема',
     'service.trace_reports.group' => 'группа %s',
     'service.trace_reports.hodov_tokenov' => '• #%d %s — %s%s, ходов %d, токенов %s, %s, %s (%s)',

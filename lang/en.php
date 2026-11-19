@@ -1095,6 +1095,7 @@ return [
     'service.trace_reports.by_topic' => 'topics',
     'service.trace_reports.delegation_version_row' => '%s — runs %d, with delegation %d (%s), worker runs %d, %s',
     'service.trace_reports.delegirovanie_za_dn' => 'Delegation over %d days',
+    'service.trace_reports.from_leader' => 'A task of a neighbour %s: its run %s, its task %s.',
     'service.trace_reports.general_topic' => 'general topic',
     'service.trace_reports.group' => 'group %s',
     'service.trace_reports.hodov_tokenov' => '• #%d %s — %s%s, turns %d, tokens %s, %s, %s (%s)',
