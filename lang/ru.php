@@ -995,6 +995,7 @@ return [
     'service.trace_reports.hodov_tokenov' => '• #%d %s — %s%s, ходов %d, токенов %s, %s, %s (%s)',
     'service.trace_reports.idet' => 'идёт',
     'service.trace_reports.itogo' => 'Итого: ',
+    'service.trace_reports.model_chosen' => 'Модель %s — %s: %s',
     'service.trace_reports.no_project' => 'без проекта',
     'service.trace_reports.no_run' => 'Такого запуска в трассах нет.',
     'service.trace_reports.otsenka' => ' (оценка)',

@@ -993,6 +993,7 @@ return [
     'service.trace_reports.hodov_tokenov' => '• #%d %s — %s%s, turns %d, tokens %s, %s, %s (%s)',
     'service.trace_reports.idet' => 'running',
     'service.trace_reports.itogo' => 'Total: ',
+    'service.trace_reports.model_chosen' => 'Model %s — %s: %s',
     'service.trace_reports.no_project' => 'no project',
     'service.trace_reports.no_run' => 'There is no such run in the traces.',
     'service.trace_reports.otsenka' => ' (estimate)',
