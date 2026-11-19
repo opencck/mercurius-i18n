@@ -209,7 +209,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => 'the browser gave an unclear response (HTTP %d)',
 
     // chat
-    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs — recent runs, /trace <number> — a run in detail, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /consolidate — check the memory, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants.",
+    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /consolidate — check the memory, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants.",
     'chat.memory_private' => 'I show the memory only in a private chat.',
     'chat.new_conversation' => 'A new conversation has started. I no longer take the previous one into account.',
     'chat.no_grants' => 'There are no saved permissions.',
@@ -1024,6 +1024,7 @@ return [
     'service.trace_reports.longest_head' => 'The longest steps:',
     'service.trace_reports.longest_row' => '%s %s — %s, run #%d',
     'service.trace_reports.model_chosen' => 'Model %s — %s: %s',
+    'service.trace_reports.no_payload' => 'This step has no saved prompt and answer: it is not a model call, or its keeping time is over.',
     'service.trace_reports.no_project' => 'no project',
     'service.trace_reports.no_run' => 'There is no such run in the traces.',
     'service.trace_reports.no_version' => 'no version',
@@ -1036,7 +1037,7 @@ return [
     'service.trace_reports.private_chat' => 'private chat: %s',
     'service.trace_reports.proveryayuschih_otklonili_otvet' => 'Reviewers: %d, rejected the answer: %d',
     'service.trace_reports.rashod_za_dn' => 'Spending over %d days',
-    'service.trace_reports.razbor_zapuska_trace_nomer' => 'Run breakdown: /trace <number>',
+    'service.trace_reports.razbor_zapuska_trace_nomer' => 'Run breakdown: /trace <number>; the prompt and answer of a step — /trace <number> <step>',
     'service.trace_reports.remote' => 'neighbour "%s", task %s: its run %s, %s, %d tokens, %s',
     'service.trace_reports.s' => '%.1f s',
     'service.trace_reports.s_2' => '%d s',

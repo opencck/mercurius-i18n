@@ -210,7 +210,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => 'браузер ответил непонятно (HTTP %d)',
 
     // chat
-    'chat.greeting' => "Здравствуйте! Я Меркурий, ваш персональный агент.\n\n/new — начать новый диалог.\n/stop — остановить текущую задачу.\n\nДля владельца: /permissions — сохранённые разрешения, /usage — расход, /runs — последние запуски, /trace <номер> — разбор запуска, /delegation — как агент делит задачи, /memory — что я помню, /forget <номер> — забыть факт, /consolidate — проверить память, /projects и /project <имя> — проекты и проект этого чата, /secret <имя> <значение> — сохранить секрет, /servers — серверы, /audit — журнал команд, /skills — скиллы, /mcp — MCP-серверы, /jobs — задания, /hook — webhook задания, /digest — сводка дел, /doctor — проверка установки, /settings — настройки, /set — изменить, /restart — перезапуск, /peers — сеть агентов, /owner <номер> — передать владение агентом, /roles и /role — роли участников.",
+    'chat.greeting' => "Здравствуйте! Я Меркурий, ваш персональный агент.\n\n/new — начать новый диалог.\n/stop — остановить текущую задачу.\n\nДля владельца: /permissions — сохранённые разрешения, /usage — расход, /runs [число] [статус] — последние запуски, /trace <номер> [шаг] — разбор запуска или промпт и ответ шага, /delegation — как агент делит задачи, /memory — что я помню, /forget <номер> — забыть факт, /consolidate — проверить память, /projects и /project <имя> — проекты и проект этого чата, /secret <имя> <значение> — сохранить секрет, /servers — серверы, /audit — журнал команд, /skills — скиллы, /mcp — MCP-серверы, /jobs — задания, /hook — webhook задания, /digest — сводка дел, /doctor — проверка установки, /settings — настройки, /set — изменить, /restart — перезапуск, /peers — сеть агентов, /owner <номер> — передать владение агентом, /roles и /role — роли участников.",
     'chat.memory_private' => 'Память показываю только в личном чате.',
     'chat.new_conversation' => 'Начат новый диалог. Предыдущий я больше не учитываю.',
     'chat.no_grants' => 'Сохранённых разрешений нет.',
@@ -1026,6 +1026,7 @@ return [
     'service.trace_reports.longest_head' => 'Самые долгие шаги:',
     'service.trace_reports.longest_row' => '%s %s — %s, запуск #%d',
     'service.trace_reports.model_chosen' => 'Модель %s — %s: %s',
+    'service.trace_reports.no_payload' => 'У этого шага нет сохранённого промпта и ответа: это не вызов модели, или срок хранения прошёл.',
     'service.trace_reports.no_project' => 'без проекта',
     'service.trace_reports.no_run' => 'Такого запуска в трассах нет.',
     'service.trace_reports.no_version' => 'без версии',
@@ -1038,7 +1039,7 @@ return [
     'service.trace_reports.private_chat' => 'личный чат: %s',
     'service.trace_reports.proveryayuschih_otklonili_otvet' => 'Проверяющих: %d, отклонили ответ: %d',
     'service.trace_reports.rashod_za_dn' => 'Расход за %d дн.',
-    'service.trace_reports.razbor_zapuska_trace_nomer' => 'Разбор запуска: /trace <номер>',
+    'service.trace_reports.razbor_zapuska_trace_nomer' => 'Разбор запуска: /trace <номер>; промпт и ответ шага — /trace <номер> <шаг>',
     'service.trace_reports.remote' => 'соседу «%s», задача %s: его запуск %s, %s, %d токенов, %s',
     'service.trace_reports.s' => '%.1f с',
     'service.trace_reports.s_2' => '%d с',
