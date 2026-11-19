@@ -384,6 +384,12 @@ return [
     'domain.content_screen.soderzhit_nevidimye_simvoly_formatirovan' => 'содержит невидимые символы форматирования',
     'domain.content_screen.soderzhit_razmetku_roley_ili_vyzova' => 'содержит разметку ролей или вызова инструмента',
 
+    // export
+    'export.broken' => 'Архив повреждён или обрезан.',
+    'export.not_archive' => 'Это не архив агента.',
+    'export.password_short' => 'Пароль архива — не короче %d символов.',
+    'export.wrong_password' => 'Пароль не подходит, или архив изменён.',
+
     // group
     'group.public_channel.delete' => 'удаление',
     'group.public_channel.edit' => 'правка',

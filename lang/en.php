@@ -383,6 +383,12 @@ return [
     'domain.content_screen.soderzhit_nevidimye_simvoly_formatirovan' => 'contains invisible formatting characters',
     'domain.content_screen.soderzhit_razmetku_roley_ili_vyzova' => 'contains role or tool-call markup',
 
+    // export
+    'export.broken' => 'The archive is damaged or cut.',
+    'export.not_archive' => 'This is not an archive of an agent.',
+    'export.password_short' => 'The password of the archive is at least %d characters long.',
+    'export.wrong_password' => 'The password does not fit, or the archive was changed.',
+
     // group
     'group.public_channel.delete' => 'deletion',
     'group.public_channel.edit' => 'editing',
