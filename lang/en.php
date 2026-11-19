@@ -439,6 +439,8 @@ return [
     'job.hook_receiver.obrezano' => "\n… (truncated)",
     'job.hook_receiver.tip_sobytiya' => 'Event type: ',
     'job.initiative.prompt' => 'This is your own initiative: the owner asked nothing. Look at their projects and open tasks with deadlines (project), the jobs (job_manage list) and what you remember. If there is something useful and timely (a deadline near or past, a stuck task, a decision the owner must take, notable news about their affairs), write briefly, 1 to 5 lines, to the point. Do not repeat what you said last time (the result of the last run is above). If there is nothing to say, answer exactly [SILENT].',
+    'job.job_scheduler.delivered_late' => '(the report is late: it did not go the first time — %s)',
+    'job.job_scheduler.delivery_refused' => 'The report was not delivered, the chat does not take it: %s',
     'job.job_scheduler.itog_proshlogo_zapuska' => "\nResult of the previous run:\n",
     'job.job_scheduler.itoga_net' => 'No result (',
     'job.job_scheduler.po_raspisaniyu' => 'on schedule',
