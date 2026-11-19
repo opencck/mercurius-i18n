@@ -677,6 +677,20 @@ return [
     'repository.postgres_server.server_uzhe_est' => 'Сервер «%s» уже есть.',
     'repository.postgres_trace_report.select_select_count_from_runs' => "SELECT\n                (SELECT count(*) FROM runs WHERE parent_run_id IS NULL AND created_at >= to_timestamp(?))::int AS top,\n                (SELECT count(DISTINCT parent_run_id) FROM runs WHERE parent_run_id IS NOT NULL AND created_at >= to_timestamp(?))::int AS delegating,\n                (SELECT count(*) FROM runs r JOIN conversations c ON c.id = r.conversation_id\n                  WHERE r.parent_run_id IS NOT NULL AND c.channel = 'worker' AND c.chat_id NOT LIKE '%-verify' AND c.chat_id NOT LIKE '%-retry'\n                    AND r.created_at >= to_timestamp(?))::int AS workers,\n                (SELECT count(*) FROM runs r JOIN conversations c ON c.id = r.conversation_id\n                  WHERE r.parent_run_id IS NOT NULL AND c.channel = 'worker' AND c.chat_id LIKE '%-retry' AND r.created_at >= to_timestamp(?))::int AS cascades,\n                (SELECT count(*) FROM runs r JOIN conversations c ON c.id = r.conversation_id\n                  WHERE r.parent_run_id IS NOT NULL AND c.channel = 'worker' AND c.chat_id LIKE '%-verify' AND r.created_at >= to_timestamp(?))::int AS verifiers,\n                -- the same rule as the code: the first line that starts with a verdict, in the final answer of the verifier\n                (SELECT count(*) FROM runs r JOIN conversations c ON c.id = r.conversation_id\n                  WHERE r.parent_run_id IS NOT NULL AND c.channel = 'worker' AND c.chat_id LIKE '%-verify' AND r.created_at >= to_timestamp(?)\n                    AND (regexp_match(\n                          (SELECT m.content FROM messages m WHERE m.run_id = r.id AND m.role = 'assistant'\n                             AND (m.tool_calls IS NULL OR jsonb_array_length(m.tool_calls) = 0) ORDER BY m.id DESC LIMIT 1),\n                          '(^|\n)[\\s*_]*[Вв][Ее][Рр][Дд][Ии][Кк][Тт][\\s*_]*[:—–-][\\s*_]*([А-Яа-я]+)'))[2] IN ('отклонено', 'Отклонено', 'ОТКЛОНЕНО'))::int AS rejected,\n                (SELECT count(*) FROM delegations WHERE created_at >= to_timestamp(?))::int AS background",
 
+    // roles
+    'roles.added' => 'Роль %s добавлена в конец списка, без полномочий. Полномочия — /role set %1$s powers …',
+    'roles.bad_name' => 'Имя роли — латиница, цифры, «-» и «_», до 32 знаков; «owner» занято.',
+    'roles.bad_position' => 'Место — целое число не меньше нуля.',
+    'roles.bad_power' => 'Нет полномочия «%s». Есть: %s.',
+    'roles.changed' => 'Роль %s изменена.',
+    'roles.exists' => 'Роль %s уже есть.',
+    'roles.held' => 'Роль %s есть у участников — сначала дайте им другую роль.',
+    'roles.help' => "/role add <имя> <название> — добавить роль в конец списка, без полномочий.\n/role set <имя> <поле> <значение> — поле: title, position, powers (через запятую: tools, skills, projects, secrets, admit, participants, publish, reports) или поле шаблона политики (tools, max_turns, token_budget, run_timeout, tool_timeout, may_request_approval, daily_spend_usd).\n/role remove <имя> — удалить роль, которой нет ни у кого.",
+    'roles.list' => 'Роли участников (место. имя «название» — полномочия; шаблон политики):',
+    'roles.no_powers' => 'без полномочий',
+    'roles.removed' => 'Роль %s удалена.',
+    'roles.unknown' => 'Роли %s нет. Список — /roles.',
+
     // run
     'run.model_calls.few' => '{count} вызова модели',
     'run.model_calls.many' => '{count} вызовов модели',

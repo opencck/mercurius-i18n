@@ -676,6 +676,20 @@ return [
     'repository.postgres_server.server_uzhe_est' => 'The server "%s" already exists.',
     'repository.postgres_trace_report.select_select_count_from_runs' => "SELECT\n                (SELECT count(*) FROM runs WHERE parent_run_id IS NULL AND created_at >= to_timestamp(?))::int AS top,\n                (SELECT count(DISTINCT parent_run_id) FROM runs WHERE parent_run_id IS NOT NULL AND created_at >= to_timestamp(?))::int AS delegating,\n                (SELECT count(*) FROM runs r JOIN conversations c ON c.id = r.conversation_id\n                  WHERE r.parent_run_id IS NOT NULL AND c.channel = 'worker' AND c.chat_id NOT LIKE '%-verify' AND c.chat_id NOT LIKE '%-retry'\n                    AND r.created_at >= to_timestamp(?))::int AS workers,\n                (SELECT count(*) FROM runs r JOIN conversations c ON c.id = r.conversation_id\n                  WHERE r.parent_run_id IS NOT NULL AND c.channel = 'worker' AND c.chat_id LIKE '%-retry' AND r.created_at >= to_timestamp(?))::int AS cascades,\n                (SELECT count(*) FROM runs r JOIN conversations c ON c.id = r.conversation_id\n                  WHERE r.parent_run_id IS NOT NULL AND c.channel = 'worker' AND c.chat_id LIKE '%-verify' AND r.created_at >= to_timestamp(?))::int AS verifiers,\n                -- the same rule as the code: the first line that starts with a verdict, in the final answer of the verifier\n                (SELECT count(*) FROM runs r JOIN conversations c ON c.id = r.conversation_id\n                  WHERE r.parent_run_id IS NOT NULL AND c.channel = 'worker' AND c.chat_id LIKE '%-verify' AND r.created_at >= to_timestamp(?)\n                    AND (regexp_match(\n                          (SELECT m.content FROM messages m WHERE m.run_id = r.id AND m.role = 'assistant'\n                             AND (m.tool_calls IS NULL OR jsonb_array_length(m.tool_calls) = 0) ORDER BY m.id DESC LIMIT 1),\n                          '(^|\n)[\\s*_]*[Vv][Ee][Rr][Dd][Ii][Cc][Tt][\\s*_]*[:—–-][\\s*_]*([A-Za-z]+)'))[2] IN ('rejected', 'Rejected', 'REJECTED'))::int AS rejected,\n                (SELECT count(*) FROM delegations WHERE created_at >= to_timestamp(?))::int AS background",
 
+    // roles
+    'roles.added' => 'The role %s is added at the end of the list, without powers. Powers — /role set %1$s powers …',
+    'roles.bad_name' => 'A role name is Latin letters, digits, "-" and "_", up to 32 characters; "owner" is taken.',
+    'roles.bad_position' => 'The place is a whole number, zero or more.',
+    'roles.bad_power' => 'There is no power "%s". There are: %s.',
+    'roles.changed' => 'The role %s is changed.',
+    'roles.exists' => 'The role %s already exists.',
+    'roles.held' => 'Participants have the role %s — give them another role first.',
+    'roles.help' => "/role add <name> <title> — add a role at the end of the list, without powers.\n/role set <name> <field> <value> — the field: title, position, powers (by commas: tools, skills, projects, secrets, admit, participants, publish, reports) or a field of the policy template (tools, max_turns, token_budget, run_timeout, tool_timeout, may_request_approval, daily_spend_usd).\n/role remove <name> — remove a role nobody has.",
+    'roles.list' => 'Roles of participants (place. name "title" — powers; policy template):',
+    'roles.no_powers' => 'no powers',
+    'roles.removed' => 'The role %s is removed.',
+    'roles.unknown' => 'There is no role %s. The list — /roles.',
+
     // run
     'run.model_calls.one' => '{count} model call',
     'run.model_calls.other' => '{count} model calls',
