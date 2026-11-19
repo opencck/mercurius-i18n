@@ -228,7 +228,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => 'the browser gave an unclear response (HTTP %d)',
 
     // chat
-    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /consolidate — check the memory, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /server - <name> — remove a server, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants, /models — model roles, their history and a rollback (/models rollback <number>), /prompt — notes to the prompt and their scores (/prompt scores).",
+    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /consolidate — check the memory, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /server - <name> — remove a server, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants, /models — model roles, their history and a rollback (/models rollback <number>), /prompt — notes to the prompt and their scores (/prompt scores), /export <password> — the agent archive.",
     'chat.memory_private' => 'I show the memory only in a private chat.',
     'chat.new_conversation' => 'A new conversation has started. I no longer take the previous one into account.',
     'chat.no_grants' => 'There are no saved permissions.',
@@ -385,8 +385,14 @@ return [
 
     // export
     'export.broken' => 'The archive is damaged or cut.',
+    'export.busy' => 'An archive is already being built — wait for it.',
+    'export.failed' => 'The archive could not be built — the details are in the application log.',
     'export.not_archive' => 'This is not an archive of an agent.',
     'export.password_short' => 'The password of the archive is at least %d characters long.',
+    'export.ready' => 'The agent archive, sealed by your password. A copy on the server: %s',
+    'export.ready_path' => 'The archive is ready but does not fit the chat: %s (%s MB). Take it from the server.',
+    'export.started' => 'Building the agent archive: database, data, working folders, settings. I will send it when it is ready.',
+    'export.usage' => 'Agent archive: /export <password> — in a private chat, a password of 12 characters or more. I will delete the message with the password; the archive does not open without it, and it cannot be recovered.',
     'export.wrong_password' => 'The password does not fit, or the archive was changed.',
 
     // group
