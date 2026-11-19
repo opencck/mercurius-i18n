@@ -67,6 +67,7 @@ return [
     'agent.approval_service.vremya_vyshlo_molchanie_ne_soglasie' => 'Time is up; silence is not consent.',
     'agent.callback_router.eto_mozhet_tolko_vladelets' => 'Only the owner can do this.',
     'agent.channel_run_observer.answer_below' => 'Done — the answer is below.',
+    'agent.channel_run_observer.answer_in_file' => '…the answer is long: all of it is in the file above.',
     'agent.channel_run_observer.nothing_to_add' => 'I have nothing to add.',
     'agent.channel_run_observer.running_tool' => 'Running %s …',
     'agent.channel_run_observer.vypolnyayu' => 'Running %s: %s …',

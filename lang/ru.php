@@ -68,6 +68,7 @@ return [
     'agent.approval_service.vremya_vyshlo_molchanie_ne_soglasie' => 'Время вышло — молчание не согласие.',
     'agent.callback_router.eto_mozhet_tolko_vladelets' => 'Это может только владелец.',
     'agent.channel_run_observer.answer_below' => 'Готово — ответ ниже.',
+    'agent.channel_run_observer.answer_in_file' => '…ответ длинный — целиком он в файле выше.',
     'agent.channel_run_observer.nothing_to_add' => 'Мне нечего добавить.',
     'agent.channel_run_observer.running_tool' => 'Выполняю %s …',
     'agent.channel_run_observer.vypolnyayu' => 'Выполняю %s: %s …',
