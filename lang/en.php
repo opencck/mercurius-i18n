@@ -418,9 +418,12 @@ return [
     'improve.notes.none' => 'No notes to the prompt: the agent works by the base prompt.',
     'improve.notes.off' => 'The notes are off: the base prompt from the next conversation.',
     'improve.notes.rolled_back' => 'Version v%s is active, from the next conversation.',
-    'improve.notes.usage' => '/prompt — versions of the notes to the prompt; /prompt rollback <version>; /prompt off.',
+    'improve.notes.usage' => '/prompt — versions of the notes to the prompt; /prompt rollback <version>; /prompt off; /prompt scores — scores of the evaluation set by category for the last two checked versions.',
     'improve.reject' => 'Reject',
     'improve.rejected' => 'Rejected.',
+    'improve.scores.head' => 'Scores of the evaluation set by category: %s → %s (model %s)',
+    'improve.scores.no_notes' => 'no notes',
+    'improve.scores.none' => 'There are no scores of the evaluation set for two versions of the notes yet: they come when a proposal is checked.',
     'improve.was' => 'Now:',
     'improve.will_be' => 'Will be:',
 

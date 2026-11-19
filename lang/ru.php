@@ -419,9 +419,12 @@ return [
     'improve.notes.none' => 'Заметок к промпту нет: агент работает по базовому промпту.',
     'improve.notes.off' => 'Заметки выключены: с новой беседы — базовый промпт.',
     'improve.notes.rolled_back' => 'Действует версия v%s — с новой беседы.',
-    'improve.notes.usage' => '/prompt — версии заметок к промпту; /prompt rollback <версия> — вернуть версию; /prompt off — выключить заметки.',
+    'improve.notes.usage' => '/prompt — версии заметок к промпту; /prompt rollback <версия> — вернуть версию; /prompt off — выключить заметки; /prompt scores — оценки набора задач по категориям для двух последних проверенных версий.',
     'improve.reject' => 'Отклонить',
     'improve.rejected' => 'Отклонено.',
+    'improve.scores.head' => 'Оценки набора задач по категориям: %s → %s (модель %s)',
+    'improve.scores.no_notes' => 'без заметок',
+    'improve.scores.none' => 'Оценок набора задач хотя бы для двух версий заметок ещё нет: они появляются при проверке предложения.',
     'improve.was' => 'Сейчас:',
     'improve.will_be' => 'Будет:',
 
