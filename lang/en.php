@@ -547,6 +547,10 @@ return [
     'media.prompt.describe' => 'Describe the image briefly, up to 80 words. Copy any text on it word for word.',
     'media.prompt.video' => 'Describe briefly, up to 100 words, what happens in the video. Speech and text on screen — word for word.',
 
+    // memory
+    'memory.file.head' => 'Your memory file MEMORY.md (in the work folder; you edit it like any file):',
+    'memory.file.over' => 'MEMORY.md takes %d characters with a limit of %d: above is only its head. Compress the file to the limit: merge repeats, drop what is out of date or already in the facts — and rewrite it (write_file).',
+
     // model
     'model.fallback_models.model_ne_otvetila' => 'model %s did not respond — %s',
     'model.fallback_models.rol_main' => 'role main',
@@ -1145,6 +1149,7 @@ return [
     'settings.about.media_vision_models' => 'vision models for photos and images, comma-separated; empty — the agent does not look at images',
     'settings.about.media_vision_rules' => 'principles of choosing a vision model, in words: which one for what',
     'settings.about.memory_check_hour' => 'hour of the nightly memory check',
+    'settings.about.memory_file_limit' => 'the limit of MEMORY.md in characters: more and the agent compresses the file',
     'settings.about.memory_hrr_weight' => 'share of HRR in memory search, 0–1',
     'settings.about.memory_nudge_turns' => 'after how many turns of a person a cheap model proposes facts for memory (through the owner\'s card); 0 — off',
     'settings.about.metrics_token' => '/metrics token for Prometheus (empty — off)',

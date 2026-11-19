@@ -548,6 +548,10 @@ return [
     'media.prompt.describe' => 'Опиши изображение коротко, до 80 слов, по-русски. Текст на изображении перепиши дословно.',
     'media.prompt.video' => 'Опиши коротко, до 100 слов, по-русски, что происходит в видео. Речь и текст в кадре — дословно.',
 
+    // memory
+    'memory.file.head' => 'Твой файл памяти MEMORY.md (в рабочей папке; правишь его как любой файл):',
+    'memory.file.over' => 'MEMORY.md занимает %d символов при пределе %d: выше — только его начало. Сожми файл до предела: объедини повторы, убери устаревшее и то, что уже есть в фактах, — и перезапиши его (write_file).',
+
     // model
     'model.fallback_models.model_ne_otvetila' => 'модель %s не ответила — %s',
     'model.fallback_models.rol_main' => 'роль main',
@@ -1147,6 +1151,7 @@ return [
     'settings.about.media_vision_models' => 'модели зрения для фото и картинок через запятую; пусто — агент картинки не смотрит',
     'settings.about.media_vision_rules' => 'принципы выбора модели зрения, текстом: какая для чего',
     'settings.about.memory_check_hour' => 'час ночной проверки памяти',
+    'settings.about.memory_file_limit' => 'предел MEMORY.md в символах: больше — агент сжимает файл',
     'settings.about.memory_hrr_weight' => 'доля HRR в поиске по памяти, 0–1',
     'settings.about.memory_nudge_turns' => 'через сколько ходов человека дешёвая модель предлагает факты для памяти (через карточку владельца); 0 — выключено',
     'settings.about.metrics_token' => 'токен /metrics для Prometheus (пусто — выключен)',
