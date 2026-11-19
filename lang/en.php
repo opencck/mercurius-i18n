@@ -26,6 +26,7 @@ return [
     'agent.agent_loop.ostanovleno_vladeltsem' => 'Stopped by the owner.',
     'agent.agent_loop.otkazano_vladeltsem' => 'Denied by the owner',
     'agent.agent_loop.same_result' => 'The same result as that of call %s — see it above.',
+    'agent.agent_loop.silent_after_actions' => 'You took actions in this run, so you may not stay silent: in 1–3 short lines say what you did and what failed (and why). Do not answer [SILENT] now.',
     'agent.agent_loop.stopped_note' => 'The task was stopped by the owner with the /stop command. Do not continue it until the owner asks again.',
     'agent.agent_loop.text_action' => 'You described an action in words but called no tool — nothing was done. Only the system writes such notes, after a real call. If the action is needed, call the tool now; if not, say plainly that you did not do it.',
     'agent.agent_loop.tokenov' => 'tokens',
