@@ -105,6 +105,7 @@ return [
     'agent.memory_cards.prinyat' => 'Принять',
     'agent.memory_cards.provenance' => 'Происхождение: %s',
     'agent.memory_cards.uchastnik' => 'участник #%d',
+    'agent.memory_cards.usage' => 'Выдача в ответах: %d, помог: %d, не помог: %d',
     'agent.memory_cards.uzhe_resheno' => 'Уже решено.',
     'agent.memory_cards.vasha_pamyat_tolko_vam_v' => 'ваша память: только вам в личном чате',
     'agent.memory_cards.written' => '🧠 Записал в память. Если не так — нажмите «Забыть».',

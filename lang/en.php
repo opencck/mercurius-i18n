@@ -104,6 +104,7 @@ return [
     'agent.memory_cards.prinyat' => 'Accept',
     'agent.memory_cards.provenance' => 'Origin: %s',
     'agent.memory_cards.uchastnik' => 'participant #%d',
+    'agent.memory_cards.usage' => 'Given in answers: %d, helped: %d, did not help: %d',
     'agent.memory_cards.uzhe_resheno' => 'Already decided.',
     'agent.memory_cards.vasha_pamyat_tolko_vam_v' => 'your memory: only you, in the private chat',
     'agent.memory_cards.written' => '🧠 Written to memory. If it is wrong, press Forget.',
