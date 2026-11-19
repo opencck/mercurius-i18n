@@ -471,6 +471,12 @@ return [
     'job.self_review.prompt' => 'This is a review of your work for the week: the owner\'s job, not a question. Call trace_review (7 days) and look at stops by limits, failing tools, refusals and repeats after a refusal, costly runs. If you see a repeating problem with a clear cause, propose one or two improvements through improvement_propose: a rule in the prompt (the full text of all notes, short and checkable), a setting or an idea for development; with each, what it rests on (run numbers, figures). Do not propose what you proposed already and what was rejected. The result for the owner is 3 to 6 lines: what you found and what you proposed. If nothing is notable, answer exactly [SILENT]. Also look at the memory facts that fell under the trust threshold (memory_search with faded): they are no longer given in answers — name them to the owner and offer to confirm or forget them.',
 
     // mcp
+    'mcp.file_kept' => 'File %s (%d KB) kept: %s',
+    'mcp.file_not_kept' => 'File %s was not kept: %s',
+    'mcp.files_no_sandbox' => 'the sandbox is not available — files can be neither passed nor kept',
+    'mcp.files_paths' => 'paths of files in your sandbox (up to 10, 50 MB together): the app passes their content itself',
+    'mcp.files_too_big' => 'files over %d MB',
+    'mcp.files_unread' => 'File %s was not read: %s',
     'mcp.http_mcp_client.binary' => '[binary data, %d bytes]',
     'mcp.http_mcp_client.mcp_server_ne_otvetil' => 'The MCP server did not respond: ',
     'mcp.http_mcp_client.mcp_server_ne_prislal_otvet' => 'The MCP server did not send a response to the request',
@@ -862,6 +868,8 @@ return [
     'service.doctor.klyuch_openai_zadan' => 'OpenAI key is set',
     'service.doctor.klyuch_openrouter_zadan' => 'OpenRouter key is set',
     'service.doctor.long_polling_app_url_pust' => 'long polling (APP_URL is empty)',
+    'service.doctor.mail' => 'Mail',
+    'service.doctor.mail_authserv' => 'the sender is checked by Authentication-Results of the server with authserv-id «%s» (MAIL_AUTHSERV_ID, else MAIL_HOST)',
     'service.doctor.mesto_ne_uznat' => 'cannot determine the space',
     'service.doctor.migratsii_primeneny' => 'migrations applied (%d)',
     'service.doctor.modeli' => 'Models',

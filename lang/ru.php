@@ -472,6 +472,12 @@ return [
     'job.self_review.prompt' => 'Это разбор твоей работы за неделю — задание владельца, а не его вопрос. Вызови trace_review (7 дней), посмотри остановки по лимитам, падающие инструменты, отказы и повторы после отказа, дорогие запуски. Если видишь повторяющуюся проблему с ясной причиной — предложи одно-два улучшения через improvement_propose: правило в промпт (полный текст всех заметок, коротко и проверяемо), настройку или идею для доработки; к каждому — на чём основано (номера запусков, числа). Не предлагай то, что уже предлагал и что отклонено. Итог владельцу — 3–6 строк: что нашёл и что предложил. Если ничего заметного — ответь ровно [SILENT]. Ещё посмотри факты памяти, ушедшие под порог доверия (memory_search с faded): их уже не подают в ответы — назови их владельцу и предложи подтвердить или забыть.',
 
     // mcp
+    'mcp.file_kept' => 'Файл %s (%d КБ) сохранён: %s',
+    'mcp.file_not_kept' => 'Файл %s не сохранён: %s',
+    'mcp.files_no_sandbox' => 'песочница недоступна — файлы не передать и не сохранить',
+    'mcp.files_paths' => 'пути файлов в твоей песочнице (до 10, вместе до 50 МБ): приложение само передаст их содержимое',
+    'mcp.files_too_big' => 'файлы больше %d МБ',
+    'mcp.files_unread' => 'Файл %s не прочитан: %s',
     'mcp.http_mcp_client.binary' => '[двоичные данные, %d байт]',
     'mcp.http_mcp_client.mcp_server_ne_otvetil' => 'MCP-сервер не ответил: ',
     'mcp.http_mcp_client.mcp_server_ne_prislal_otvet' => 'MCP-сервер не прислал ответ на запрос',
@@ -864,6 +870,8 @@ return [
     'service.doctor.klyuch_openai_zadan' => 'ключ OpenAI задан',
     'service.doctor.klyuch_openrouter_zadan' => 'ключ OpenRouter задан',
     'service.doctor.long_polling_app_url_pust' => 'long polling (APP_URL пуст)',
+    'service.doctor.mail' => 'Почта',
+    'service.doctor.mail_authserv' => 'отправителя сверяю по Authentication-Results сервера с authserv-id «%s» (MAIL_AUTHSERV_ID, иначе MAIL_HOST)',
     'service.doctor.mesto_ne_uznat' => 'место не узнать',
     'service.doctor.migratsii_primeneny' => 'миграции применены (%d)',
     'service.doctor.modeli' => 'Модели',
