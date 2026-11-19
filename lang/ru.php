@@ -185,6 +185,7 @@ return [
     'api.keys.used' => 'входил',
 
     // app
+    'app.consolidation.conflict_negation' => "Возможно, противоречат друг другу (отрицание):\n#%d %s\n#%d %s\nВерное оставьте, неверное — /forget <номер> или попросите меня изменить.",
     'app.consolidation.davno_ne_prigozhdalis_nuzhny_li' => "Давно не пригождались — нужны ли ещё (если нет — /forget <номер>):\n",
     'app.consolidation.fakt_povtoryaet_predlozhil_zabyt_kartoch' => 'Факт #%d повторяет #%d — предложил забыть #%d (карточка №%d).',
     'app.consolidation.nochnaya_proverka_povtoryaet_fakt' => 'Ночная проверка: повторяет факт #%d «%s».',

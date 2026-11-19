@@ -184,6 +184,7 @@ return [
     'api.keys.used' => 'last used',
 
     // app
+    'app.consolidation.conflict_negation' => "They may contradict each other (a negation):\n#%d %s\n#%d %s\nKeep the correct one; for the wrong one use /forget <number> or ask me to change it.",
     'app.consolidation.davno_ne_prigozhdalis_nuzhny_li' => "Haven't been useful for a long time — are they still needed (if not, /forget <number>):\n",
     'app.consolidation.fakt_povtoryaet_predlozhil_zabyt_kartoch' => 'Fact #%d repeats #%d — proposed forgetting #%d (card #%d).',
     'app.consolidation.nochnaya_proverka_povtoryaet_fakt' => 'Nightly check: repeats fact #%d “%s”.',
