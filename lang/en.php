@@ -806,7 +806,7 @@ return [
     'search.about.tavily' => 'search for agents: links and a short answer',
 
     // self
-    'self.channels' => 'Channels. Telegram: the private chat with the bot; in groups the owner approved, on a mention or freely; a forum: a topic is a project; a channel: posts through the owner\'s card. WebSocket API (the second channel): %s, header Authorization: Bearer <key>; the owner issues a key to a participant with /apikey new <participant number> (shown once); JSON frames: message (text, files), callback (data). A participant with a key is the same participant with the same rights.',
+    'self.channels' => 'Channels. Telegram: the private chat with the bot; in groups the owner approved, on a mention or freely; other bots of a group are visitors, answered only on a mention and for at most 4 hops in a row, and participants name whom not to hear in a group with group_ignore; a forum: a topic is a project; a channel: posts through the owner\'s card. WebSocket API (the second channel): %s, header Authorization: Bearer <key>; the owner issues a key to a participant with /apikey new <participant number> (shown once); JSON frames: message (text, files), callback (data). A participant with a key is the same participant with the same rights.',
     'self.limits' => 'The participant\'s rights and limits (tools — allowed tools, null — all; daily_spend_usd — their daily cap). Their own zone and quiet hours: my_preferences.',
     'self.modules' => 'Modules (each a service in its compose profile; the tool exists while the module works):',
     'self.modules.down' => 'does not answer',
