@@ -426,6 +426,7 @@ return [
     'infrastructure.postgres_memory_store.zavershen' => '; завершён: ',
 
     // job
+    'job.daily_digest.audit_broken' => '⚠ Журнал команд: цепочка хешей нарушена на записи #%d — журнал меняли в обход приложения. Подробности — /audit.',
     'job.daily_digest.memory_waiting' => 'Память: ждут решения %d, старейшему %d дн. — /memory',
     'job.daily_digest.prosrocheno' => 'Просрочено',
     'job.daily_digest.segodnya' => 'Сегодня',
@@ -845,6 +846,9 @@ return [
     'service.chat.v_soobschenii_byl_sekret' => 'В сообщении был секрет: %s%s',
     'service.chat.ya_udalil_soobschenie_iz_chata' => 'я удалил сообщение из чата',
     'service.doctor.app_url_zadan_a_telegram' => 'APP_URL задан, а TELEGRAM_WEBHOOK_SECRET пуст',
+    'service.doctor.audit' => 'Журнал команд',
+    'service.doctor.audit_broken' => 'цепочка хешей нарушена на записи #%d — журнал меняли в обход приложения',
+    'service.doctor.audit_whole' => 'цепочка хешей цела',
     'service.doctor.baza' => 'База',
     'service.doctor.browser' => 'Браузер',
     'service.doctor.chasovoy_poyas' => 'Часовой пояс',
