@@ -1945,6 +1945,7 @@ return [
     'tool.skill_view.file_path' => 'путь файла внутри скилла, например references/format.md',
     'tool.skill_view.file_path_about' => ' У скилла бывают файлы (references/, scripts/ и др.): их список — в конце текста скилла, содержимое — skill_view с file_path.',
     'tool.skill_view.files_list' => "\n\nФайлы скилла (читай через skill_view с file_path):\n%s",
+    'tool.skill_view.in_project' => 'В этом чате скилла «%s» нет, но он есть в проекте «%s». Вызови skill_view ещё раз с project: «%s».',
     'tool.skill_view.no_file' => 'В скилле «%s» нет файла %s.',
     'tool.skill_view.zagruzhaet_tekst_skilla_iz_kataloga' => 'Загружает текст скилла из каталога по имени (список — в системном промпте).',
     'tool.spending.bad_by' => 'by — одно из: topic, chat, project, participant, model, day.',

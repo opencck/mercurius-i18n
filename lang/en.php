@@ -1943,6 +1943,7 @@ return [
     'tool.skill_view.file_path' => 'a path of a file inside the skill, for example references/format.md',
     'tool.skill_view.file_path_about' => ' A skill may have files (references/, scripts/ and others): their list is at the end of the skill text, the content — skill_view with file_path.',
     'tool.skill_view.files_list' => "\n\nFiles of the skill (read them with skill_view and file_path):\n%s",
+    'tool.skill_view.in_project' => 'This chat has no skill "%s", but the project "%s" has it. Call skill_view again with project: "%s".',
     'tool.skill_view.no_file' => 'The skill "%s" has no file %s.',
     'tool.skill_view.zagruzhaet_tekst_skilla_iz_kataloga' => 'Loads the skill text from the catalog by name (the list is in the system prompt).',
     'tool.spending.bad_by' => 'by is one of: topic, chat, project, participant, model, day.',
