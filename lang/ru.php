@@ -229,7 +229,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => 'браузер ответил непонятно (HTTP %d)',
 
     // chat
-    'chat.greeting' => "Здравствуйте! Я Меркурий, ваш персональный агент.\n\n/new — начать новый диалог.\n/stop — остановить текущую задачу.\n\nДля владельца: /permissions — сохранённые разрешения, /usage — расход, /runs [число] [статус] — последние запуски, /trace <номер> [шаг] — разбор запуска или промпт и ответ шага, /delegation — как агент делит задачи, /memory — что я помню, /forget <номер> — забыть факт, /consolidate — проверить память, /projects и /project <имя> — проекты и проект этого чата, /secret <имя> <значение> — сохранить секрет, /servers — серверы, /server - <имя> — удалить сервер, /audit — журнал команд, /skills — скиллы, /mcp — MCP-серверы, /jobs — задания, /hook — webhook задания, /digest — сводка дел, /doctor — проверка установки, /settings — настройки, /set — изменить, /restart — перезапуск, /peers — сеть агентов, /owner <номер> — передать владение агентом, /roles и /role — роли участников, /models — роли моделей, их история и откат (/models rollback <номер>), /prompt — заметки к промпту и их оценки (/prompt scores), /export <пароль> — архив агента.",
+    'chat.greeting' => "Здравствуйте! Я Меркурий, ваш персональный агент.\n\n/new — начать новый диалог.\n/stop — остановить текущую задачу.\n\nДля владельца: /permissions — сохранённые разрешения, /usage — расход, /runs [число] [статус] — последние запуски, /trace <номер> [шаг] — разбор запуска или промпт и ответ шага, /delegation — как агент делит задачи, /memory — что я помню, /forget <номер> — забыть факт, /consolidate — проверить память, /projects и /project <имя> — проекты и проект этого чата, /secret <имя> <значение> — сохранить секрет, /servers — серверы, /server - <имя> — удалить сервер, /audit — журнал команд, /skills — скиллы, /mcp — MCP-серверы, /jobs — задания, /hook — webhook задания, /digest — сводка дел, /doctor — проверка установки, /settings — настройки, /set — изменить, /restart — перезапуск, /peers — сеть агентов, /owner <номер> — передать владение агентом, /roles и /role — роли участников, /models — роли моделей, их история и откат (/models rollback <номер>), /prompt — заметки к промпту и их оценки (/prompt scores), /export <пароль> — архив агента, /import <пароль> с файлом архива — заменить агента архивом.",
     'chat.memory_private' => 'Память показываю только в личном чате.',
     'chat.new_conversation' => 'Начат новый диалог. Предыдущий я больше не учитываю.',
     'chat.no_grants' => 'Сохранённых разрешений нет.',
@@ -391,7 +391,7 @@ return [
     'export.not_archive' => 'Это не архив агента.',
     'export.password_short' => 'Пароль архива — не короче %d символов.',
     'export.ready' => 'Архив агента, запечатан вашим паролем. Копия на сервере: %s',
-    'export.ready_path' => 'Архив готов, но в чат не помещается: %s (%s МБ). Заберите его с сервера.',
+    'export.ready_path' => 'Архив готов, но в чат не помещается: %s (%s МБ). Забрать с сервера из каталога агента: docker compose cp app:/app/storage/exports/%s .',
     'export.started' => 'Собираю архив агента: база, данные, рабочие каталоги, настройки. Пришлю, когда будет готов.',
     'export.usage' => 'Архив агента: /export <пароль> — в личном чате, пароль от 12 символов. Сообщение с паролем я удалю; без пароля архив не открыть, восстановить его нельзя.',
     'export.wrong_password' => 'Пароль не подходит, или архив изменён.',
@@ -401,6 +401,24 @@ return [
     'group.public_channel.edit' => 'правка',
     'group.public_channel.net_prav_na_posty' => 'нет прав на посты',
     'group.public_channel.post' => 'публикация',
+
+    // import
+    'import.cancelled' => 'Импорт отменён.',
+    'import.checking' => 'Проверяю архив…',
+    'import.done' => 'Агент восстановлен из архива (коммит %s). Рабочие каталоги: %s.',
+    'import.expired' => 'Время подтверждения вышло, архив сброшен. Начните заново.',
+    'import.failed' => 'Импорт не удался — подробности в журнале приложения.',
+    'import.no_file' => 'Такого архива нет в storage/import агента — нужно имя файла в этом каталоге, без пути.',
+    'import.nothing' => 'Нет проверенного архива — сначала /import <пароль> с файлом.',
+    'import.ready' => "Архив открыт и проверен: коммит %s, база %s МБ.\n\nИмпорт заменит базу, данные и рабочие каталоги агента — память, проекты, участников, владельца, секреты. Перед заменой текущее состояние будет запечатано в архив тем же паролем. Агент перезапустится.\n\nЗаменить — /import yes, отменить — /import no. Жду %d минут.",
+    'import.restarting' => 'Текущее состояние сохранено: %s. Перезапускаюсь и восстанавливаю агента из архива.',
+    'import.saving' => 'Сохраняю текущее состояние агента…',
+    'import.start_failed' => 'Импорт архива при запуске не удался, агент запущен с прежней базой или пустой схемой. Архив отложен в storage/app/import/failed-*, состояние до импорта — в storage/app/exports/; подробности — в журнале.',
+    'import.too_large' => 'Архив больше, чем бот может скачать из чата. Положите его в агента: docker compose cp <файл> app:/app/storage/import/ — и напишите /import <пароль> <имя файла>.',
+    'import.usage' => 'Заменить агента архивом: пришлите файл .mrcx с подписью /import <пароль> — или положите архив в агента (docker compose cp <файл> app:/app/storage/import/) и напишите /import <пароль> <имя файла>. Только в личном чате.',
+    'import.workspace_back' => 'восстановлены',
+    'import.workspace_failed' => 'не восстановлены — песочница недоступна, архив рабочих каталогов оставлен в storage/app/import/',
+    'import.workspace_none' => 'в архиве их нет',
 
     // improve
     'improve.accept' => 'Принять',
@@ -923,6 +941,9 @@ return [
     'service.doctor.sandbox' => 'Песочница',
     'service.doctor.secrets_key_32_bayta_v' => 'SECRETS_KEY — 32 байта в base64 (openssl rand -base64 32)',
     'service.doctor.secrets_key_pust_sekrety_ssh' => 'SECRETS_KEY пуст: секреты, SSH и webhook заданий выключены',
+    'service.doctor.storage' => 'Каталог данных',
+    'service.doctor.storage_ok' => 'запись есть',
+    'service.doctor.storage_readonly' => 'приложение не может в него писать — на хосте: chmod 1777 storage/app (как storage/browser); без этого не работают архивы агента и отметки приложения',
     'service.doctor.svobodno_gb' => 'свободно %.0f ГБ (%.0f%%)',
     'service.doctor.svodka' => 'Сводка',
     'service.doctor.telegram_admin_id_chislovoy_id' => 'TELEGRAM_ADMIN_ID — числовой id владельца в Telegram',

@@ -228,7 +228,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => 'the browser gave an unclear response (HTTP %d)',
 
     // chat
-    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /consolidate — check the memory, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /server - <name> — remove a server, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants, /models — model roles, their history and a rollback (/models rollback <number>), /prompt — notes to the prompt and their scores (/prompt scores), /export <password> — the agent archive.",
+    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /consolidate — check the memory, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /server - <name> — remove a server, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants, /models — model roles, their history and a rollback (/models rollback <number>), /prompt — notes to the prompt and their scores (/prompt scores), /export <password> — the agent archive, /import <password> with the archive file — replace the agent with an archive.",
     'chat.memory_private' => 'I show the memory only in a private chat.',
     'chat.new_conversation' => 'A new conversation has started. I no longer take the previous one into account.',
     'chat.no_grants' => 'There are no saved permissions.',
@@ -390,7 +390,7 @@ return [
     'export.not_archive' => 'This is not an archive of an agent.',
     'export.password_short' => 'The password of the archive is at least %d characters long.',
     'export.ready' => 'The agent archive, sealed by your password. A copy on the server: %s',
-    'export.ready_path' => 'The archive is ready but does not fit the chat: %s (%s MB). Take it from the server.',
+    'export.ready_path' => 'The archive is ready but does not fit the chat: %s (%s MB). Take it from the agent folder on the server: docker compose cp app:/app/storage/exports/%s .',
     'export.started' => 'Building the agent archive: database, data, working folders, settings. I will send it when it is ready.',
     'export.usage' => 'Agent archive: /export <password> — in a private chat, a password of 12 characters or more. I will delete the message with the password; the archive does not open without it, and it cannot be recovered.',
     'export.wrong_password' => 'The password does not fit, or the archive was changed.',
@@ -400,6 +400,24 @@ return [
     'group.public_channel.edit' => 'editing',
     'group.public_channel.net_prav_na_posty' => 'no permission to post',
     'group.public_channel.post' => 'publishing',
+
+    // import
+    'import.cancelled' => 'The import is cancelled.',
+    'import.checking' => 'Checking the archive…',
+    'import.done' => 'The agent is restored from the archive (commit %s). Working folders: %s.',
+    'import.expired' => 'The time to confirm is over; the archive is dropped. Start again.',
+    'import.failed' => 'The import failed — the details are in the application log.',
+    'import.no_file' => 'No such archive in the agent\'s storage/import — give a file name in that folder, without a path.',
+    'import.nothing' => 'No checked archive — first /import <password> with the file.',
+    'import.ready' => "The archive is open and checked: commit %s, database %s MB.\n\nThe import replaces the database, the data and the working folders of the agent — memory, projects, participants, the owner, secrets. Before that the current state is sealed into an archive by the same password. The agent restarts.\n\nReplace — /import yes, cancel — /import no. Waiting %d minutes.",
+    'import.restarting' => 'The current state is saved: %s. Restarting and restoring the agent from the archive.',
+    'import.saving' => 'Saving the current state of the agent…',
+    'import.start_failed' => 'Applying the archive at the start failed; the agent runs on the previous database or an empty schema. The archive is set aside in storage/app/import/failed-*, the state before the import is in storage/app/exports/; the details are in the log.',
+    'import.too_large' => 'The archive is larger than the bot can download from the chat. Put it into the agent: docker compose cp <file> app:/app/storage/import/ — and write /import <password> <file name>.',
+    'import.usage' => 'Replace the agent with an archive: send the .mrcx file with the caption /import <password> — or put the archive into the agent (docker compose cp <file> app:/app/storage/import/) and write /import <password> <file name>. Private chat only.',
+    'import.workspace_back' => 'restored',
+    'import.workspace_failed' => 'not restored — the sandbox is unavailable, their archive is left in storage/app/import/',
+    'import.workspace_none' => 'none in the archive',
 
     // improve
     'improve.accept' => 'Accept',
@@ -921,6 +939,9 @@ return [
     'service.doctor.sandbox' => 'Sandbox',
     'service.doctor.secrets_key_32_bayta_v' => 'SECRETS_KEY is 32 bytes in base64 (openssl rand -base64 32)',
     'service.doctor.secrets_key_pust_sekrety_ssh' => 'SECRETS_KEY is empty: secrets, SSH and job webhooks are off',
+    'service.doctor.storage' => 'Data folder',
+    'service.doctor.storage_ok' => 'writable',
+    'service.doctor.storage_readonly' => 'the application cannot write to it — on the host: chmod 1777 storage/app (as storage/browser); without it the agent archives and the application\'s marks do not work',
     'service.doctor.svobodno_gb' => '%.0f GB free (%.0f%%)',
     'service.doctor.svodka' => 'Summary',
     'service.doctor.telegram_admin_id_chislovoy_id' => 'TELEGRAM_ADMIN_ID is the owner\'s numeric Telegram id',
