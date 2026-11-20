@@ -228,7 +228,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => 'the browser gave an unclear response (HTTP %d)',
 
     // chat
-    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /consolidate — check the memory, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /server - <name> — remove a server, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants, /models — model roles, their history and a rollback (/models rollback <number>), /prompt — notes to the prompt and their scores (/prompt scores), /export <password> — the agent archive, /import <password> with the archive file — replace the agent with an archive.",
+    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /consolidate — check the memory, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /server - <name> — remove a server, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants, /models — model roles, their history and a rollback (/models rollback <number>), /prompt — notes to the prompt and their scores (/prompt scores), /codex login — connect the ChatGPT subscription (models chatgpt:…), /export <password> — the agent archive, /import <password> with the archive file — replace the agent with an archive.",
     'chat.memory_private' => 'I show the memory only in a private chat.',
     'chat.new_conversation' => 'A new conversation has started. I no longer take the previous one into account.',
     'chat.no_grants' => 'There are no saved permissions.',
@@ -238,6 +238,15 @@ return [
     'chat.private_only' => 'I show reports only in a private chat.',
     'chat.refusal' => 'This is a personal agent. You have no access.',
     'chat.secret_private' => 'Secrets only in a private chat; I will delete the message with the secret.',
+
+    // codex
+    'codex.done' => 'The ChatGPT subscription is connected: its models go by chatgpt:<model> — for example in /models and the model roles.',
+    'codex.failed' => 'Signing in to the ChatGPT subscription failed — the details are in the log. Try /codex login again.',
+    'codex.login' => 'Sign in to the ChatGPT subscription: open %s, sign in to your account and enter the code %s. I wait up to 15 minutes and will say when it works. I neither need nor see your password.',
+    'codex.not_signed_in' => 'The ChatGPT subscription is not connected. Sign in — /codex login (the owner\'s private chat only).',
+    'codex.signed_in' => 'The ChatGPT subscription is connected. Sign out — /codex logout.',
+    'codex.signed_out' => 'The ChatGPT subscription is disconnected: its keys are removed from the vault.',
+    'codex.waiting' => 'Already waiting for the code — finish the sign-in or wait 15 minutes.',
 
     // commandpolicy
     'commandpolicy.command_classifier.argument_u_pishet_ili_zapuskaet' => 'argument %s of %s writes or runs',
