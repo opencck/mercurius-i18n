@@ -945,6 +945,9 @@ return [
     'service.doctor.sandbox' => 'Песочница',
     'service.doctor.secrets_key_32_bayta_v' => 'SECRETS_KEY — 32 байта в base64 (openssl rand -base64 32)',
     'service.doctor.secrets_key_pust_sekrety_ssh' => 'SECRETS_KEY пуст: секреты, SSH и webhook заданий выключены',
+    'service.doctor.settings_unknown' => 'Устаревшие настройки',
+    'service.doctor.settings_unknown_list' => '%s — их больше нет в этой версии, они не применяются; удалить — /set <ключ> без значения',
+    'service.doctor.settings_unknown_none' => 'нет',
     'service.doctor.storage' => 'Каталог данных',
     'service.doctor.storage_ok' => 'запись есть',
     'service.doctor.storage_readonly' => 'приложение не может в него писать — на хосте: chmod 1777 storage/app (как storage/browser); без этого не работают архивы агента и отметки приложения',
@@ -1305,6 +1308,7 @@ return [
     'settings.settings_service.sohranena_primenitsya_posle_perezapuska' => '%s сохранена. Применится после перезапуска (/restart).',
     'settings.settings_service.takih_nastroek_net' => 'Таких настроек нет.',
     'settings.settings_service.zadan' => 'задан',
+    'settings.unknown_removed' => 'Устаревшая настройка %s удалена.',
 
     // skill
     'skill.builtin.local' => 'Встроенный скилл обновился в коде. Сейчас действует ваша версия v%d — принять обновление вместо неё?',

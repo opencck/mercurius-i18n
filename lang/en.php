@@ -943,6 +943,9 @@ return [
     'service.doctor.sandbox' => 'Sandbox',
     'service.doctor.secrets_key_32_bayta_v' => 'SECRETS_KEY is 32 bytes in base64 (openssl rand -base64 32)',
     'service.doctor.secrets_key_pust_sekrety_ssh' => 'SECRETS_KEY is empty: secrets, SSH and job webhooks are off',
+    'service.doctor.settings_unknown' => 'Outdated settings',
+    'service.doctor.settings_unknown_list' => '%s — this version no longer has them, they are not applied; remove — /set <key> without a value',
+    'service.doctor.settings_unknown_none' => 'none',
     'service.doctor.storage' => 'Data folder',
     'service.doctor.storage_ok' => 'writable',
     'service.doctor.storage_readonly' => 'the application cannot write to it — on the host: chmod 1777 storage/app (as storage/browser); without it the agent archives and the application\'s marks do not work',
@@ -1303,6 +1306,7 @@ return [
     'settings.settings_service.sohranena_primenitsya_posle_perezapuska' => '%s saved. Takes effect after a restart (/restart).',
     'settings.settings_service.takih_nastroek_net' => 'There are no such settings.',
     'settings.settings_service.zadan' => 'set',
+    'settings.unknown_removed' => 'The outdated setting %s is removed.',
 
     // skill
     'skill.builtin.local' => 'The built-in skill was updated in the code. Your version v%d is active now: accept the update instead?',
