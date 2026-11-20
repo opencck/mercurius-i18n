@@ -1335,7 +1335,7 @@ return [
     'settings.about.media_vision_rules' => 'principles of choosing a vision model, in words: which one for what',
     'settings.about.memory_check_hour' => 'hour of the nightly memory check',
     'settings.about.memory_file_limit' => 'the limit of MEMORY.md in characters: more and the agent compresses the file',
-    'settings.about.memory_hrr_weight' => 'share of HRR in memory search, 0–1',
+    'settings.about.memory_hrr_weight' => 'weight of HRR in ordering facts the words scored alike, 0–1 (0 — words only)',
     'settings.about.memory_nudge_turns' => 'after how many turns of a person a cheap model proposes facts for memory (through the owner\'s card); 0 — off',
     'settings.about.metrics_token' => '/metrics token for Prometheus (empty — off)',
     'settings.about.openai_api_key' => 'OpenAI key',

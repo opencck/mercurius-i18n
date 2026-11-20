@@ -1337,7 +1337,7 @@ return [
     'settings.about.media_vision_rules' => 'принципы выбора модели зрения, текстом: какая для чего',
     'settings.about.memory_check_hour' => 'час ночной проверки памяти',
     'settings.about.memory_file_limit' => 'предел MEMORY.md в символах: больше — агент сжимает файл',
-    'settings.about.memory_hrr_weight' => 'доля HRR в поиске по памяти, 0–1',
+    'settings.about.memory_hrr_weight' => 'вес HRR в порядке равных по словам фактов, 0–1 (0 — только слова)',
     'settings.about.memory_nudge_turns' => 'через сколько ходов человека дешёвая модель предлагает факты для памяти (через карточку владельца); 0 — выключено',
     'settings.about.metrics_token' => 'токен /metrics для Prometheus (пусто — выключен)',
     'settings.about.openai_api_key' => 'ключ OpenAI',
