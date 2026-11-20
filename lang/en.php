@@ -622,7 +622,7 @@ return [
 
     // memory
     'memory.file.head' => 'Your memory file MEMORY.md (in the work folder; you edit it like any file):',
-    'memory.file.over' => 'MEMORY.md takes %d characters with a limit of %d: above is only its head. Compress the file to the limit: merge repeats, drop what is out of date or already in the facts — and rewrite it (write_file).',
+    'memory.file.over' => 'MEMORY.md takes %d characters with a limit of %d: above is only its head. Compress the file by the built-in skill memory-file (skill_view): read it whole, take a snapshot, merge repeats, drop what is out of date or already in the facts, and rewrite it in one call (write_file).',
     'memory.forgotten' => '(forgotten)',
     'memory.provenance.agent' => 'the agent\'s conclusion',
     'memory.provenance.owner_confirmed' => 'confirmed',
