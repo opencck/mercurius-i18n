@@ -1615,6 +1615,7 @@ return [
     'tool.job_manage.filter_event_only' => 'Only a job by event has a filter, and #%d runs on a schedule.',
     'tool.job_manage.filter_model' => 'filter — which webhook events wake the job (filter: \'events=push; ref=refs/heads/master; action=opened|reopened; merge=30\', empty — all); model — the model of its runs (role: main, or cheap for simple checks).',
     'tool.job_manage.filter_set' => 'Job #%d \'%s\': the event filter is %s.',
+    'tool.job_manage.finished' => '#%d "%s" — finished, will not run again (runs: %d). The outcome of the last run: %s',
     'tool.job_manage.into_project' => 'The job #%d "%s" is in the project "%s" now: it runs in the name of its owner and reports into the project\'s topic or to the owner.',
     'tool.job_manage.model_set' => 'Job #%d \'%s\' runs on the model of the %s role.',
     'tool.job_manage.na_pauze' => 'paused',

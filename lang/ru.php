@@ -1617,6 +1617,7 @@ return [
     'tool.job_manage.filter_event_only' => 'Фильтр есть только у задания по событию, а #%d — по расписанию.',
     'tool.job_manage.filter_model' => 'filter — какие события webhook будят задание (filter: «events=push; ref=refs/heads/master; action=opened|reopened; merge=30», пусто — все); model — модель запусков (role: main или cheap — для простых проверок).',
     'tool.job_manage.filter_set' => 'Задание #%d «%s»: фильтр событий — %s.',
+    'tool.job_manage.finished' => '#%d «%s» — выполнено, больше не запустится (запусков: %d). Итог последнего запуска: %s',
     'tool.job_manage.into_project' => 'Задание #%d «%s» теперь в проекте «%s»: идёт от имени его владельца, итог — в тему проекта или владельцу.',
     'tool.job_manage.model_set' => 'Задание #%d «%s» запускается на модели роли %s.',
     'tool.job_manage.na_pauze' => 'на паузе',
