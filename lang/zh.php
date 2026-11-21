@@ -358,7 +358,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => '浏览器返回了无法理解的响应（HTTP %d）',
 
     // chat
-    'chat.greeting' => "你好！我是 Mercurius，你的个人智能体。\n\n/new — 开始新对话。\n/stop — 停止当前任务。\n\n所有者可用：/permissions — 按分组查看已保存的许可并撤销（/permissions server|job|project … — 筛选，/permissions allow job|project|server|tool … — 允许整个区域），/deny — 禁止项：列表，/deny <范围> <内容> — 禁止（优先于任何授权；项目所有者 —— 在自己的项目中），/deny remove <编号> — 解除，/usage — 支出，/runs [数量] [状态] — 最近的运行，/trace <编号> [步骤] — 运行详情或某一步的提示和回答，/delegation — 智能体如何拆分任务，/memory — 我记住了什么，/forget <编号> — 忘记一条事实，/dream (/consolidate) — 记忆睡眠，/aliases — 同义词，/projects 和 /project <名称> — 项目以及本聊天的项目（/project export <项目> <密码> —— 将项目导出为文件，/project import <密码> 作为文件说明 —— 导入项目），/secret <名称> <值> — 保存或更新机密，/secret - <名称> — 删除，/secret <项目>: <名称> <值> <站点> — 项目密钥（项目所有者；/secret <项目>: — 列表，/secret <项目>: - <名称> — 删除），/servers — 服务器，/server - <名称> — 删除服务器，/audit — 命令日志，/skills — 技能，/mcp — MCP 服务器，/jobs — 作业，/hook — 作业 webhook，/doctor — 安装检查，/settings — 设置，/set — 修改一项设置，/restart — 重启，/peers — 智能体网络，/owner <编号> — 转让智能体的所有权，/roles 和 /role — 参与者的角色，/models — 模型角色、其历史和回滚（/models rollback <编号>），/prompt — 提示的备注及其评分（/prompt scores），/codex login — 连接 ChatGPT 订阅（模型 chatgpt:…），/export <密码> — 智能体归档，/import <密码> 并附上归档文件 — 用归档替换当前智能体。",
+    'chat.greeting' => "你好！我是 Mercurius，你的个人智能体。\n\n/new — 开始新对话。\n/stop — 停止当前任务。\n\n所有者可用：/permissions — 按分组查看已保存的许可并撤销（/permissions server|job|project … — 筛选，/permissions allow job|project|server|tool … — 允许整个区域），/deny — 禁止项：列表，/deny <范围> <内容> — 禁止（优先于任何授权；项目所有者 —— 在自己的项目中），/deny remove <编号> — 解除，/stream give|take <代理> — 在群组或话题中将此地点的流交给或收回网络代理，/streams — 代理的流，/usage — 支出，/runs [数量] [状态] — 最近的运行，/trace <编号> [步骤] — 运行详情或某一步的提示和回答，/delegation — 智能体如何拆分任务，/memory — 我记住了什么，/forget <编号> — 忘记一条事实，/dream (/consolidate) — 记忆睡眠，/aliases — 同义词，/projects 和 /project <名称> — 项目以及本聊天的项目（/project export <项目> <密码> —— 将项目导出为文件，/project import <密码> 作为文件说明 —— 导入项目），/secret <名称> <值> — 保存或更新机密，/secret - <名称> — 删除，/secret <项目>: <名称> <值> <站点> — 项目密钥（项目所有者；/secret <项目>: — 列表，/secret <项目>: - <名称> — 删除），/servers — 服务器，/server - <名称> — 删除服务器，/audit — 命令日志，/skills — 技能，/mcp — MCP 服务器，/jobs — 作业，/hook — 作业 webhook，/doctor — 安装检查，/settings — 设置，/set — 修改一项设置，/restart — 重启，/peers — 智能体网络，/owner <编号> — 转让智能体的所有权，/roles 和 /role — 参与者的角色，/models — 模型角色、其历史和回滚（/models rollback <编号>），/prompt — 提示的备注及其评分（/prompt scores），/codex login — 连接 ChatGPT 订阅（模型 chatgpt:…），/export <密码> — 智能体归档，/import <密码> 并附上归档文件 — 用归档替换当前智能体。",
     'chat.memory_private' => '我只在私聊中显示记忆。',
     'chat.new_conversation' => '已开始新对话。我不再考虑之前的对话。',
     'chat.no_grants' => '没有已保存的许可。',
@@ -985,6 +985,19 @@ return [
     'peer.peer_network.vladelets_ne_nayden' => '未找到所有者。',
     'peer.peer_network.vopros' => '问题',
     'peer.project_channels.no_project' => '此代理的项目中没有项目 "%s"（列表见 ListProjects 方法）。',
+    'peer.streams.empty' => '没有代理拥有地点流。',
+    'peer.streams.given' => '已将流交给代理 %s：%s（#%d）。订阅后，它将以外部数据形式收到此地点的人类消息、回答和任务报告。',
+    'peer.streams.head' => '代理的地点流：',
+    'peer.streams.listening' => '正在收听',
+    'peer.streams.no_agent' => '未找到网络代理「%s」（#编号或名称）。',
+    'peer.streams.none' => '没有这个流。',
+    'peer.streams.not_private' => '私聊的流不会交出：请交出群组或话题的流 —— 在那里输入命令。',
+    'peer.streams.owner_only' => '地点流由代理所有者管理。',
+    'peer.streams.taken' => '已从 %s 收回流：%s。订阅已关闭。',
+    'peer.streams.title_chat' => '聊天 %s',
+    'peer.streams.title_project' => '项目「%s」',
+    'peer.streams.title_topic' => '话题 %s/%s',
+    'peer.streams.usage' => '/stream give <代理> —— 在聊天或话题中：将此地点的流交给网络代理（它通过 WebSocket 用 SubscribeStream 订阅并收到 PlaceEvent）；/stream take <代理> —— 在同一处收回；/streams —— 列表；/stream remove <编号> —— 在任何地方收回。',
 
     // project
     'project.archive.export_usage' => '格式：/project export <项目> <密码> —— 项目归档将以文件发送（其中不含密钥值、邮箱密码和浏览器配置）。',
