@@ -1861,6 +1861,7 @@ return [
     'tool.job_create.eto_vremya_uzhe_proshlo' => 'That time has already passed.',
     'tool.job_create.komandoy_hook_prompt_chto_sdelat' => 'with the /hook command. prompt — what to do, in full, without references to “this conversation”.',
     'tool.job_create.project_about' => 'project is the name of a project: the job belongs to it, runs in the name of its owner with the files, skills and browser profile of the project, and reports into the project\'s topic or to its owner. Without project the job takes the project of this chat when it is yours. The write level is needed; when you are not the owner of the project, the job is set by the card of the agent\'s owner.',
+    'tool.job_create.schedule_in' => 'Schedule: in:<minutes> — once, that many minutes from now (the server counts the moment, not the model), once:<ISO time>, every:<minutes>, daily:HH:MM, weekly:<days>@HH:MM, event.',
     'tool.job_create.stavit_zadanie_po_raspisaniyu_napominani' => 'Schedules a job: a reminder, a check, a digest. It runs without the owner in a new ',
     'tool.job_create.tekst_zadaniya_ne_prinyat' => 'The job text was not accepted: ',
     'tool.job_create.watch' => 'An address to watch: the model is called only when the page changed (no change — no tokens, no report)',

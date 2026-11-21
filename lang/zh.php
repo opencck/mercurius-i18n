@@ -1861,6 +1861,7 @@ return [
     'tool.job_create.eto_vremya_uzhe_proshlo' => '该时间已经过去。',
     'tool.job_create.komandoy_hook_prompt_chto_sdelat' => '使用 /hook 命令。prompt — 要做什么，要完整，不要引用“此对话”。',
     'tool.job_create.project_about' => 'project 是项目的名称：任务属于该项目，以其所有者的名义运行，使用该项目的文件、技能和浏览器配置文件，并将报告发送到项目的话题或其所有者。不带 project 时，如果此聊天的项目属于你，任务就使用它。需要 write 级别；当你不是该项目的所有者时，任务由代理所有者的卡片来设置。',
+    'tool.job_create.schedule_in' => '计划：in:<分钟> —— 从现在起若干分钟后执行一次（时间由服务器计算，而非模型），once:<ISO 时间>，every:<分钟>，daily:HH:MM，weekly:<天>@HH:MM，event。',
     'tool.job_create.stavit_zadanie_po_raspisaniyu_napominani' => '按计划创建任务：提醒、检查、摘要。它在没有所有者参与的情况下，在新的 ',
     'tool.job_create.tekst_zadaniya_ne_prinyat' => '任务文本未被接受： ',
     'tool.job_create.watch' => '要监视的地址：只有页面发生变化时才会调用模型（没有变化 — 不耗令牌，不发报告）',
