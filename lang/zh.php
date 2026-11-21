@@ -358,7 +358,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => '浏览器返回了无法理解的响应（HTTP %d）',
 
     // chat
-    'chat.greeting' => "你好！我是 Mercurius，你的个人智能体。\n\n/new — 开始新对话。\n/stop — 停止当前任务。\n\n所有者可用：/permissions — 按分组查看已保存的许可并撤销（/permissions server|job|project … — 筛选，/permissions allow job|project|server|tool … — 允许整个区域），/deny — 禁止项：列表，/deny <范围> <内容> — 禁止（优先于任何授权；项目所有者 —— 在自己的项目中），/deny remove <编号> — 解除，/usage — 支出，/runs [数量] [状态] — 最近的运行，/trace <编号> [步骤] — 运行详情或某一步的提示和回答，/delegation — 智能体如何拆分任务，/memory — 我记住了什么，/forget <编号> — 忘记一条事实，/dream (/consolidate) — 记忆睡眠，/aliases — 同义词，/projects 和 /project <名称> — 项目以及本聊天的项目，/secret <名称> <值> — 保存或更新机密，/secret - <名称> — 删除，/secret <项目>: <名称> <值> <站点> — 项目密钥（项目所有者；/secret <项目>: — 列表，/secret <项目>: - <名称> — 删除），/servers — 服务器，/server - <名称> — 删除服务器，/audit — 命令日志，/skills — 技能，/mcp — MCP 服务器，/jobs — 作业，/hook — 作业 webhook，/doctor — 安装检查，/settings — 设置，/set — 修改一项设置，/restart — 重启，/peers — 智能体网络，/owner <编号> — 转让智能体的所有权，/roles 和 /role — 参与者的角色，/models — 模型角色、其历史和回滚（/models rollback <编号>），/prompt — 提示的备注及其评分（/prompt scores），/codex login — 连接 ChatGPT 订阅（模型 chatgpt:…），/export <密码> — 智能体归档，/import <密码> 并附上归档文件 — 用归档替换当前智能体。",
+    'chat.greeting' => "你好！我是 Mercurius，你的个人智能体。\n\n/new — 开始新对话。\n/stop — 停止当前任务。\n\n所有者可用：/permissions — 按分组查看已保存的许可并撤销（/permissions server|job|project … — 筛选，/permissions allow job|project|server|tool … — 允许整个区域），/deny — 禁止项：列表，/deny <范围> <内容> — 禁止（优先于任何授权；项目所有者 —— 在自己的项目中），/deny remove <编号> — 解除，/usage — 支出，/runs [数量] [状态] — 最近的运行，/trace <编号> [步骤] — 运行详情或某一步的提示和回答，/delegation — 智能体如何拆分任务，/memory — 我记住了什么，/forget <编号> — 忘记一条事实，/dream (/consolidate) — 记忆睡眠，/aliases — 同义词，/projects 和 /project <名称> — 项目以及本聊天的项目（/project export <项目> <密码> —— 将项目导出为文件，/project import <密码> 作为文件说明 —— 导入项目），/secret <名称> <值> — 保存或更新机密，/secret - <名称> — 删除，/secret <项目>: <名称> <值> <站点> — 项目密钥（项目所有者；/secret <项目>: — 列表，/secret <项目>: - <名称> — 删除），/servers — 服务器，/server - <名称> — 删除服务器，/audit — 命令日志，/skills — 技能，/mcp — MCP 服务器，/jobs — 作业，/hook — 作业 webhook，/doctor — 安装检查，/settings — 设置，/set — 修改一项设置，/restart — 重启，/peers — 智能体网络，/owner <编号> — 转让智能体的所有权，/roles 和 /role — 参与者的角色，/models — 模型角色、其历史和回滚（/models rollback <编号>），/prompt — 提示的备注及其评分（/prompt scores），/codex login — 连接 ChatGPT 订阅（模型 chatgpt:…），/export <密码> — 智能体归档，/import <密码> 并附上归档文件 — 用归档替换当前智能体。",
     'chat.memory_private' => '我只在私聊中显示记忆。',
     'chat.new_conversation' => '已开始新对话。我不再考虑之前的对话。',
     'chat.no_grants' => '没有已保存的许可。',
@@ -987,6 +987,17 @@ return [
     'peer.project_channels.no_project' => '此代理的项目中没有项目 "%s"（列表见 ListProjects 方法）。',
 
     // project
+    'project.archive.export_usage' => '格式：/project export <项目> <密码> —— 项目归档将以文件发送（其中不含密钥值、邮箱密码和浏览器配置）。',
+    'project.archive.exported' => '项目「%s」的归档。在其他实例上导入：发送此文件并附上说明 /project import <密码>。',
+    'project.archive.folder_no' => '未迁移（为空或没有沙箱）',
+    'project.archive.folder_too_big' => '项目文件夹打包后超过 %d MB —— 项目未打包。',
+    'project.archive.folder_yes' => '已迁移',
+    'project.archive.import_usage' => '格式：发送项目归档文件并附上说明 /project import <密码>。',
+    'project.archive.imported' => "项目「%s」已导入。任务：%d 个（按项目时钟运行，报告发往项目话题或你）。项目文件夹：%s。\n\n还需：\n• 绑定聊天或话题：在相应位置执行 project_edit activate；\n• 录入密钥：\n%s\n• 连接邮箱（mailbox_edit）并交给项目：%s；\n已恢复的代理订阅：%s。",
+    'project.archive.imported_suffix' => '（导入）',
+    'project.archive.no_power' => '拥有项目权限的参与者才能导入项目。',
+    'project.archive.not_project' => '这不是项目归档，或者密码不对。',
+    'project.archive.owner_only' => '只有项目「%s」的所有者或代理所有者可以导出它。',
     'project.policy.above_owner' => '限制 %s 不能高于项目所有者的（%s），且必须为正数',
     'project.policy.inherited' => '项目「%s」的权限与其所有者相同。工具：%s。限制：%s',
     'project.policy.limit_down' => '%s：%s → %s',
