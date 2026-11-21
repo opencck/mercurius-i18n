@@ -265,7 +265,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => 'the browser gave an unclear response (HTTP %d)',
 
     // chat
-    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /dream (/consolidate) — memory sleep, /aliases — words that mean one thing, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep a secret, /servers — servers, /server - <name> — remove a server, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants, /models — model roles, their history and a rollback (/models rollback <number>), /prompt — notes to the prompt and their scores (/prompt scores), /codex login — connect the ChatGPT subscription (models chatgpt:…), /export <password> — the agent archive, /import <password> with the archive file — replace the agent with an archive.",
+    'chat.greeting' => "Hello! I am Mercurius, your personal agent.\n\n/new — start a new conversation.\n/stop — stop the current task.\n\nFor the owner: /permissions — saved permissions, /usage — spend, /runs [count] [status] — recent runs, /trace <number> [step] — a run in detail or the prompt and answer of a step, /delegation — how the agent splits tasks, /memory — what I remember, /forget <number> — forget a fact, /dream (/consolidate) — memory sleep, /aliases — words that mean one thing, /projects and /project <name> — projects and the project of this chat, /secret <name> <value> — keep or update a secret, /secret - <name> — delete it, /servers — servers, /server - <name> — remove a server, /audit — command log, /skills — skills, /mcp — MCP servers, /jobs — jobs, /hook — job webhooks, /digest — digest of tasks, /doctor — installation check, /settings — settings, /set — change one, /restart — restart, /peers — agent network, /owner <number> — pass ownership of the agent on, /roles and /role — the roles of participants, /models — model roles, their history and a rollback (/models rollback <number>), /prompt — notes to the prompt and their scores (/prompt scores), /codex login — connect the ChatGPT subscription (models chatgpt:…), /export <password> — the agent archive, /import <password> with the archive file — replace the agent with an archive.",
     'chat.memory_private' => 'I show the memory only in a private chat.',
     'chat.new_conversation' => 'A new conversation has started. I no longer take the previous one into account.',
     'chat.no_grants' => 'There are no saved permissions.',
@@ -1202,7 +1202,7 @@ return [
     'service.project_transfers.not_yours' => 'This offer is for another participant.',
     'service.project_transfers.offer' => "📦 %s hands the project \"%s\" over to you%s.\n\nIts card, tasks, skills, files and scheduled jobs come with it — the jobs will run in your name. %s keeps the full access to the project until you take it back.\n\nAccept the project?",
     'service.project_transfers.settled' => 'This offer no longer waits for a decision.',
-    'service.server_commands.format_secret_imya_znachenie_soobschenie' => 'Format: /secret <name> <value>. I will delete the message with the secret from the chat.',
+    'service.server_commands.format_secret_imya_znachenie_soobschenie' => 'Format: /secret <name> <value> — save, the same again — update; /secret - <name> — delete. Several /secret lines in one message are several secrets. I will delete the message with the secret from the chat.',
     'service.server_commands.hranilische_sekretov_vyklyucheno_v_env' => 'The secret vault is disabled: SECRETS_KEY is missing from .env.',
     'service.server_commands.klyuch_hosta_ne_podtverzhden' => ', host key not confirmed',
     'service.server_commands.kod' => ', code ',
@@ -1212,7 +1212,8 @@ return [
     'service.server_commands.sekret_udalen' => 'Secret "%s" removed.',
     'service.server_commands.sekreta_net_ili_on_ne' => 'There is no secret "%s", or it is not yours.',
     'service.server_commands.sekretov_net_secret_imya_znachenie' => 'No secrets. /secret <name> <value> saves one.',
-    'service.server_commands.sekrety_tolko_imena' => "Secrets (names only):\n",
+    'service.server_commands.secret_updated' => 'Secret "%s" updated (%s). I am deleting the message with it from the chat.',
+    'service.server_commands.sekrety_tolko_imena' => "Secrets (names only; /secret <name> <value> — update, /secret - <name> — delete):\n",
     'service.server_commands.server_removed' => 'Server «%s» is removed from the registry.',
     'service.server_commands.server_usage' => 'Usage: /server - <name> removes a server from the registry. To change a server, ask the agent.',
     'service.server_commands.serverov_v_reestre_net_poprosite' => 'No servers in the registry. Ask me to add a server (server_add); the login secret goes through /secret.',

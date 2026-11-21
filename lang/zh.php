@@ -266,7 +266,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => '浏览器返回了无法理解的响应（HTTP %d）',
 
     // chat
-    'chat.greeting' => "你好！我是 Mercurius，你的个人智能体。\n\n/new — 开始新对话。\n/stop — 停止当前任务。\n\n所有者可用：/permissions — 已保存的许可，/usage — 支出，/runs [数量] [状态] — 最近的运行，/trace <编号> [步骤] — 运行详情或某一步的提示和回答，/delegation — 智能体如何拆分任务，/memory — 我记住了什么，/forget <编号> — 忘记一条事实，/dream (/consolidate) — 记忆睡眠，/aliases — 同义词，/projects 和 /project <名称> — 项目以及本聊天的项目，/secret <名称> <值> — 保存机密，/servers — 服务器，/server - <名称> — 删除服务器，/audit — 命令日志，/skills — 技能，/mcp — MCP 服务器，/jobs — 作业，/hook — 作业 webhook，/digest — 任务摘要，/doctor — 安装检查，/settings — 设置，/set — 修改一项设置，/restart — 重启，/peers — 智能体网络，/owner <编号> — 转让智能体的所有权，/roles 和 /role — 参与者的角色，/models — 模型角色、其历史和回滚（/models rollback <编号>），/prompt — 提示的备注及其评分（/prompt scores），/codex login — 连接 ChatGPT 订阅（模型 chatgpt:…），/export <密码> — 智能体归档，/import <密码> 并附上归档文件 — 用归档替换当前智能体。",
+    'chat.greeting' => "你好！我是 Mercurius，你的个人智能体。\n\n/new — 开始新对话。\n/stop — 停止当前任务。\n\n所有者可用：/permissions — 已保存的许可，/usage — 支出，/runs [数量] [状态] — 最近的运行，/trace <编号> [步骤] — 运行详情或某一步的提示和回答，/delegation — 智能体如何拆分任务，/memory — 我记住了什么，/forget <编号> — 忘记一条事实，/dream (/consolidate) — 记忆睡眠，/aliases — 同义词，/projects 和 /project <名称> — 项目以及本聊天的项目，/secret <名称> <值> — 保存或更新机密，/secret - <名称> — 删除，/servers — 服务器，/server - <名称> — 删除服务器，/audit — 命令日志，/skills — 技能，/mcp — MCP 服务器，/jobs — 作业，/hook — 作业 webhook，/digest — 任务摘要，/doctor — 安装检查，/settings — 设置，/set — 修改一项设置，/restart — 重启，/peers — 智能体网络，/owner <编号> — 转让智能体的所有权，/roles 和 /role — 参与者的角色，/models — 模型角色、其历史和回滚（/models rollback <编号>），/prompt — 提示的备注及其评分（/prompt scores），/codex login — 连接 ChatGPT 订阅（模型 chatgpt:…），/export <密码> — 智能体归档，/import <密码> 并附上归档文件 — 用归档替换当前智能体。",
     'chat.memory_private' => '我只在私聊中显示记忆。',
     'chat.new_conversation' => '已开始新对话。我不再考虑之前的对话。',
     'chat.no_grants' => '没有已保存的许可。',
@@ -1202,7 +1202,7 @@ return [
     'service.project_transfers.not_yours' => '此提议是发给另一位参与者的。',
     'service.project_transfers.offer' => "📦 %s 将项目“%s”移交给你%s。\n\n它的名片、任务、技能、文件和定时任务都会一并转移——这些任务将以你的名义运行。在你收回之前，%s 保留对项目的完全访问权限。\n\n接受该项目吗？",
     'service.project_transfers.settled' => '此提议已无需再作决定。',
-    'service.server_commands.format_secret_imya_znachenie_soobschenie' => '格式：/secret <名称> <值>。我会从聊天中删除含有密钥的消息。',
+    'service.server_commands.format_secret_imya_znachenie_soobschenie' => '格式：/secret <名称> <值> — 保存，再发一次 — 更新；/secret - <名称> — 删除。一条消息里的多行 /secret 就是多个密钥。我会从聊天中删除含有密钥的消息。',
     'service.server_commands.hranilische_sekretov_vyklyucheno_v_env' => '密钥库已禁用：.env 中缺少 SECRETS_KEY。',
     'service.server_commands.klyuch_hosta_ne_podtverzhden' => '，主机密钥未确认',
     'service.server_commands.kod' => '，代码 ',
@@ -1212,7 +1212,8 @@ return [
     'service.server_commands.sekret_udalen' => '密钥“%s”已删除。',
     'service.server_commands.sekreta_net_ili_on_ne' => '没有密钥“%s”，或者它不是你的。',
     'service.server_commands.sekretov_net_secret_imya_znachenie' => '没有密钥。/secret <名称> <值> 可保存一个。',
-    'service.server_commands.sekrety_tolko_imena' => "密钥（仅名称）：\n",
+    'service.server_commands.secret_updated' => '密钥“%s”已更新（%s）。我正在从聊天中删除含有它的消息。',
+    'service.server_commands.sekrety_tolko_imena' => "密钥（仅名称；/secret <名称> <值> — 更新，/secret - <名称> — 删除）：\n",
     'service.server_commands.server_removed' => '服务器「%s」已从登记表中移除。',
     'service.server_commands.server_usage' => '用法：/server - <名称> 从登记表中移除服务器。要修改服务器，请让智能体来做。',
     'service.server_commands.serverov_v_reestre_net_poprosite' => '登记表中没有服务器。请让我添加服务器（server_add）；登录密钥通过 /secret 提供。',

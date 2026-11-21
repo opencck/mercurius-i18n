@@ -266,7 +266,7 @@ return [
     'browser.browser_client.brauzer_otvetil_neponyatno_http' => 'браузер ответил непонятно (HTTP %d)',
 
     // chat
-    'chat.greeting' => "Здравствуйте! Я Меркурий, ваш персональный агент.\n\n/new — начать новый диалог.\n/stop — остановить текущую задачу.\n\nДля владельца: /permissions — сохранённые разрешения, /usage — расход, /runs [число] [статус] — последние запуски, /trace <номер> [шаг] — разбор запуска или промпт и ответ шага, /delegation — как агент делит задачи, /memory — что я помню, /forget <номер> — забыть факт, /dream (/consolidate) — сон памяти, /aliases — слова, которые значат одно, /projects и /project <имя> — проекты и проект этого чата, /secret <имя> <значение> — сохранить секрет, /servers — серверы, /server - <имя> — удалить сервер, /audit — журнал команд, /skills — скиллы, /mcp — MCP-серверы, /jobs — задания, /hook — webhook задания, /digest — сводка дел, /doctor — проверка установки, /settings — настройки, /set — изменить, /restart — перезапуск, /peers — сеть агентов, /owner <номер> — передать владение агентом, /roles и /role — роли участников, /models — роли моделей, их история и откат (/models rollback <номер>), /prompt — заметки к промпту и их оценки (/prompt scores), /codex login — подключить подписку ChatGPT (модели chatgpt:…), /export <пароль> — архив агента, /import <пароль> с файлом архива — заменить агента архивом.",
+    'chat.greeting' => "Здравствуйте! Я Меркурий, ваш персональный агент.\n\n/new — начать новый диалог.\n/stop — остановить текущую задачу.\n\nДля владельца: /permissions — сохранённые разрешения, /usage — расход, /runs [число] [статус] — последние запуски, /trace <номер> [шаг] — разбор запуска или промпт и ответ шага, /delegation — как агент делит задачи, /memory — что я помню, /forget <номер> — забыть факт, /dream (/consolidate) — сон памяти, /aliases — слова, которые значат одно, /projects и /project <имя> — проекты и проект этого чата, /secret <имя> <значение> — сохранить или обновить секрет, /secret - <имя> — удалить, /servers — серверы, /server - <имя> — удалить сервер, /audit — журнал команд, /skills — скиллы, /mcp — MCP-серверы, /jobs — задания, /hook — webhook задания, /digest — сводка дел, /doctor — проверка установки, /settings — настройки, /set — изменить, /restart — перезапуск, /peers — сеть агентов, /owner <номер> — передать владение агентом, /roles и /role — роли участников, /models — роли моделей, их история и откат (/models rollback <номер>), /prompt — заметки к промпту и их оценки (/prompt scores), /codex login — подключить подписку ChatGPT (модели chatgpt:…), /export <пароль> — архив агента, /import <пароль> с файлом архива — заменить агента архивом.",
     'chat.memory_private' => 'Память показываю только в личном чате.',
     'chat.new_conversation' => 'Начат новый диалог. Предыдущий я больше не учитываю.',
     'chat.no_grants' => 'Сохранённых разрешений нет.',
@@ -1204,7 +1204,7 @@ return [
     'service.project_transfers.not_yours' => 'Это предложение адресовано другому участнику.',
     'service.project_transfers.offer' => "📦 %s передаёт вам проект «%s»%s.\n\nС проектом переходят его карточка, задачи, скиллы, файлы и задания планировщика — задания пойдут от вашего имени. %s сохранит полный доступ к проекту, пока вы его не отзовёте.\n\nПринять проект?",
     'service.project_transfers.settled' => 'Это предложение уже не ждёт решения.',
-    'service.server_commands.format_secret_imya_znachenie_soobschenie' => 'Формат: /secret <имя> <значение>. Сообщение с секретом я удалю из чата.',
+    'service.server_commands.format_secret_imya_znachenie_soobschenie' => 'Формат: /secret <имя> <значение> — сохранить, тем же — обновить; /secret - <имя> — удалить. Несколько строк /secret в одном сообщении — несколько секретов. Сообщение с секретом я удалю из чата.',
     'service.server_commands.hranilische_sekretov_vyklyucheno_v_env' => 'Хранилище секретов выключено: в .env нет SECRETS_KEY.',
     'service.server_commands.klyuch_hosta_ne_podtverzhden' => ', ключ хоста не подтверждён',
     'service.server_commands.kod' => ', код ',
@@ -1214,7 +1214,8 @@ return [
     'service.server_commands.sekret_udalen' => 'Секрет «%s» удалён.',
     'service.server_commands.sekreta_net_ili_on_ne' => 'Секрета «%s» нет или он не ваш.',
     'service.server_commands.sekretov_net_secret_imya_znachenie' => 'Секретов нет. /secret <имя> <значение> — сохранить.',
-    'service.server_commands.sekrety_tolko_imena' => "Секреты (только имена):\n",
+    'service.server_commands.secret_updated' => 'Секрет «%s» обновлён (%s). Сообщение с ним удаляю из чата.',
+    'service.server_commands.sekrety_tolko_imena' => "Секреты (только имена; /secret <имя> <значение> — обновить, /secret - <имя> — удалить):\n",
     'service.server_commands.server_removed' => 'Сервер «%s» удалён из реестра.',
     'service.server_commands.server_usage' => 'Формат: /server - <имя> — удалить сервер из реестра. Изменить сервер — попросите агента.',
     'service.server_commands.serverov_v_reestre_net_poprosite' => 'Серверов в реестре нет. Попросите меня добавить сервер (server_add), секрет для входа — /secret.',
