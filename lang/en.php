@@ -251,6 +251,7 @@ return [
     'agent.stop_reason.otvet_dan' => 'answer given',
     'agent.stop_reason.otvet_modeli_obryvalsya_na_seredine' => 'the model\'s reply was cut off in the middle of a tool call',
     'agent.stop_reason.vnutrennyaya_oshibka' => 'internal error',
+    'agent.todo.header' => '[Your plan in this conversation — what is still to do (todo_list):]',
     'agent.tool_use_guidance' => "# Act through tools\nYou MUST use your tools to take action — do not describe what you would do or plan to do without actually doing it. When you say you will perform an action (e.g. 'I will check the file', 'I will run the build', 'I will create the project'), you MUST make the tool call in the same response. Never end your turn with a promise of future action — execute it now.\nKeep working until the task is actually complete. Do not stop with a summary of what you plan to do next. If you have tools that can accomplish the task, use them instead of telling the user what you would do.\nEvery response either contains tool calls that make progress or delivers a final result. Responses that only describe intentions without acting are not acceptable.",
 
     // api
@@ -2176,6 +2177,14 @@ return [
     'tool.tcp_probe.port_otkryt_soedinenie_za_ms' => '%s:%d (%s) — port is open, connected in %d ms.',
     'tool.tcp_probe.proveryaet_otvechaet_li_tcp_port' => 'Checks whether a TCP port responds (instead of ping): host, port, timeout up to 10 s. Public addresses only; ',
     'tool.tcp_probe.vnutri_seti_vladeltsa_proveryay_s' => 'inside the owner\'s network check from the server via ssh_run (nc -z, curl).',
+    'tool.todo_list.about' => 'The plan of this conversation for work of three steps or more, or when there are several tasks. With no parameters it reads. The order of the list is the priority. Only one item in progress at a time. For "all N items", put each one as its own item so none is dropped. Split a large phase into subtasks with parent. Mark an item completed only after the work is verified done, never by intent. If something fails, cancel it and add a revised item. The answer is always the whole list. The plan is shared by this place (the private chat, a chat or a topic of a project) and ends with the conversation.',
+    'tool.todo_list.busy' => 'Another run of this conversation is changing the plan right now: read it and write again.',
+    'tool.todo_list.content' => 'What to do.',
+    'tool.todo_list.empty_item' => 'Item "%s" has no text: every item needs content. Nothing was written, the plan is as it was.',
+    'tool.todo_list.merge' => 'true — update items by id and add new ones; false (the default) — replace the whole list with a fresh plan.',
+    'tool.todo_list.not_a_list' => 'todos must be a list of items.',
+    'tool.todo_list.parent' => 'The id of another item when this is its subtask; omit for a top-level item.',
+    'tool.todo_list.todos' => 'Items to write.',
     'tool.tool_call.about' => 'Invoke a tool found by tool_search: name is its exact name, arguments follow the schema from tool_describe. Approvals and rights apply as usual.',
     'tool.tool_call.arguments' => 'Arguments matching the tool schema.',
     'tool.tool_call.bad' => 'tool_call needs name, the exact name of a tool from tool_search, and arguments, an object matching its schema.',

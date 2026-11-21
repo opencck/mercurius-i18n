@@ -252,6 +252,7 @@ return [
     'agent.stop_reason.otvet_dan' => '已给出回答',
     'agent.stop_reason.otvet_modeli_obryvalsya_na_seredine' => '模型的回复在工具调用中途被截断',
     'agent.stop_reason.vnutrennyaya_oshibka' => '内部错误',
+    'agent.todo.header' => '[你在本次对话中的计划 — 尚未完成的部分（todo_list）：]',
     'agent.tool_use_guidance' => "# 通过工具行动\n你必须使用工具来采取行动——不要只描述你将要做或打算做什么而不真正去做。当你说要执行某个操作时（例如“我来检查文件”、“我来运行构建”、“我来创建项目”），你必须在同一次回复中发起工具调用。绝不要以对未来行动的承诺来结束你的回合——现在就执行。\n持续工作，直到任务真正完成。不要以“接下来打算做什么”的总结作为结束。如果你有能完成任务的工具，就使用它们，而不是告诉用户你会怎么做。\n每次回复要么包含推进进展的工具调用，要么给出最终结果。只描述意图而不行动的回复是不可接受的。",
 
     // api
@@ -2176,6 +2177,14 @@ return [
     'tool.tcp_probe.port_otkryt_soedinenie_za_ms' => '%s:%d（%s）——端口开放，%d 毫秒内连接成功。',
     'tool.tcp_probe.proveryaet_otvechaet_li_tcp_port' => '检查 TCP 端口是否有响应（代替 ping）：host、port、超时最多 10 秒。仅限公网地址； ',
     'tool.tcp_probe.vnutri_seti_vladeltsa_proveryay_s' => '所有者网络内部的地址，请通过 ssh_run 从服务器上检查（nc -z、curl）。',
+    'tool.todo_list.about' => '本次对话的计划，用于三步及以上的工作或有多项任务时。不带参数即为读取。列表顺序即优先级。同一时间只能有一个进行中（in_progress）的条目。“全部 N 项”要每项单独列为一个条目，避免遗漏。大的阶段用 parent 拆成子任务。只有在工作已核实完成后才标记 completed，不能凭打算。失败时标记 cancelled 并添加修正后的新条目。回答始终是整个列表。计划由此处共享（私聊、项目的聊天或话题），并随对话结束。',
+    'tool.todo_list.busy' => '本对话的另一次运行正在修改计划：请先读取再重新写入。',
+    'tool.todo_list.content' => '要做什么。',
+    'tool.todo_list.empty_item' => '条目“%s”没有文本：每个条目都需要 content。未写入任何内容，计划保持不变。',
+    'tool.todo_list.merge' => 'true — 按 id 更新条目并添加新条目；false（默认）— 用新计划替换整个列表。',
+    'tool.todo_list.not_a_list' => 'todos 必须是条目列表。',
+    'tool.todo_list.parent' => '若这是另一条目的子任务，填写其编号；顶层条目则省略。',
+    'tool.todo_list.todos' => '要写入的条目。',
     'tool.tool_call.about' => '调用由 tool_search 找到的工具：name 是其准确名称，arguments 遵循 tool_describe 给出的模式。审批和权限照常适用。',
     'tool.tool_call.arguments' => '符合工具模式的参数。',
     'tool.tool_call.bad' => 'tool_call 需要 name（tool_search 中某个工具的准确名称）和 arguments（符合其模式的对象）。',
