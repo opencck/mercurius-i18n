@@ -34,7 +34,7 @@ echo tp('run.model_calls', 3);             // 3 model calls
 |-------|--------------|
 | `Translator` | `t(key, params)`, `plural(key, count, params)`, `language()`, `languages()` |
 | `CatalogTranslator` | over flat catalogs `language → key → text`; the first catalog is the default language. A missing text comes from the default language, then the key itself is returned |
-| `Catalogs` | the bundled `lang/ru.php`, `lang/en.php` and `lang/zh.php` (simplified script); `shape()` lists keys with their placeholders for parity checks |
+| `Catalogs` | the bundled `lang/ru.php`, `lang/en.php` and `lang/zh.php` (simplified script; translated by a model and not yet reviewed by a person); `shape()` lists keys with their placeholders for parity checks |
 | `Plural` | plural form of an integer: Russian `one`, `few`, `many`; Chinese `other` only; English and others `one`, `other` |
 | `Lang`, `t()`, `tp()` | the translator of the process; Russian over the bundled catalogs until another is set |
 
