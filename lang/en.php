@@ -33,7 +33,7 @@ return [
     'agent.agent_loop.text_action' => 'You described an action in words but called no tool — nothing was done. Only the system writes such notes, after a real call. If the action is needed, call the tool now; if not, say plainly that you did not do it.',
     'agent.agent_loop.tokenov' => 'tokens',
     'agent.agent_loop.vladelets_ne_otvetil_vovremya_molchanie' => 'The owner did not answer in time; silence is not consent. The action was not performed.',
-    'agent.agent_loop.vorkeru_neobratimye_deystviya_nedostupny' => 'Irreversible actions are not available to a worker, even with a saved permission. Not performed: describe in the result what needs to be done, and the orchestrator will decide.',
+    'agent.agent_loop.vorkeru_neobratimye_deystviya_nedostupny' => 'Irreversible actions are available to a worker only by the owner\'s saved "always" permission, and there is none for this action. Not performed: describe in the result what needs to be done, and the orchestrator will decide.',
     'agent.agent_loop.vremeni' => 'time',
     'agent.agent_loop.vypolneno_po_sohranennomu_razresheniyu_v' => "\n\n[Performed under the owner's saved permission.]",
     'agent.agent_loop.vyzov_ne_proshel_proverku' => 'The call failed validation.',

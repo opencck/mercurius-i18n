@@ -34,7 +34,7 @@ return [
     'agent.agent_loop.text_action' => '你用文字描述了一个操作，却没有调用任何工具——什么都没有发生。只有系统会在真正调用之后写这类说明。如果需要该操作，现在就调用工具；如果不需要，就明确说明你没有执行它。',
     'agent.agent_loop.tokenov' => 'token',
     'agent.agent_loop.vladelets_ne_otvetil_vovremya_molchanie' => '所有者未及时回复；沉默不代表同意。操作未执行。',
-    'agent.agent_loop.vorkeru_neobratimye_deystviya_nedostupny' => '工作者即使有已保存的权限，也不能执行不可逆操作。未执行：请在结果中说明需要做什么，由编排者决定。',
+    'agent.agent_loop.vorkeru_neobratimye_deystviya_nedostupny' => '工作者只有在所有者已保存“始终允许”权限时才能执行不可逆操作，而此操作没有该权限。未执行：请在结果中说明需要做什么，由编排者决定。',
     'agent.agent_loop.vremeni' => '时间',
     'agent.agent_loop.vypolneno_po_sohranennomu_razresheniyu_v' => "\n\n[已根据所有者保存的许可执行。]",
     'agent.agent_loop.vyzov_ne_proshel_proverku' => '调用未通过校验。',
