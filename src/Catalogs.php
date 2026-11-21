@@ -10,7 +10,7 @@ namespace Mercurius\I18n;
 final class Catalogs
 {
     /** The default language first. */
-    public const LANGUAGES = ['ru', 'en'];
+    public const LANGUAGES = ['ru', 'en', 'zh'];
 
     /** @var array<string, array<string, string>>|null */
     private static ?array $bundled = null;

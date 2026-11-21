@@ -13,9 +13,9 @@ use PHPUnit\Framework\TestCase;
  */
 final class CatalogsTest extends TestCase
 {
-    public function testTheBundledLanguagesAreRussianAndEnglish(): void
+    public function testTheBundledLanguagesAreRussianEnglishAndChinese(): void
     {
-        self::assertSame(['ru', 'en'], array_keys(Catalogs::bundled()));
+        self::assertSame(['ru', 'en', 'zh'], array_keys(Catalogs::bundled()));
     }
 
     public function testEveryLanguageHasTheSameKeysAndPlaceholders(): void

@@ -6,13 +6,16 @@ namespace Mercurius\I18n;
 
 /**
  * The plural form of a number in a language, by the CLDR rules for integers: Russian has one (1, 21, 101…), few
- * (2–4, 22–24…) and many (0, 5–20, 25…); English and the rest — one (1) and other.
+ * (2–4, 22–24…) and many (0, 5–20, 25…); Chinese has one form, other; English and the rest — one (1) and other.
  */
 final class Plural
 {
     public static function form(string $language, int $count): string
     {
         $n = abs($count);
+        if ($language === 'zh') {
+            return 'other';
+        }
         if ($language === 'ru' || $language === 'uk') {
             $last = $n % 10;
             $lastTwo = $n % 100;
@@ -32,6 +35,10 @@ final class Plural
     /** @return list<string> the forms a language has, for checking catalogs */
     public static function forms(string $language): array
     {
-        return $language === 'ru' || $language === 'uk' ? ['one', 'few', 'many'] : ['one', 'other'];
+        return match ($language) {
+            'ru', 'uk' => ['one', 'few', 'many'],
+            'zh' => ['other'],
+            default => ['one', 'other'],
+        };
     }
 }

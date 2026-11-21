@@ -1349,7 +1349,7 @@ return [
     'settings.about.a2a_name' => 'the agent\'s name in the A2A card for neighbors',
     'settings.about.agent_approval_timeout' => 'seconds to wait for approval',
     'settings.about.agent_daily_spend_cap' => 'daily spending cap, $ (empty — none)',
-    'settings.about.agent_language' => 'agent language: ru or en',
+    'settings.about.agent_language' => 'agent language: ru, en or zh',
     'settings.about.agent_max_turns' => 'model calls per run',
     'settings.about.agent_max_workers_per_run' => 'workers per run',
     'settings.about.agent_monthly_spend_cap' => 'monthly spending cap, $ (empty — none)',

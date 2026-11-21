@@ -27,6 +27,9 @@ final class TranslatorTest extends TestCase
             'run.calls.one' => '{count} call',
             'run.calls.other' => '{count} calls',
         ],
+        'zh' => [
+            'run.calls.other' => '{count} 次调用',
+        ],
     ];
 
     protected function tearDown(): void
@@ -44,7 +47,7 @@ final class TranslatorTest extends TestCase
         self::assertSame('Только по-русски', $en->t('chat.only_ru'), 'a missing text falls back to the default language');
         self::assertSame('no.such.key', $en->t('no.such.key'), 'then to the key itself');
         self::assertSame('en', $en->language());
-        self::assertSame(['ru', 'en'], $en->languages());
+        self::assertSame(['ru', 'en', 'zh'], $en->languages());
     }
 
     public function testAnUnknownLanguageIsTheDefaultOne(): void
@@ -65,6 +68,8 @@ final class TranslatorTest extends TestCase
             array_map(static fn(int $n): string => $ru->plural('run.calls', $n), [1, 2, 5, 11, 21, 104, 0]),
         );
         self::assertSame(['1 call', '2 calls', '0 calls'], array_map(static fn(int $n): string => $en->plural('run.calls', $n), [1, 2, 0]));
+        $zh = new CatalogTranslator('zh', self::CATALOGS);
+        self::assertSame(['1 次调用', '5 次调用'], array_map(static fn(int $n): string => $zh->plural('run.calls', $n), [1, 5]), 'Chinese has one form');
     }
 
     public function testTheProcessTranslatorIsRussianUntilAnotherIsSet(): void

@@ -1351,7 +1351,7 @@ return [
     'settings.about.a2a_name' => 'имя агента в карточке A2A для соседей',
     'settings.about.agent_approval_timeout' => 'секунд ожидания подтверждения',
     'settings.about.agent_daily_spend_cap' => 'потолок расхода в день, $ (пусто — нет)',
-    'settings.about.agent_language' => 'язык агента: ru или en',
+    'settings.about.agent_language' => 'язык агента: ru, en или zh',
     'settings.about.agent_max_turns' => 'вызовов модели на запуск',
     'settings.about.agent_max_workers_per_run' => 'воркеров на запуск',
     'settings.about.agent_monthly_spend_cap' => 'потолок расхода в месяц, $ (пусто — нет)',
