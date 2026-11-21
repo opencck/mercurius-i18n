@@ -95,7 +95,7 @@ return [
     'agent.grants.needs_all_done' => '⚠️ 所有者已允许：%s 可以不经询问做一切。下次运行起生效；撤销用 /permissions。',
     'agent.grants.needs_card' => "任务 %s 缺少权限 — 相关操作已跳过：\n\n%s\n\n任务的权限只在它的运行中生效，读取外部数据后也生效；取消任务会移除这些权限。",
     'agent.grants.needs_these' => '永久允许任务执行这些',
-    'agent.grants.needs_these_done' => '所有者已允许：%2$s 的 %1$d 项操作。下次运行起生效。',
+    'agent.grants.needs_these_done' => '所有者已允许：%d 项操作，适用于 %s。下次运行起生效。',
     'agent.grants.once' => '仅此一次',
     'agent.grants.saved_outside' => ' ⚠️ 读取外部数据后也生效',
     'agent.grants.saved_session' => '所有者已允许（本次对话，直到 /new）：%s',
