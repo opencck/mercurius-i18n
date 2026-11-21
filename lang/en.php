@@ -1694,7 +1694,7 @@ return [
     'tool.job_create.zadanie_postavleno_pervyy_zapusk' => 'Job #%d “%s” scheduled: %s, first run %s.',
     'tool.job_create.zadanie_postavleno_po_sobytiyu_vladelets' => 'Job #%d “%s” scheduled: on an event. The owner connects the webhook with /hook %d <secret name>.',
     'tool.job_manage.distrusted' => 'Job #%d "%s": its source is no longer trusted — runs with outside data are marked again.',
-    'tool.job_manage.edit_about' => 'edit — change a job (id and what changes: prompt, title, schedule); "redo the job" is edit, not a new job.',
+    'tool.job_manage.edit_about' => 'edit — change a job (id and what changes: prompt, title, schedule, project — move it into a project, its report goes to the project\'s topic); "redo the job" is edit, not a new job.',
     'tool.job_manage.edit_nothing' => 'Nothing to change: give prompt, title or schedule.',
     'tool.job_manage.edited' => 'Job #%d «%s» changed. Now: %s',
     'tool.job_manage.filter_event_only' => 'Only a job by event has a filter, and #%d runs on a schedule.',

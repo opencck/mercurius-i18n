@@ -1694,7 +1694,7 @@ return [
     'tool.job_create.zadanie_postavleno_pervyy_zapusk' => '任务 #%d “%s”已安排：%s，首次运行 %s。',
     'tool.job_create.zadanie_postavleno_po_sobytiyu_vladelets' => '任务 #%d “%s”已安排：按事件触发。所有者通过 /hook %d <secret name> 连接 webhook。',
     'tool.job_manage.distrusted' => '任务 #%d "%s"：其来源不再受信任 — 带有外部数据的运行会再次被标记。',
-    'tool.job_manage.edit_about' => 'edit — 修改任务（id 以及要改的内容：prompt、title、schedule）；“改一下任务”就是 edit，而不是新建任务。',
+    'tool.job_manage.edit_about' => 'edit — 修改任务（id 以及要改的内容：prompt、title、schedule、project — 移入项目，结果发到项目的话题）；“改一下任务”就是 edit，而不是新建任务。',
     'tool.job_manage.edit_nothing' => '没有要修改的内容：请给出 prompt、title 或 schedule。',
     'tool.job_manage.edited' => '任务 #%d «%s» 已修改。现在：%s',
     'tool.job_manage.filter_event_only' => '只有按事件触发的任务才有过滤器，而 #%d 是按计划运行的。',
