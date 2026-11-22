@@ -295,6 +295,7 @@ return [
     'app.aliases.short' => '«%s» is too short: a word of one or two letters means too many things.',
     'app.aliases.too_few' => 'A group needs at least two different words.',
     'app.aliases.too_many' => 'A group holds %d words at most.',
+    'app.bot_api_back' => 'The local Bot API server did not answer for about %d min and works again. Buttons pressed or messages sent to me in that time may not have arrived — please repeat them.',
     'app.consolidation.auto_conflict' => 'Sleep by itself: fact #%d “%s” was replaced by the newer #%d “%s” — ended (edit #%d; to bring it back — /dream undo %d).',
     'app.consolidation.auto_conflict_reason' => 'sleep: replaced by fact #%d',
     'app.consolidation.auto_copy' => 'Sleep by itself: fact #%d “%s” repeated #%d — ended (edit #%d; to bring it back — /dream undo %d).',

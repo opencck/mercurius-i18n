@@ -296,6 +296,7 @@ return [
     'app.aliases.short' => '«%s»太短：一两个字母的词含义太多。',
     'app.aliases.too_few' => '一组至少需要两个不同的词。',
     'app.aliases.too_many' => '一组最多容纳 %d 个词。',
+    'app.bot_api_back' => '本地 Bot API 服务器大约 %d 分钟没有响应，现在已恢复工作。如果这段时间里你按过按钮或给我发过消息，它们可能没有送达——请重新操作一次。',
     'app.consolidation.auto_conflict' => '睡眠自动处理：事实 #%d“%s”被较新的 #%d“%s”取代——已终止（修改 #%d；要恢复——/dream undo %d）。',
     'app.consolidation.auto_conflict_reason' => '睡眠：被事实 #%d 取代',
     'app.consolidation.auto_copy' => '睡眠自动处理：事实 #%d“%s”与 #%d 重复——已终止（修改 #%d；要恢复——/dream undo %d）。',
