@@ -1026,6 +1026,7 @@ return [
     'project.archive.no_power' => '拥有项目权限的参与者才能导入项目。',
     'project.archive.not_project' => '这不是项目归档，或者密码不对。',
     'project.archive.owner_only' => '只有项目「%s」的所有者或代理所有者可以导出它。',
+    'project.archive.started' => '正在打包项目「%s」：卡片、文件夹、任务、权限、机密和邮箱的名称（不含值）。将以文件发送。',
     'project.policy.above_owner' => '限制 %s 不能高于项目所有者的（%s），且必须为正数',
     'project.policy.inherited' => '项目「%s」的权限与其所有者相同。工具：%s。限制：%s',
     'project.policy.limit_down' => '%s：%s → %s',

@@ -1025,6 +1025,7 @@ return [
     'project.archive.no_power' => 'A participant with the power of projects brings projects in.',
     'project.archive.not_project' => 'This is not an archive of a project, or the password is wrong.',
     'project.archive.owner_only' => 'Only the owner of the project «%s» or the owner of the agent takes it out.',
+    'project.archive.started' => 'Packing the project «%s»: card, folder, jobs, rights, names of secrets and mailboxes (no values). It comes as a file.',
     'project.policy.above_owner' => 'The limit %s cannot be above the project owner\'s (%s) and must be positive',
     'project.policy.inherited' => 'Rights of the project «%s» — those of its owner. Tools: %s. Limits: %s',
     'project.policy.limit_down' => '%s: %s → %s',
