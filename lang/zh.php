@@ -314,6 +314,7 @@ return [
     'app.consolidation.judged_supersedes' => '睡眠模型：#%d“%s”更新，取代 #%d“%s”。是否忘记旧的？',
     'app.consolidation.merge_card' => '事实 #%d 和 #%d 互为补充——建议合并（卡片 #%d）。',
     'app.consolidation.merge_reason' => '记忆睡眠：事实 #%d 和 #%d 说的是同一件事，且一条补充另一条——用一条文本代替两条。',
+    'app.consolidation.merge_unverified' => '另一个睡眠模型发现合并文本丢失或改变了事实内容，未展示：%d 条。',
     'app.consolidation.merge_refused' => '合并后的文本被代码校验拒绝：%d 条——不为它们生成卡片。',
     'app.consolidation.model_silent' => '睡眠模型对大多数配对没有回应：今晚仅由代码判定。',
     'app.consolidation.model_spent' => '睡眠模型：%d 次调用，%d 个 token，$%.4f。',

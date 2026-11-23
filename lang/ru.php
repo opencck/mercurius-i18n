@@ -314,6 +314,7 @@ return [
     'app.consolidation.judged_supersedes' => 'Модель сна: #%d «%s» новее и заменяет #%d «%s». Забыть старое?',
     'app.consolidation.merge_card' => 'Факты #%d и #%d дополняют друг друга — предложил слить их (карточка №%d).',
     'app.consolidation.merge_reason' => 'Сон памяти: факты #%d и #%d говорят об одном, один дополняет другой — один текст вместо двух.',
+    'app.consolidation.merge_unverified' => 'Слияния, в которых другая модель сна нашла потерю или искажение сказанного в фактах, не показаны: %d.',
     'app.consolidation.merge_refused' => 'Текстов слияния не прошло проверку кода: %d — карточек по ним нет.',
     'app.consolidation.model_silent' => 'Модель сна не ответила на большую часть пар: эта ночь решена одним кодом.',
     'app.consolidation.model_spent' => 'Модель сна: вызовов %d, токенов %d, $%.4f.',
