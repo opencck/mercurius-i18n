@@ -1573,6 +1573,7 @@ return [
     'settings.about.memory_nudge_turns' => 'after how many turns of a person a cheap model proposes facts for memory (through the owner\'s card); 0 — off',
     'settings.about.memory_rules_notice' => '1 — tell of a change of the section «Rules» of MEMORY.md with a «Take back» button; 0 — silently, nothing to take back',
     'settings.about.memory_sleep_auto' => 'Edits sleep makes by itself, comma-separated: copy — end an explicit copy, merge — merge, conflict — end a fact a newer one surely replaced; empty — everything as cards to the owner',
+    'settings.about.memory_sleep_usd' => 'the cap on what the model of sleep spends in one night, in dollars: once it is spent no call starts and the code finishes the night; 0 — no cap; works at once',
     'settings.about.memory_sleep_models' => 'models of memory sleep, comma-separated: empty — no sleep (the guard against loss always runs); in effect at once',
     'settings.about.memory_sleep_translate' => '1 — sleep also adds translations of the search words into the other two languages of memory; 0 — only words in the fact\'s own language',
     'settings.about.metrics_token' => '/metrics token for Prometheus (empty — off)',

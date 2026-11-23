@@ -1573,6 +1573,7 @@ return [
     'settings.about.memory_nudge_turns' => '某人发言多少轮后，由廉价模型提议要存入记忆的事实（通过所有者的名片）；0 —— 关闭',
     'settings.about.memory_rules_notice' => '1 —— 当 MEMORY.md 的“规则”部分发生变化时，通知并附“撤回”按钮；0 —— 静默进行，无可撤回',
     'settings.about.memory_sleep_auto' => '睡眠自行进行的编辑，以逗号分隔：copy —— 结束明确的重复，merge —— 合并，conflict —— 结束已被较新事实明确取代的事实；留空 —— 一律以名片形式交给所有者',
+    'settings.about.memory_sleep_usd' => '睡眠模型每晚花费上限（美元）：用尽后不再调用模型，由代码完成当晚检查；0 表示不设上限；立即生效',
     'settings.about.memory_sleep_models' => '记忆睡眠的模型，以逗号分隔：留空 —— 不睡眠（防止丢失的保护始终运行）；立即生效',
     'settings.about.memory_sleep_translate' => '1 —— 睡眠还会把搜索词翻译成记忆的另外两种语言并加入；0 —— 仅保留事实自身语言的词',
     'settings.about.metrics_token' => 'Prometheus 的 /metrics 令牌（留空 —— 关闭）',
