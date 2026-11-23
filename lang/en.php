@@ -1986,7 +1986,7 @@ return [
     'tool.memory_propose.predlozhenie_otpravleno_vladeltsu_pamyat' => 'Proposal #%d was sent to the owner. Memory will change once they accept it; no need to wait.',
     'tool.memory_propose.predlozhenie_sohraneno_no_kartochku_vlad' => 'Proposal #%d was saved, but the card could not be sent to the owner; they will see it in /memory.',
     'tool.memory_propose.primet_kartochku_add_novyy_fakt' => 'accepts the card. A rule on how to work with the person is not a fact: it goes into «## Rules» of MEMORY.md (memory_file). add — a new fact: one complete statement that will be useful in other conversations (not a retelling ',
-    'tool.memory_propose.project' => 'For add: a fact about the project of this chat (a server, agreements, decisions) — it is seen in every chat and topic of the project, not only here.',
+    'tool.memory_propose.project' => 'For add in a private chat with a project: a fact about the project (a server, agreements, decisions) — it is seen in every chat and topic of the project. In a group or a topic of a project a new fact goes to the project anyway.',
     'tool.memory_propose.razgovora_ne_sekrety_change_novaya' => 'of the conversation, not secrets). change — new wording of fact fact_id; end — the fact is no longer true; forget — forget ',
     'tool.memory_propose.source' => 'Where the fact comes from: owner — the person said it in words, inferred — you concluded it, tool — from a tool result (a page, a file, a command). The trust in the fact depends on it.',
     'tool.memory_propose.v_odnom_zapuske_ne_bolshe' => 'One run allows no more than %d proposals: wait for the owner\'s decision.',

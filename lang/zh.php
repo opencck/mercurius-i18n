@@ -1986,7 +1986,7 @@ return [
     'tool.memory_propose.predlozhenie_otpravleno_vladeltsu_pamyat' => '提议 #%d 已发送给所有者。所有者接受后记忆会改变；无需等待。',
     'tool.memory_propose.predlozhenie_sohraneno_no_kartochku_vlad' => '提议 #%d 已保存，但卡片未能发送给所有者；他们可以在 /memory 中看到。',
     'tool.memory_propose.primet_kartochku_add_novyy_fakt' => '接受卡片后生效。关于如何与此人合作的规则不是事实：它应放入 MEMORY.md 的 «## Rules»（memory_file）。add — 新事实：一条完整的陈述，对其他对话有用（而不是转述 ',
-    'tool.memory_propose.project' => '用于 add：关于此聊天项目的事实（服务器、约定、决定） — 它在该项目的每个聊天和话题中可见，而不只是在这里。',
+    'tool.memory_propose.project' => '用于带项目的私聊中的 add：关于项目的事实（服务器、约定、决定） — 它在该项目的每个聊天和话题中可见。在项目的群组和话题中，新事实本来就归项目。',
     'tool.memory_propose.razgovora_ne_sekrety_change_novaya' => '对话，不含机密）。change — 事实 fact_id 的新表述；end — 该事实不再成立；forget — 遗忘 ',
     'tool.memory_propose.source' => '事实的来源：owner — 此人亲口所说，inferred — 你推断得出，tool — 来自工具结果（页面、文件、命令）。对该事实的信任度取决于它。',
     'tool.memory_propose.v_odnom_zapuske_ne_bolshe' => '一次运行最多允许 %d 个提议：请等待所有者的决定。',
