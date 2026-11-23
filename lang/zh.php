@@ -315,7 +315,7 @@ return [
     'app.consolidation.merge_card' => '事实 #%d 和 #%d 互为补充——建议合并（卡片 #%d）。',
     'app.consolidation.merge_reason' => '记忆睡眠：事实 #%d 和 #%d 说的是同一件事，且一条补充另一条——用一条文本代替两条。',
     'app.consolidation.merge_unverified' => '另一个睡眠模型发现合并文本丢失或改变了事实内容，未展示：%d 条。',
-    'app.consolidation.noted' => '睡眠从当天对话中在 %2$s 写入了事实 #%1$d：「%3$s」。',
+    'app.consolidation.noted' => '睡眠根据当天对话写入了事实 #%d（%s）：「%s」。',
     'app.consolidation.note_reason' => '场所睡眠：来自当天对话',
     'app.consolidation.merge_refused' => '合并后的文本被代码校验拒绝：%d 条——不为它们生成卡片。',
     'app.consolidation.model_silent' => '睡眠模型对大多数配对没有回应：今晚仅由代码判定。',
