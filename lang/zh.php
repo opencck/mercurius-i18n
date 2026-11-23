@@ -317,6 +317,8 @@ return [
     'app.consolidation.merge_unverified' => '另一个睡眠模型发现合并文本丢失或改变了事实内容，未展示：%d 条。',
     'app.consolidation.noted' => '睡眠根据当天对话写入了事实 #%d（%s）：「%s」。',
     'app.consolidation.note_reason' => '场所睡眠：来自当天对话',
+    'app.consolidation.findability' => '用换了说法的问题，搜索找到 %d / %d 条事实（本夜补词前 — %d）；每个问题前五名中的其他事实：%.2f（之前 — %.2f）。',
+    'app.consolidation.not_found' => '补了两夜的词后仍无法用其问题找到：%s — 也许事实的文本应换个说法。',
     'app.consolidation.merge_refused' => '合并后的文本被代码校验拒绝：%d 条——不为它们生成卡片。',
     'app.consolidation.model_silent' => '睡眠模型对大多数配对没有回应：今晚仅由代码判定。',
     'app.consolidation.model_spent' => '睡眠模型：%d 次调用，%d 个 token，$%.4f。',
