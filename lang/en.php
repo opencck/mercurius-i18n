@@ -1532,7 +1532,7 @@ return [
 
     // settings
     'settings.about.context_max_tokens' => 'tokens a conversation holds in the context: 0 — the whole window of the model, else from 8000; a project and a private chat may set their own; works at once',
-    'settings.about.context_compact_percent' => 'at which percent of a conversation\'s tokens automatic compaction starts: 0 — 75% (50% for windows from 512K), else 10–95; a project and a private chat may set their own; works at once',
+    'settings.about.context_compact_percent' => 'at which percent of a conversation\'s tokens automatic compaction starts: 0 — 75 percent (50 percent for windows from 512K), else 10–95; a project and a private chat may set their own; works at once',
     'settings.about.a2a_description' => 'what the agent can help its neighbors with (A2A card)',
     'settings.about.a2a_name' => 'the agent\'s name in the A2A card for neighbors',
     'settings.about.agent_approval_timeout' => 'seconds to wait for approval',
@@ -2430,5 +2430,5 @@ return [
     'agent.context_limits.now' => 'A conversation holds in the context: %s; compaction starts at %s.',
     'agent.context_limits.bad_tokens' => 'A conversation holds at least %d tokens (0 — back to the default).',
     'agent.context_limits.bad_percent' => 'The threshold of compaction is from %d to %d percent (0 — back to the default).',
-    'agent.context_limits.auto' => '75% (50% for windows from 512K)',
+    'agent.context_limits.auto' => '75 percent (50 percent for windows from 512K)',
 ];
