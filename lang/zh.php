@@ -180,7 +180,7 @@ return [
     'agent.host_key_cards.ne_doveryat' => '不信任',
     'agent.host_key_cards.novyy_server_otpechatok_klyucha_hosta' => "新服务器“%s”（%s@%s）。\n主机密钥指纹：%s\n请在服务器上核对：ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub（或 /etc/ssh 中的其他密钥）。是否信任？",
     'agent.host_key_cards.uzhe_resheno' => '已经处理过了。',
-    'agent.loop_guard.warning' => '警告：你在重复相同的调用，结果也相同。请换一种方式，或收尾。',
+    'agent.loop_guard.warning' => '警告：你在重复相同的调用，结果也相同。你重复调用的工具（观察外部世界的除外）在本次运行中不再提供——它的回答就在上面。请据此行动，或收尾。',
     'agent.memory_cards.about_person' => '👤 关于另一个人——只保存在所有者的记忆中。',
     'agent.memory_cards.agent' => '智能体',
     'agent.memory_cards.agent_v_razgovore_s' => '智能体与“%s”的对话',

@@ -179,7 +179,7 @@ return [
     'agent.host_key_cards.ne_doveryat' => 'Do not trust',
     'agent.host_key_cards.novyy_server_otpechatok_klyucha_hosta' => "New server “%s” (%s@%s).\nHost key fingerprint: %s\nCheck it on the server: ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub (or another key from /etc/ssh). Trust it?",
     'agent.host_key_cards.uzhe_resheno' => 'Already decided.',
-    'agent.loop_guard.warning' => 'Warning: you are repeating the same calls with the same result. Change your approach or wrap up.',
+    'agent.loop_guard.warning' => 'Warning: you are repeating the same calls with the same result. The tool you repeated (unless it watches the outside world) is not offered again in this run — its answer is above. Act on it or wrap up.',
     'agent.memory_cards.about_person' => '👤 About another person — kept only in the owner\'s memory.',
     'agent.memory_cards.agent' => 'agent',
     'agent.memory_cards.agent_v_razgovore_s' => 'agent in a conversation with “%s”',

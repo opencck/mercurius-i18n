@@ -180,7 +180,7 @@ return [
     'agent.host_key_cards.ne_doveryat' => 'Не доверять',
     'agent.host_key_cards.novyy_server_otpechatok_klyucha_hosta' => "Новый сервер «%s» (%s@%s).\nОтпечаток ключа хоста: %s\nСверьте на сервере: ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub (или другой ключ из /etc/ssh). Доверять?",
     'agent.host_key_cards.uzhe_resheno' => 'Уже решено.',
-    'agent.loop_guard.warning' => 'Внимание: ты повторяешь те же вызовы с тем же результатом. Измени подход или подведи итог.',
+    'agent.loop_guard.warning' => 'Внимание: ты повторяешь те же вызовы с тем же результатом. Инструмент, который ты повторял (кроме наблюдающих за внешним миром), до конца запуска больше не предлагается — его ответ уже выше. Действуй по нему или подведи итог.',
     'agent.memory_cards.about_person' => '👤 Сведения о другом человеке — сохраняются только в памяти владельца.',
     'agent.memory_cards.agent' => 'агент',
     'agent.memory_cards.agent_v_razgovore_s' => 'агент в разговоре с «%s»',
