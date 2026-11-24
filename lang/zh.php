@@ -1140,7 +1140,7 @@ return [
     'self.mail.power_yes' => '拥有',
     'self.memory' => "记忆：事实（memory_search、memory_propose）按问题中的词来查找——按词干、外来词和同根词，支持俄语、英语和中文（简体和繁体通用）。含义相同但搜索不会自动关联的词（«прокс» — «proxmox»）要用 memory_alias 放进词表：一个组对其所有词是同一个搜索键，事实会立即重新建立索引。所有者用 /aliases 查看和编辑词表。 主人可以用 /probe 设置记忆探针：一个问题和记忆必须始终凭它找到的事实；损失守卫每晚检查，事实消失或找不到时发出警告。\n\nMEMORY.md — 每个上下文各有一个，位于其文件夹的根目录：私聊——个人的文件，项目——项目的文件，群组、频道、话题——该场所的文件（memory_file）。两个部分：«## Rules» 作为指令进入提示词，«## Notes» 作为参考资料；上限为 MEMORY_FILE_LIMIT，规则部分完整保留。\n\n什么放哪里——一条知识只放一处：怎么工作（直白地说）——文件的 «## Rules»；这个人是谁——档案；正在进行什么——笔记或摘要；人、项目、服务器——事实；某项工作的流程——技能；适用于代理所有对话的规则——提示词备注，由所有者接受。一次性的请求不是规则。",
     'self.memory.aliases' => '当前词表：',
-    'self.models' => "我只调用所有者放入某个类别的模型。类别及其设置：\n- cheap（辅助调用）— LLM_CHEAP_MODELS；main — LLM_MAIN_MODELS；strong（困难任务）— LLM_STRONG_MODELS。列表为空则只用初始的 LLM_MODEL；\n- 网络搜索 — WEB_SEARCH_MODELS；识别图片 — MEDIA_VISION_MODELS；绘制图片 — MEDIA_IMAGE_MODELS；识别音频 — MEDIA_SPEECH_MODELS；生成音频 — MEDIA_AUDIO_GEN_MODELS；识别视频 — MEDIA_VIDEO_MODELS；生成视频 — MEDIA_VIDEO_GEN_MODELS。类别为空表示没有这项能力。\n\n选择：我在列表的模型中自行选择（按任务选择也只在列表内）。列表由我按主人的要求修改：model_list（list — 查看，add / remove / set — 任意类别）；set_model_role 按主人的要求会自动把指定模型加入该角色的列表并设置。文本列表立即生效；网页搜索和媒体在重启后生效（settings restart，先问主人）。没有主人的要求我不扩大列表；其他参与者不能修改。主人也可以自己用 /set <设置> <逗号分隔的模型>。说某个模型不存在之前，先查目录：名称写作 提供方:作者/模型（openrouter:z-ai/glm-5.3-flash）。 所有者的订阅也是提供方：chatgpt:<模型>（登录——/codex login）和 claude:<模型>（模块 claude-code，登录——/claude login）；只有当所有者把它们放入类别列表后，其模型才会工作。当订阅套餐的限额用尽时，其模型在重置之前从选择中移除，任务转到同一类别列表中的另一个模型；没有其他模型时，任务不会运行。",
+    'self.models' => "我只调用所有者放入某个类别的模型。类别及其设置：\n- cheap（辅助调用）— LLM_CHEAP_MODELS；main — LLM_MAIN_MODELS；strong（困难任务）— LLM_STRONG_MODELS。列表为空则只用初始的 LLM_MODEL；\n- 网络搜索 — WEB_SEARCH_MODELS；识别图片 — MEDIA_VISION_MODELS；绘制图片 — MEDIA_IMAGE_MODELS；识别音频 — MEDIA_SPEECH_MODELS；生成音频 — MEDIA_AUDIO_GEN_MODELS；识别视频 — MEDIA_VIDEO_MODELS；生成视频 — MEDIA_VIDEO_GEN_MODELS。类别为空表示没有这项能力。\n\n选择：我在列表的模型中自行选择（按任务选择也只在列表内）。列表由我按主人的要求修改：model_list（list — 查看，add / remove / set — 任意类别）；set_model_role 按主人的要求会自动把指定模型加入该角色的列表并设置。所有列表都立即生效，无需重启：文本、网页搜索和媒体。没有主人的要求我不扩大列表；其他参与者不能修改。主人也可以自己用 /set <设置> <逗号分隔的模型>。说某个模型不存在之前，先查目录：名称写作 提供方:作者/模型（openrouter:z-ai/glm-5.3-flash）。 所有者的订阅也是提供方：chatgpt:<模型>（登录——/codex login）和 claude:<模型>（模块 claude-code，登录——/claude login）；只有当所有者把它们放入类别列表后，其模型才会工作。当订阅套餐的限额用尽时，其模型在重置之前从选择中移除，任务转到同一类别列表中的另一个模型；没有其他模型时，任务不会运行。",
     'self.models.now' => '当前：%s',
     'self.models.providers' => '当前可用的提供商：%s。不带“提供商:”的模型名属于 openrouter。订阅的模型要带上其提供商，例如 claude:claude-opus-5-5；当所有者说出订阅中有的模型且没有另作说明时，按订阅使用它。',
     'self.models.subscription' => '%s——订阅，不按令牌计费；模型：%s',
@@ -1708,7 +1708,7 @@ return [
     'ssh.amp_ssh_shell.vyvod_komandy_ne_prochitan' => '未读取到命令输出',
 
     // tool
-    'tool.model_list.about' => '按类别的模型列表 — 代理可以调用哪些模型：cheap、main、strong（文本）、search、vision、image、speech、voice、video、film、sleep。list — 查看当前；add、remove、set — 修改某类别的列表（models — 名称 提供方:作者/模型）。只按主人的要求修改。文本列表立即生效，其他在重启后生效。角色的模型由 set_model_role 设置。',
+    'tool.model_list.about' => '按类别的模型列表 — 代理可以调用哪些模型：cheap、main、strong（文本）、search、vision、image、speech、voice、video、film、sleep。list — 查看当前；add、remove、set — 修改某类别的列表（models — 名称 提供方:作者/模型）。只按主人的要求修改。所有列表都立即生效，无需重启。角色的模型由 set_model_role 设置。',
     'tool.address_guard.adres_vnutrenniy_takie_zaprosy_zapresche' => '地址 %s 为内部地址：仅在获得所有者许可后才能请求。',
     'tool.address_guard.ne_udalos_nayti_adres' => '无法解析地址 %s。',
     'tool.address_internal' => "\n⚠️ 内部地址：%s（本地网络、服务器服务或云元数据）。",
