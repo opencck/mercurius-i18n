@@ -2441,6 +2441,7 @@ return [
     'agent.context_limits.bad_percent' => 'The threshold of compaction is from %d to %d percent (0 — back to the default).',
     'agent.context_limits.auto' => '75 percent (50 percent for windows from 512K)',
     // claude subscription
+    'claude.module_off' => 'The module claude-code is not switched on: the agent has no Claude subscription. Whoever runs the server switches it on: the profile claude-code in COMPOSE_PROFILES and the token CLAUDE_CODE_TOKEN in .env.',
     'claude.module_down' => 'The module claude-code does not answer: the Claude subscription is unavailable. Whoever runs the server starts it (the profile claude-code in COMPOSE_PROFILES).',
     'claude.cli_unusable' => 'Claude Code in the module does not work: %s',
     'claude.auth_login' => 'The Claude subscription is connected by the owner\'s sign-in, plan %s.',

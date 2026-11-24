@@ -2441,6 +2441,7 @@ return [
     'agent.context_limits.bad_percent' => '压缩阈值为 %d 到 %d 百分比（0 — 恢复默认值）。',
     'agent.context_limits.auto' => '75%（窗口 512K 起为 50%）',
     // claude subscription
+    'claude.module_off' => '模块 claude-code 未启用：代理没有 Claude 订阅。由管理服务器的人启用它：COMPOSE_PROFILES 中的 claude-code 配置和 .env 中的令牌 CLAUDE_CODE_TOKEN。',
     'claude.module_down' => '模块 claude-code 没有响应：Claude 订阅不可用。由管理服务器的人启动它（COMPOSE_PROFILES 中的 claude-code 配置）。',
     'claude.cli_unusable' => '模块中的 Claude Code 无法工作：%s',
     'claude.auth_login' => 'Claude 订阅已通过所有者登录连接，套餐为 %s。',

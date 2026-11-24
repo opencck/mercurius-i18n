@@ -2443,6 +2443,7 @@ return [
     'agent.context_limits.bad_percent' => 'Порог сжатия — от %d до %d процентов (0 — вернуть значение по умолчанию).',
     'agent.context_limits.auto' => '75% (50% для окон от 512 тыс.)',
     // claude subscription
+    'claude.module_off' => 'Модуль claude-code не включён: подписки Claude у агента нет. Его включает тот, кто управляет сервером: профиль claude-code в COMPOSE_PROFILES и токен CLAUDE_CODE_TOKEN в .env.',
     'claude.module_down' => 'Модуль claude-code не отвечает: подписка Claude недоступна. Его запускает тот, кто управляет сервером (профиль claude-code в COMPOSE_PROFILES).',
     'claude.cli_unusable' => 'Claude Code в модуле не работает: %s',
     'claude.auth_login' => 'Подписка Claude подключена входом владельца, план — %s.',
