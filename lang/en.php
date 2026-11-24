@@ -1668,6 +1668,7 @@ return [
     'skill.import.clean' => 'nothing suspicious',
     'skill.import.fetch_failed' => 'The skill was not downloaded: %s',
     'skill.import.http_failed' => 'Answer %d for %s.',
+    'skill.import.nested' => 'This is not a skill but a set: the directory itself has no SKILL.md, the skills lie deeper. Import each one you need by its own link: %s',
     'skill.import.no_revision' => 'GitHub did not return the revision of the repository.',
     'skill.import.proposed' => 'The skill "%s" v%d is downloaded, checked and waits for the owner\'s decision.',
     'skill.import.skipped' => "\nLeft out (not text): %s",

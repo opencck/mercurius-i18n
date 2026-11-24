@@ -1670,6 +1670,7 @@ return [
     'skill.import.clean' => 'ничего подозрительного',
     'skill.import.fetch_failed' => 'Скилл не скачался: %s',
     'skill.import.http_failed' => 'Ответ %d на %s.',
+    'skill.import.nested' => 'Это не скилл, а набор: в самом каталоге нет SKILL.md, скиллы лежат глубже. Импортируй каждый нужный по своей ссылке: %s',
     'skill.import.no_revision' => 'GitHub не отдал ревизию репозитория.',
     'skill.import.proposed' => 'Скилл «%s» v%d скачан, проверен и ждёт решения владельца.',
     'skill.import.skipped' => "\nНе взяты (не текст): %s",

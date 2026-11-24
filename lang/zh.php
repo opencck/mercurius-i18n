@@ -1668,6 +1668,7 @@ return [
     'skill.import.clean' => '没有可疑之处',
     'skill.import.fetch_failed' => '技能未能下载：%s',
     'skill.import.http_failed' => '响应 %d，来自 %s。',
+    'skill.import.nested' => '这不是一个技能，而是一组技能：目录本身没有 SKILL.md，技能在更深的目录里。请按各自的链接逐个导入需要的技能：%s',
     'skill.import.no_revision' => 'GitHub 未返回仓库的修订版本。',
     'skill.import.proposed' => '技能“%s”v%d 已下载并检查，等待所有者决定。',
     'skill.import.skipped' => "\n已略过（非文本）：%s",
