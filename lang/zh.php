@@ -235,7 +235,7 @@ return [
     'agent.prompt_builder.notes' => '所有者从智能体的提议中接受的规则：',
     'agent.prompt_builder.pamyat_sloy_1_spravochnye_dannye' => "记忆（第 1 层），参考数据：\n",
     'agent.prompt_builder.polzovatel' => '用户',
-    'agent.prompt_builder.posetitel_tolko_razgovor_bez_instrumento' => '访客：仅限对话，没有工具，也没有关于所有者事务的信息',
+    'agent.prompt_builder.posetitel_tolko_razgovor_bez_instrumento' => '读者：仅限对话，没有工具，也没有关于所有者事务的信息',
     'agent.prompt_builder.proekt_etogo_chata_spravochnye_dannye' => "本聊天的项目，参考数据：\n",
     'agent.prompt_builder.self_info' => '关于你自己（你的能力、设置、渠道、命令、模块、限制、连接其他智能体），不要猜测：请询问 self_info 工具（不带主题则返回主题列表）。',
     'agent.prompt_builder.uchastnik_bez_imeni' => '未命名的参与者',
@@ -1079,6 +1079,7 @@ return [
     'roles.list' => '参与者角色（位置. 名称 "标题" — 权限；策略模板）：',
     'roles.no_powers' => '无权限',
     'roles.removed' => '角色 %s 已删除。',
+    'roles.last_owner' => '这样智能体将没有所有者：至少要有一名活跃成员保留 owner 权限。',
     'roles.unknown' => '没有角色 %s。列表见 /roles。',
 
     // run
@@ -1536,6 +1537,7 @@ return [
     'service.visitor.otkazat' => '拒绝',
     'service.visitor.polzovatel' => '用户',
     'service.visitor.razgovor' => '聊天',
+    'service.visitor.reader' => '读者',
     'service.visitor.razgovor_razreshen' => '已允许聊天。',
     'service.visitor.role_given' => '角色：%s。',
     'service.visitor.sobesednik' => "联系人\n\n%s\n\n%s",

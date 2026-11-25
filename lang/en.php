@@ -234,7 +234,7 @@ return [
     'agent.prompt_builder.notes' => 'Rules the owner accepted from the agent\'s proposals:',
     'agent.prompt_builder.pamyat_sloy_1_spravochnye_dannye' => "Memory (layer 1), reference data:\n",
     'agent.prompt_builder.polzovatel' => 'user',
-    'agent.prompt_builder.posetitel_tolko_razgovor_bez_instrumento' => 'visitor: conversation only, no tools and no information about the owner\'s affairs',
+    'agent.prompt_builder.posetitel_tolko_razgovor_bez_instrumento' => 'reader: conversation only, no tools and no information about the owner\'s affairs',
     'agent.prompt_builder.proekt_etogo_chata_spravochnye_dannye' => "Project of this chat, reference data:\n",
     'agent.prompt_builder.self_info' => 'About yourself (your capabilities, setup, channels, commands, modules, limits, connecting other agents), do not guess: ask the self_info tool (without a topic: the list of topics).',
     'agent.prompt_builder.uchastnik_bez_imeni' => 'participant without a name',
@@ -1078,6 +1078,7 @@ return [
     'roles.list' => 'Roles of participants (place. name "title" — permissions; policy template):',
     'roles.no_powers' => 'no permissions',
     'roles.removed' => 'The role %s is removed.',
+    'roles.last_owner' => 'The agent would be left without an owner: the permission owner must stay with at least one active member.',
     'roles.unknown' => 'There is no role %s. The list — /roles.',
 
     // run
@@ -1536,6 +1537,7 @@ return [
     'service.visitor.otkazat' => 'Decline',
     'service.visitor.polzovatel' => 'User',
     'service.visitor.razgovor' => 'Chat',
+    'service.visitor.reader' => 'Reader',
     'service.visitor.razgovor_razreshen' => 'Chat allowed.',
     'service.visitor.role_given' => 'Role: %s.',
     'service.visitor.sobesednik' => "Contact\n\n%s\n\n%s",

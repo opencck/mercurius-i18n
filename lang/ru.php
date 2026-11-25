@@ -235,7 +235,7 @@ return [
     'agent.prompt_builder.notes' => 'Правила, которые владелец принял по предложениям агента:',
     'agent.prompt_builder.pamyat_sloy_1_spravochnye_dannye' => "Память (слой 1), справочные данные:\n",
     'agent.prompt_builder.polzovatel' => 'пользователь',
-    'agent.prompt_builder.posetitel_tolko_razgovor_bez_instrumento' => 'посетитель: только разговор, без инструментов и без сведений о делах владельца',
+    'agent.prompt_builder.posetitel_tolko_razgovor_bez_instrumento' => 'читатель: только разговор, без инструментов и без сведений о делах владельца',
     'agent.prompt_builder.proekt_etogo_chata_spravochnye_dannye' => "Проект этого чата, справочные данные:\n",
     'agent.prompt_builder.self_info' => 'О себе — своих возможностях, настройке, каналах, командах, модулях, лимитах, подключении других агентов — не гадай: спроси инструмент self_info (без темы — список тем).',
     'agent.prompt_builder.uchastnik_bez_imeni' => 'участник без имени',
@@ -1079,6 +1079,7 @@ return [
     'roles.list' => 'Роли участников (место. имя «название» — права; шаблон политики):',
     'roles.no_powers' => 'без прав',
     'roles.removed' => 'Роль %s удалена.',
+    'roles.last_owner' => 'Так у агента не останется владельца: право owner должно остаться хотя бы у одного активного участника.',
     'roles.unknown' => 'Роли %s нет. Список — /roles.',
 
     // run
@@ -1538,6 +1539,7 @@ return [
     'service.visitor.otkazat' => 'Отказать',
     'service.visitor.polzovatel' => 'Пользователь',
     'service.visitor.razgovor' => 'Разговор',
+    'service.visitor.reader' => 'Читатель',
     'service.visitor.razgovor_razreshen' => 'Разговор разрешён.',
     'service.visitor.role_given' => 'Роль: %s.',
     'service.visitor.sobesednik' => "Собеседник\n\n%s\n\n%s",
