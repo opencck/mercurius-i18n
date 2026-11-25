@@ -2281,6 +2281,7 @@ return [
     'tool.run_command.sohranyayutsya_vyvod_kod_vyhoda_stdout' => 'are kept. The output is the exit code, stdout and stderr (a long output is shortened). Documents docx, xlsx and pptx are made by the documents tool (while the media-docs module runs). Do not pass a multi-line script by heredoc (<<EOF): such a command cannot be parsed and waits for the owner\'s approval — write it with write_file and run python3 file.py. Send the finished file with send_file.',
     'tool.run_command.vypolnyaet_komandu_bash_v_tvoem' => 'Runs a bash command in your sandbox working directory (git, curl, ',
     'tool.sandbox.area' => 'owners — the owners\' area: the root of the sandbox where every member\'s folder lies (owners of the agent only); by default — your own folder.',
+    'tool.sandbox.in_owners_area' => 'In the owners\' area:',
     'tool.sandbox.area_owners_only' => 'The owners\' area is for owners of the agent only.',
     'tool.sandbox.pesochnitsa_nedostupna_dlya_uchastnika' => 'The sandbox is not available to the participant.',
     'tool.search_files.about' => 'Searches the files of the working folder: target=content — lines by a regular expression (grep -E), target=files — files by name (a pattern like *.md). path — the folder (the working one by default), file_glob — which files to look in for a content search, limit — how many lines (50 by default). Use it instead of grep and find in run_command.',

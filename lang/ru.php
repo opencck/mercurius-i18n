@@ -2283,6 +2283,7 @@ return [
     'tool.run_command.sohranyayutsya_vyvod_kod_vyhoda_stdout' => 'сохраняются. Вывод — код выхода, stdout и stderr (длинный вывод сокращается). Документы docx, xlsx и pptx делает инструмент documents (если модуль media-docs запущен). Многострочный скрипт не передавай через heredoc (<<EOF): такую команду нельзя разобрать, и она ждёт подтверждения владельца, — запиши его write_file и запусти python3 файл.py. Готовый файл пришли send_file.',
     'tool.run_command.vypolnyaet_komandu_bash_v_tvoem' => 'Выполняет команду bash в твоём рабочем каталоге песочницы (есть git, curl, ',
     'tool.sandbox.area' => 'owners — общая область владельцев: корень песочницы, где лежат папки всех участников (только владельцам агента); по умолчанию — своя папка.',
+    'tool.sandbox.in_owners_area' => 'В общей области владельцев:',
     'tool.sandbox.area_owners_only' => 'Общая область владельцев — только для владельцев агента.',
     'tool.sandbox.pesochnitsa_nedostupna_dlya_uchastnika' => 'Песочница недоступна для участника.',
     'tool.search_files.about' => 'Ищет в файлах рабочего каталога: target=content — строки по регулярному выражению (grep -E), target=files — файлы по имени (шаблон вида *.md). path — каталог (по умолчанию рабочий), file_glob — какие файлы смотреть при поиске по содержимому, limit — сколько строк (по умолчанию 50). Используй вместо grep и find в run_command.',

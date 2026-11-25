@@ -2281,6 +2281,7 @@ return [
     'tool.run_command.sohranyayutsya_vyvod_kod_vyhoda_stdout' => '。输出包括退出码、stdout 和 stderr（过长的输出会被截短）。docx、xlsx 和 pptx 文档由 documents 工具生成（需 media-docs 模块在运行）。不要用 heredoc（<<EOF）传递多行脚本：这样的命令无法解析，会一直等待所有者批准——请用 write_file 写入，再运行 python3 file.py。完成的文件用 send_file 发送。',
     'tool.run_command.vypolnyaet_komandu_bash_v_tvoem' => '在你沙盒的工作目录中运行 bash 命令（git、curl、 ',
     'tool.sandbox.area' => 'owners — 所有者共享区：沙箱根目录，所有成员的文件夹都在其中（仅限智能体所有者）；默认 — 你自己的文件夹。',
+    'tool.sandbox.in_owners_area' => '在所有者共享区：',
     'tool.sandbox.area_owners_only' => '所有者共享区仅限智能体所有者使用。',
     'tool.sandbox.pesochnitsa_nedostupna_dlya_uchastnika' => '沙盒对该参与者不可用。',
     'tool.search_files.about' => '在工作文件夹的文件中搜索：target=content——按正则表达式匹配行（grep -E），target=files——按名称查找文件（如 *.md 这样的模式）。path——文件夹（默认为工作文件夹），file_glob——内容搜索时在哪些文件中查找，limit——最多多少行（默认 50）。请用它代替 run_command 中的 grep 和 find。',
