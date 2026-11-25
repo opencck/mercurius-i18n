@@ -1081,6 +1081,7 @@ return [
     'roles.no_powers' => 'без прав',
     'roles.removed' => 'Роль %s удалена.',
     'roles.last_owner' => 'Так у агента не останется владельца: право owner должно остаться хотя бы у одного активного участника.',
+    'roles.agent_owner' => 'Право owner роли, которую держит агент, не даётся: агент не бывает владельцем.',
     'roles.unknown' => 'Роли %s нет. Список — /roles.',
 
     // run
@@ -2057,6 +2058,7 @@ return [
     'tool.open_router_byok.registriruet_klyuch_provaydera_openai_an' => 'Регистрирует ключ провайдера (openai, anthropic…) в аккаунте OpenRouter владельца (BYOK); ждёт ',
     'tool.open_router_byok.sekret_s_klyuchom_provaydera_nedostupen' => 'Секрет с ключом провайдера недоступен.',
     'tool.participants.above_own' => 'Так нельзя: роль меняют другим, не себе, и не выше своей — роль с правом, которого нет у вас, выдаёт владелец.',
+    'tool.participants.owner_by_command' => 'Владельцем делает только команда /owner <номер> — с карточкой подтверждения.',
     'tool.participants.agent' => 'агент',
     'tool.participants.bad_role' => 'role — talk, user, admin или rejected.',
     'tool.participants.bez_imeni' => 'без имени',

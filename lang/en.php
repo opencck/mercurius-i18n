@@ -1080,6 +1080,7 @@ return [
     'roles.no_powers' => 'no permissions',
     'roles.removed' => 'The role %s is removed.',
     'roles.last_owner' => 'The agent would be left without an owner: the permission owner must stay with at least one active member.',
+    'roles.agent_owner' => 'The permission owner is not given to a role an agent holds: an agent is never an owner.',
     'roles.unknown' => 'There is no role %s. The list — /roles.',
 
     // run
@@ -2055,6 +2056,7 @@ return [
     'tool.open_router_byok.registriruet_klyuch_provaydera_openai_an' => 'Registers a provider key (openai, anthropic…) in the owner\'s OpenRouter account (BYOK); waits for ',
     'tool.open_router_byok.sekret_s_klyuchom_provaydera_nedostupen' => 'The secret with the provider key is unavailable.',
     'tool.participants.above_own' => 'Not allowed: a role is changed for others, not for yourself, and not above your own — a role with a permission you do not have is given by the owner.',
+    'tool.participants.owner_by_command' => 'Only the command /owner <number> makes an owner, with a confirmation card.',
     'tool.participants.agent' => 'agent',
     'tool.participants.bad_role' => 'role is talk, user, admin or rejected.',
     'tool.participants.bez_imeni' => 'unnamed',

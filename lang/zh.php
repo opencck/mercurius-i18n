@@ -1081,6 +1081,7 @@ return [
     'roles.no_powers' => '无权限',
     'roles.removed' => '角色 %s 已删除。',
     'roles.last_owner' => '这样智能体将没有所有者：至少要有一名活跃成员保留 owner 权限。',
+    'roles.agent_owner' => '不能将 owner 权限授予智能体所持有的角色：智能体永远不能成为所有者。',
     'roles.unknown' => '没有角色 %s。列表见 /roles。',
 
     // run
@@ -2055,6 +2056,7 @@ return [
     'tool.open_router_byok.registriruet_klyuch_provaydera_openai_an' => '在所有者的 OpenRouter 账户中注册提供商密钥（openai、anthropic…）（BYOK）；等待 ',
     'tool.open_router_byok.sekret_s_klyuchom_provaydera_nedostupen' => '带提供商密钥的机密不可用。',
     'tool.participants.above_own' => '不允许：只能为他人更改角色，不能为自己更改，也不能高于自己的角色 — 拥有你所没有的权力的角色由所有者授予。',
+    'tool.participants.owner_by_command' => '只有命令 /owner <编号>（带确认卡片）才能设置所有者。',
     'tool.participants.agent' => 'agent',
     'tool.participants.bad_role' => 'role 是 talk、user、admin 或 rejected。',
     'tool.participants.bez_imeni' => '未命名',
