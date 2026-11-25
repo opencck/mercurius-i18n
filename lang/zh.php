@@ -1714,7 +1714,7 @@ return [
     // tool
     'tool.browser.point' => 'click 的截图坐标点，用于没有编号的位置（其他网站的内嵌框）：x 和 y 为距 1280×900 截图左上角的像素',
     'tool.browser.secret' => '用于 type：用密钥库中的密钥名称代替 text——值由代码输入，你看不到；同时给出 site，即当前打开页面的网站',
-    'tool.browser.secret_describe' => '在浏览器中于网站 %2$s 输入密钥“%1$s”',
+    'tool.browser.secret_describe' => '在浏览器中输入密钥“%s”（网站 %s）',
     'tool.browser.secret_missing' => '密钥库中没有密钥“%s”，或你无权使用。由对方保存：/secret <名称> <值>。',
     'tool.browser.secret_no_site' => '要输入密钥，请给出 site——当前打开页面的网站（例如 accounts.google.com）：密钥只会在该网站输入。',
     'tool.browser.secret_other_site' => '未输入密钥：当前打开的网站是 %s，而不是 %s。请打开正确的页面或给出它的网站。',
