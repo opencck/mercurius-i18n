@@ -1475,7 +1475,7 @@ return [
     'service.server_commands.inherit_off' => 'Наследование секретов здесь не настроено.',
     'service.server_commands.inherit_usage_member' => 'Формат: /secret inherit agent on|off [номер участника] — секреты агента в личном контексте.',
     'service.server_commands.inherit_usage_project' => 'Формат: /secret <проект>: inherit owner|agent on|off — секреты владельца проекта или агента в проекте.',
-    'service.server_commands.inherit_owner_only' => 'Свои секреты проекту открывает только владелец проекта (или владелец агента).',
+    'service.server_commands.inherit_owner_only' => 'Свои секреты проекту открывает только сам владелец проекта.',
     'service.server_commands.inherit_agent_only' => 'Секреты агента открывает только владелец агента.',
     'service.server_commands.inherit_on_word' => 'наследуются',
     'service.server_commands.inherit_off_word' => 'не наследуются',

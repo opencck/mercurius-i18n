@@ -1473,7 +1473,7 @@ return [
     'service.server_commands.inherit_off' => '此处未设置密钥继承。',
     'service.server_commands.inherit_usage_member' => '格式：/secret inherit agent on|off [成员编号] — 个人上下文中的智能体密钥。',
     'service.server_commands.inherit_usage_project' => '格式：/secret <项目>: inherit owner|agent on|off — 项目中的项目所有者密钥或智能体密钥。',
-    'service.server_commands.inherit_owner_only' => '只有项目所有者（或智能体所有者）可以向项目开放自己的密钥。',
+    'service.server_commands.inherit_owner_only' => '只有项目所有者本人可以向项目开放自己的密钥。',
     'service.server_commands.inherit_agent_only' => '只有智能体所有者可以开放智能体密钥。',
     'service.server_commands.inherit_on_word' => '被继承',
     'service.server_commands.inherit_off_word' => '不被继承',

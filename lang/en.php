@@ -1473,7 +1473,7 @@ return [
     'service.server_commands.inherit_off' => 'Inheritance of secrets is not set up here.',
     'service.server_commands.inherit_usage_member' => 'Format: /secret inherit agent on|off [member number] — secrets of the agent in a personal context.',
     'service.server_commands.inherit_usage_project' => 'Format: /secret <project>: inherit owner|agent on|off — secrets of the project owner or of the agent in the project.',
-    'service.server_commands.inherit_owner_only' => 'Only the owner of the project (or of the agent) opens their secrets to the project.',
+    'service.server_commands.inherit_owner_only' => 'Only the owner of the project opens their own secrets to it.',
     'service.server_commands.inherit_agent_only' => 'Only an owner of the agent opens the agent\'s secrets.',
     'service.server_commands.inherit_on_word' => 'inherited',
     'service.server_commands.inherit_off_word' => 'not inherited',
