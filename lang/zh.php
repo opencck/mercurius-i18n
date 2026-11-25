@@ -783,6 +783,8 @@ return [
     'mcp.guard.egress' => '条目「%s」被拒绝：访问网络的 shell（curl、wget、nc…）是外传数据的方式，而不是 MCP 服务器。',
     'mcp.guard.persistence' => '条目「%s」被拒绝：shell 写入后门常驻的位置（SSH 密钥、cron、sudoers、.bashrc）。',
     'mcp.mcp_manager.stdio_command' => 'stdio 服务器的命令：一行，最多 1000 个字符。',
+    'mcp.mcp_manager.lasting' => 'MCP 服务器「%s」（%s）已关闭：此错误不会自行消失 — %s。请修正条目后重新启用：/mcp on %s',
+    'mcp.mcp_manager.not_checked' => 'MCP 服务器「%s」的工具未与已启动的进程核对，调用未执行：',
     'mcp.mcp_manager.stdio_off' => 'stdio MCP 服务器在沙盒中运行，而沙盒已关闭（SANDBOX_TOKEN）。',
     'mcp.mcp_tool.instrument_mcp_soobschil_ob_oshibke' => 'MCP 工具报告了错误。',
     'mcp.mcp_tool.pusto' => '（空）',

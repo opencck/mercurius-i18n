@@ -783,6 +783,8 @@ return [
     'mcp.guard.egress' => 'Запись «%s» отклонена: оболочка с выходом в сеть (curl, wget, nc…) — так выглядит выгрузка данных, а не MCP-сервер.',
     'mcp.guard.persistence' => 'Запись «%s» отклонена: оболочка пишет туда, где закрепляются бэкдоры (ключи SSH, cron, sudoers, .bashrc).',
     'mcp.mcp_manager.stdio_command' => 'Команда stdio-сервера: одна строка, до 1000 символов.',
+    'mcp.mcp_manager.lasting' => 'MCP-сервер «%s» (%s) выключен: ошибка сама не пройдёт — %s. Исправьте запись и включите снова: /mcp on %s',
+    'mcp.mcp_manager.not_checked' => 'Инструменты MCP-сервера «%s» не сверены с запущенным процессом, вызов не выполнен: ',
     'mcp.mcp_manager.stdio_off' => 'stdio-серверы MCP запускаются в песочнице, а она выключена (SANDBOX_TOKEN).',
     'mcp.mcp_tool.instrument_mcp_soobschil_ob_oshibke' => 'Инструмент MCP сообщил об ошибке.',
     'mcp.mcp_tool.pusto' => '(пусто)',

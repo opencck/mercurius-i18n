@@ -782,6 +782,8 @@ return [
     'mcp.guard.egress' => 'Entry "%s" is refused: a shell reaching the network (curl, wget, nc…) is how data is taken out, not an MCP server.',
     'mcp.guard.persistence' => 'Entry "%s" is refused: a shell writing where backdoors are kept (SSH keys, cron, sudoers, .bashrc).',
     'mcp.mcp_manager.stdio_command' => 'The command of a stdio server: one line, up to 1000 characters.',
+    'mcp.mcp_manager.lasting' => 'MCP server «%s» (%s) is off: the error will not pass by itself — %s. Fix the entry and turn it on again: /mcp on %s',
+    'mcp.mcp_manager.not_checked' => 'The tools of MCP server «%s» were not checked against the started process, the call was not made: ',
     'mcp.mcp_manager.stdio_off' => 'stdio MCP servers run in the sandbox, and it is off (SANDBOX_TOKEN).',
     'mcp.mcp_tool.instrument_mcp_soobschil_ob_oshibke' => 'The MCP tool reported an error.',
     'mcp.mcp_tool.pusto' => '(empty)',
