@@ -915,6 +915,7 @@ return [
     'ownership.not_eligible' => 'Only another active person who is not an owner yet can become an owner.',
     'ownership.usage' => 'To add an owner: /owner <participant number>. The numbers are in the list of participants. To take a role away — /role.',
     'ownership.welcome' => 'You are an owner of the agent now (the administrator role): approval cards and notices come to you too. /start lists the commands.',
+    'owners.decided_by' => 'Decided by %s',
 
     // peer
     'peer.a2a_client.card_not_proven' => 'the card does not prove its key: whoever answers at this address does not hold the key of the card (or the agent is of an older version).',

@@ -916,6 +916,7 @@ return [
     'ownership.not_eligible' => '只有尚未成为所有者的另一位活跃真人参与者才能成为所有者。',
     'ownership.usage' => '添加所有者：/owner <参与者编号>。编号见参与者列表。取消角色 — /role。',
     'ownership.welcome' => '您现在是智能体的所有者（管理员角色）：确认卡片和通知也会发给您。/start 查看命令列表。',
+    'owners.decided_by' => '由 %s 决定',
 
     // peer
     'peer.a2a_client.card_not_proven' => '名片无法证明其密钥：在此地址应答的一方并不持有名片上的密钥（或者该代理版本较旧）。',
