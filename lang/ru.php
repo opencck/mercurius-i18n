@@ -102,6 +102,7 @@ return [
     'agent.grants.wide_model_list' => 'любые изменения списков моделей',
     'agent.grants.allow_usage' => 'Формат: /permissions allow job <номер> | project <номер> | server <имя> | tool <имя> [outside]. Слово outside в конце — разрешение действует и после внешних данных.',
     'agent.grants.allowed' => 'Разрешено навсегда: %s. Отозвать — /permissions.',
+    'agent.grants.in_owners_area' => 'в общей области владельцев: %s',
     'agent.grants.any_call' => 'любой вызов %s',
     'agent.grants.area' => 'всё в области %s',
     'agent.grants.btn_back' => '‹ Назад',

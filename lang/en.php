@@ -101,6 +101,7 @@ return [
     'agent.grants.wide_model_list' => 'any change of the lists of models',
     'agent.grants.allow_usage' => 'Format: /permissions allow job <number> | project <number> | server <name> | tool <name> [outside]. The word outside at the end — the permission applies after outside data too.',
     'agent.grants.allowed' => 'Allowed for good: %s. Revoke with /permissions.',
+    'agent.grants.in_owners_area' => "in the owners' area: %s",
     'agent.grants.any_call' => 'any call of %s',
     'agent.grants.area' => 'everything in the area %s',
     'agent.grants.btn_back' => '‹ Back',

@@ -102,6 +102,7 @@ return [
     'agent.grants.wide_model_list' => '对模型列表的任何修改',
     'agent.grants.allow_usage' => '格式：/permissions allow job <编号> | project <编号> | server <名称> | tool <名称> [outside]。末尾加 outside — 权限在读取外部数据后也生效。',
     'agent.grants.allowed' => '已永久允许：%s。撤销用 /permissions。',
+    'agent.grants.in_owners_area' => '在所有者共享区：%s',
     'agent.grants.any_call' => '对 %s 的任何调用',
     'agent.grants.area' => '区域 %s 内的一切',
     'agent.grants.btn_back' => '‹ 上一页',
