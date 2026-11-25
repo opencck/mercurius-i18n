@@ -906,15 +906,15 @@ return [
 
     // ownership
     'ownership.cancel' => 'Cancel',
-    'ownership.cancelled' => 'The transfer of ownership is cancelled.',
-    'ownership.card' => "Pass ownership of the agent to participant #%d \"%s\"?\n\nYou will become an admin. What is yours stays yours and the new owner will not see it: memory about you, your projects, secrets and private chats. The agent with everything shared — settings, modules, the agent's key, its jobs — goes to the new owner. Only the new owner can give ownership back.",
-    'ownership.confirm' => 'Pass on',
-    'ownership.done' => 'Ownership passed to participant #%d "%s". You are an admin now.',
+    'ownership.cancelled' => 'Cancelled.',
+    'ownership.card' => "Make participant #%d \"%s\" one more owner of the agent (the administrator role)?\n\nYou stay an owner. An owner sees everything and decides on the cards as you do.",
+    'ownership.confirm' => 'Make an owner',
+    'ownership.done' => 'Participant #%d "%s" is an owner of the agent now (administrator).',
     'ownership.expired' => 'The request is out of date — send /owner again.',
-    'ownership.failed' => 'Ownership was not passed on: the participant no longer fits or the owner changed.',
-    'ownership.not_eligible' => 'Only another active person among the participants can become the owner.',
-    'ownership.usage' => 'To pass ownership on: /owner <participant number>. The numbers are in the list of participants.',
-    'ownership.welcome' => 'Ownership of the agent passed to you. You are the owner now: approval cards and notices come to you. /start lists the commands.',
+    'ownership.failed' => 'Not done: the participant no longer fits or you are no longer an owner.',
+    'ownership.not_eligible' => 'Only another active person who is not an owner yet can become an owner.',
+    'ownership.usage' => 'To add an owner: /owner <participant number>. The numbers are in the list of participants. To take a role away — /role.',
+    'ownership.welcome' => 'You are an owner of the agent now (the administrator role): approval cards and notices come to you too. /start lists the commands.',
 
     // peer
     'peer.a2a_client.card_not_proven' => 'the card does not prove its key: whoever answers at this address does not hold the key of the card (or the agent is of an older version).',

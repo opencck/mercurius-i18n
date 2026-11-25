@@ -907,15 +907,15 @@ return [
 
     // ownership
     'ownership.cancel' => '取消',
-    'ownership.cancelled' => '所有权转让已取消。',
-    'ownership.card' => "将代理的所有权转让给参与者 #%d \"%s\"？\n\n你将成为管理员。属于你的内容仍归你，新所有者看不到：关于你的记忆、你的项目、密钥和私聊。共享的一切——设置、模块、代理的密钥、它的任务——将归新所有者。只有新所有者才能把所有权还给你。",
-    'ownership.confirm' => '转让',
-    'ownership.done' => '所有权已转让给参与者 #%d "%s"。你现在是管理员。',
+    'ownership.cancelled' => '已取消。',
+    'ownership.card' => "让参与者 #%d「%s」成为智能体的又一位所有者（管理员角色）？\n\n您仍然是所有者。所有者可以看到一切，并与您一样处理卡片。",
+    'ownership.confirm' => '设为所有者',
+    'ownership.done' => '参与者 #%d「%s」现在是智能体的所有者（管理员）。',
     'ownership.expired' => '请求已过期——请重新发送 /owner。',
-    'ownership.failed' => '所有权未转让：该参与者已不符合条件，或所有者已变更。',
-    'ownership.not_eligible' => '只有参与者中另一位活跃的人才能成为所有者。',
-    'ownership.usage' => '转让所有权：/owner <参与者编号>。编号见参与者列表。',
-    'ownership.welcome' => '代理的所有权已转给你。你现在是所有者：审批卡片和通知将发给你。/start 会列出命令。',
+    'ownership.failed' => '未完成：该参与者已不符合条件，或您已不是所有者。',
+    'ownership.not_eligible' => '只有尚未成为所有者的另一位活跃真人参与者才能成为所有者。',
+    'ownership.usage' => '添加所有者：/owner <参与者编号>。编号见参与者列表。取消角色 — /role。',
+    'ownership.welcome' => '您现在是智能体的所有者（管理员角色）：确认卡片和通知也会发给您。/start 查看命令列表。',
 
     // peer
     'peer.a2a_client.card_not_proven' => '名片无法证明其密钥：在此地址应答的一方并不持有名片上的密钥（或者该代理版本较旧）。',
