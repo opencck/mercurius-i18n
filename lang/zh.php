@@ -850,6 +850,7 @@ return [
     'media.intake.on_request' => '按请求处理：media 工具，操作 %s。',
     'media.intake.principles' => '选择模型的原则——所有者的：%s；参与者的：%s。如需细节，请据此选择模型（media，model 参数）。',
     'media.intake.replied' => '（来自本条所回复的消息）',
+    'media.intake.not_kept' => '（未保存到磁盘 —— 已立即处理；如果需要文件本身，请让对方回复这条消息：文件会从 Telegram 再次获取并保存）',
     'media.intake.seconds' => '%d 秒',
     'media.intake.set_later' => '已设置 %s 模型，但这类处理将在下一版本提供——我目前还无法获取内容。',
     'media.intake.timeout' => '文档耗时超过 30 秒',

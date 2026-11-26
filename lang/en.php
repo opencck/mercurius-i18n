@@ -849,6 +849,7 @@ return [
     'media.intake.on_request' => 'Processed on request: the media tool, action %s.',
     'media.intake.principles' => 'Principles of choosing a model — the owner\'s: %s; the participant\'s: %s. For details choose the model by them (media, the model parameter).',
     'media.intake.replied' => ' (from the message this one replies to)',
+    'media.intake.not_kept' => ' (not kept on the disk — understood at once; when the file itself is needed, ask for a reply to this message: it comes from Telegram again and is kept)',
     'media.intake.seconds' => '%d s',
     'media.intake.set_later' => 'A %s model is set, but processing of this kind comes in the next version — the content is not available to me yet.',
     'media.intake.timeout' => 'the document took longer than 30 s',
