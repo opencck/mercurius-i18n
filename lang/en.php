@@ -2205,6 +2205,8 @@ return [
     'tool.memory_alias.about' => 'The memory\'s table of words that mean one thing («прокс» — «proxmox», «бэкап» — «备份»). add — a group (2–8 words; a word already in a group adds to it): memory search finds a fact by any word of the group. Add when the person calls one thing by different words and search does not join them; common synonyms are not needed. list — the table. Adding works only in a conversation of the owner; the owner edits the table with /aliases.',
     'tool.memory_alias.owner_only' => 'The table is filled only in a conversation of the owner: it changes search for everyone.',
     'tool.memory_feedback.about' => 'Mark a fact from memory you used: useful=true — it helped (trust +0.05), false — it was wrong or useless (−0.10). A fact with trust under 0.3 is no longer recalled. Once per fact in a run; fact — the number of the fact from memory or memory_search. A wrong fact is not corrected this way — use memory_propose for that.',
+    'tool.memory_feedback.note' => 'One line of correction: what is actually right (optional).',
+    'tool.memory_feedback.reason' => 'Why the fact did not help (with useful=false only): wrong_entity — about another person or thing; stale_version — out of date; irrelevant — not about the question; missing_evidence — not enough to answer by; answer_error — the answer was wrong for another reason; other — something else.',
     'tool.memory_feedback.done' => 'Fact #%d marked, trust is now %.2f.',
     'tool.memory_feedback.not_found' => 'Fact #%d is not among those visible in this conversation.',
     'tool.memory_feedback.once' => 'Fact #%d is already marked in this run.',

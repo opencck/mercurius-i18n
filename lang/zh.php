@@ -2205,6 +2205,8 @@ return [
     'tool.memory_alias.about' => '记忆的同义词表，即表示同一事物的词语（«прокс» — «proxmox»，«бэкап» — «备份»）。add — 一组（2–8 个词；已在某组中的词会加入该组）：记忆搜索可通过组内任何一个词找到事实。当某人用不同的词称呼同一事物而搜索无法将它们关联时添加；常见同义词不需要。list — 该表。添加仅在所有者的对话中有效；所有者通过 /aliases 编辑该表。',
     'tool.memory_alias.owner_only' => '该表仅在所有者的对话中填写：它会改变所有人的搜索。',
     'tool.memory_feedback.about' => '标记你使用过的记忆中的事实：useful=true — 有帮助（信任度 +0.05），false — 错误或无用（−0.10）。信任度低于 0.3 的事实不再被回忆。每次运行中每个事实一次；fact — 来自 memory 或 memory_search 的事实编号。错误的事实不能这样纠正 — 请用 memory_propose。',
+    'tool.memory_feedback.note' => '一行更正：实际正确的内容（可选）。',
+    'tool.memory_feedback.reason' => '事实为何没有帮助（仅在 useful=false 时）：wrong_entity —— 关于另一个人或事物；stale_version —— 已过时；irrelevant —— 与问题无关；missing_evidence —— 不足以据此回答；answer_error —— 回答因其他原因出错；other —— 其他。',
     'tool.memory_feedback.done' => '事实 #%d 已标记，信任度现为 %.2f。',
     'tool.memory_feedback.not_found' => '事实 #%d 不在此对话可见的事实之中。',
     'tool.memory_feedback.once' => '事实 #%d 在本次运行中已标记过。',
