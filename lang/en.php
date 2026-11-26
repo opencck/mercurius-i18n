@@ -309,6 +309,7 @@ return [
     'app.consolidation.auto_merge' => 'Sleep by itself: facts #%d and #%d merged into “%s” (edit #%d; to undo — /dream undo %d).',
     'app.consolidation.auto_merge_reason' => 'sleep: merged with fact #%d',
     'app.consolidation.conflict_negation' => "They may contradict each other (a negation):\n#%d %s\n#%d %s\nKeep the correct one; for the wrong one use /forget <number> or ask me to change it.",
+    'app.consolidation.conflict_detail' => "They may contradict each other (the same about one, another detail — one may be out of date):\n#%d %s\n#%d %s\nKeep the correct one; for the wrong one use /forget <number> or ask me to change it.",
     'app.consolidation.davno_ne_prigozhdalis_nuzhny_li' => "Haven't been useful for a long time — are they still needed (if not, /forget <number>):\n",
     'app.consolidation.enriched' => 'Sleep added search words to facts: %d, words: %d. The texts of the facts did not change.',
     'app.consolidation.fakt_povtoryaet_predlozhil_zabyt_kartoch' => 'Fact #%d repeats #%d — proposed forgetting #%d (card #%d).',

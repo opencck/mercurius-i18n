@@ -310,6 +310,7 @@ return [
     'app.consolidation.auto_merge' => '睡眠自动处理：事实 #%d 和 #%d 已合并为“%s”（修改 #%d；要撤销——/dream undo %d）。',
     'app.consolidation.auto_merge_reason' => '睡眠：与事实 #%d 合并',
     'app.consolidation.conflict_negation' => "它们可能互相矛盾（否定）：\n#%d %s\n#%d %s\n保留正确的；错误的请用 /forget <编号>，或让我修改。",
+    'app.consolidation.conflict_detail' => "它们可能互相矛盾（关于同一对象的同一说法，但细节不同 —— 其中一个可能已过时）：\n#%d %s\n#%d %s\n保留正确的；错误的请用 /forget <编号>，或让我修改。",
     'app.consolidation.davno_ne_prigozhdalis_nuzhny_li' => "很长时间没派上用场——还需要吗（不需要的话用 /forget <编号>）：\n",
     'app.consolidation.enriched' => '睡眠为事实添加了搜索词：事实 %d 条，词 %d 个。事实的文本没有变化。',
     'app.consolidation.fakt_povtoryaet_predlozhil_zabyt_kartoch' => '事实 #%d 与 #%d 重复——建议忘记 #%d（卡片 #%d）。',
