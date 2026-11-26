@@ -781,6 +781,7 @@ return [
     'mcp.install.card_fetch' => "获取 MCP「%s」的源码（来自 %s）",
     'mcp.install.card_install' => "安装 MCP「%s」：步骤\n%s\n条目：%s",
     'mcp.install.card_approve' => "批准 MCP「%s」的工具集，类别：%s",
+    'mcp.install.bundled' => 'MCP「%s」随 Mercurius 一起提供：它随智能体一起更新，不能删除。',
     'mcp.install.not_installed' => 'MCP「%s」未安装。',
     'mcp.install.update_archive' => 'MCP「%s」来自压缩包：请通过 mcp_install fetch 和 install 用新压缩包更新。',
     'mcp.install.up_to_date' => 'MCP「%s」已是最新版本 %s。',

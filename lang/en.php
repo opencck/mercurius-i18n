@@ -780,6 +780,7 @@ return [
     'mcp.install.card_fetch' => "Fetch the sources of MCP «%s» from %s",
     'mcp.install.card_install' => "Install MCP «%s»: steps\n%s\nentry: %s",
     'mcp.install.card_approve' => "Approve the tools of MCP «%s», classes: %s",
+    'mcp.install.bundled' => 'MCP «%s» ships with Mercurius: it updates with the agent and is not removed.',
     'mcp.install.not_installed' => 'MCP «%s» is not installed.',
     'mcp.install.update_archive' => 'MCP «%s» came from an archive: update it with a new archive through mcp_install fetch and install.',
     'mcp.install.up_to_date' => 'MCP «%s» already has the newest revision %s.',

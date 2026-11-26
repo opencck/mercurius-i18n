@@ -781,6 +781,7 @@ return [
     'mcp.install.card_fetch' => "Получить исходники MCP «%s» из %s",
     'mcp.install.card_install' => "Установить MCP «%s»: шаги\n%s\nзапись: %s",
     'mcp.install.card_approve' => "Одобрить набор инструментов MCP «%s», классы: %s",
+    'mcp.install.bundled' => 'MCP «%s» идёт в поставке Меркурия: он обновляется вместе с агентом и не удаляется.',
     'mcp.install.not_installed' => 'MCP «%s» не установлен.',
     'mcp.install.update_archive' => 'MCP «%s» поставлен из архива: обновление — новым архивом через mcp_install fetch и install.',
     'mcp.install.up_to_date' => 'У MCP «%s» уже последняя ревизия %s.',
