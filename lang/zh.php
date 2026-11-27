@@ -749,6 +749,7 @@ return [
     'mcp.mcp_manager.nabor_instrumentov_izmenilsya' => '工具集已更改',
     'mcp.mcp_manager.not_connected' => 'MCP 服务器«%s»未连接。已连接：%s。',
     'mcp.mcp_manager.names_taken' => 'MCP 服务器「%s」未启用：其工具名称在此上下文中已被占用（%s）。请重命名该连接。',
+    'mcp.mcp_manager.secret_missing_owners' => '没有智能体密钥"%s" —— 所有者共享文件中的 MCP 服务器"%s"没有它无法启动。所有者在与机器人的私聊中存入：/secret *: %s <value>（共享文件的条目看不到个人密钥）。',
     'mcp.mcp_manager.secret_missing' => '保险库中没有密钥"%s" —— MCP 服务器"%s"没有它无法启动。请存入：/secret <name> <value>；项目条目使用项目密钥（/secret <project>: <name> <value>），或已向项目开放的所有者个人密钥（project_edit inherit，详见 self_info secrets）；所有者共享文件中的条目只使用智能体密钥（/secret *: <name> <value>）。',
     'mcp.files.unreadable' => '此上下文的 .mcp.json 存在但无法读取（被截断、不是 JSON 或缺少 mcpServers）：请修正文件，在此期间其中的内容不会被更改。',
     'mcp.files.install_dir' => '${INSTALL_DIR} 仅用于安装计划（mcp_install）。条目中应使用安装代码的真实路径：/workspace/mcp/<安装名>/current/…（例如 /workspace/mcp/mail/current/bin/mail-mcp-stdio）。',

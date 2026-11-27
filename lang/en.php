@@ -748,6 +748,7 @@ return [
     'mcp.mcp_manager.nabor_instrumentov_izmenilsya' => 'the set of tools changed',
     'mcp.mcp_manager.not_connected' => 'The MCP server «%s» is not connected. Connected: %s.',
     'mcp.mcp_manager.names_taken' => 'The MCP server "%s" is not on: the names of its tools are already taken in this context (%s). Rename the connection.',
+    'mcp.mcp_manager.secret_missing_owners' => 'There is no secret of the agent "%s" — the MCP server "%s" of the owners\' shared file does not start without it. An owner puts it in the private chat with the bot: /secret *: %s <value> (a personal secret is not visible to an entry of the shared file).',
     'mcp.mcp_manager.secret_missing' => 'The secret "%s" is not in the vault — the MCP server "%s" does not start without it. Put it there: /secret <name> <value>; an entry of a project takes a secret of the project (/secret <project>: <name> <value>) or the owner\'s personal secret if it is opened to the project (project_edit inherit, see self_info secrets); an entry of the shared file of the owners takes only a secret of the agent (/secret *: <name> <value>).',
     'mcp.files.unreadable' => 'The .mcp.json of this context is there but could not be read (cut off, not JSON or without mcpServers): fix the file, nothing in it is changed meanwhile.',
     'mcp.files.install_dir' => '${INSTALL_DIR} is only for a plan of an install (mcp_install). An entry takes the real path to the code of the install: /workspace/mcp/<install>/current/… (for example /workspace/mcp/mail/current/bin/mail-mcp-stdio).',
