@@ -976,7 +976,7 @@ return [
     'model.catalog.available_head' => 'The providers of models available now:',
     'model.catalog.unavailable_head' => 'Unavailable now (their models are not called; a category where such a model stands goes on with the next model of its list or the fallback one):',
     'model.catalog.by_mcp' => '%s; models in the catalog: %d; kinds: %s',
-    'model.catalog.chat_risk' => 'The text models of this MCP see the whole text of a conversation — the system prompt, the memory, the results of tools, the attachments.',
+    'model.catalog.chat_risk' => 'The text models of this MCP see the whole text of a conversation — the system prompt, the memory, the results of tools, the attachments — and decide for the agent which tools to call (confirmations work as usual).',
     'model.catalog.mcp_off' => 'why: %s',
     'model.catalog.placed' => 'The category %s holds %s — it is not called now.',
     'model.catalog.mcp_unavailable' => 'The provider %s is unavailable now (%s): its catalog is not read, its models are not called.',

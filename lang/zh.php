@@ -977,7 +977,7 @@ return [
     'model.catalog.available_head' => '当前可用的模型提供方：',
     'model.catalog.unavailable_head' => '当前不可用（其模型不会被调用；放有此类模型的类别会改用列表中的下一个模型或备用模型）：',
     'model.catalog.by_mcp' => '%s；目录中的模型数：%d；类型：%s',
-    'model.catalog.chat_risk' => '此 MCP 的文本模型会看到对话的全部文本——系统提示、记忆、工具结果和附件。',
+    'model.catalog.chat_risk' => '此 MCP 的文本模型会看到对话的全部文本——系统提示、记忆、工具结果和附件——并替智能体决定调用哪些工具（确认照常生效）。',
     'model.catalog.mcp_off' => '原因：%s',
     'model.catalog.placed' => '类别 %s 中放有 %s——当前不会被调用。',
     'model.catalog.mcp_unavailable' => '提供方 %s 当前不可用（%s）：其目录不可读取，其模型不会被调用。',
