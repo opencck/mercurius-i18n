@@ -2767,6 +2767,7 @@ return [
     'antigravity.no_logout' => 'У Antigravity CLI нет команды выхода. Чтобы отключить план, отзовите доступ в настройках аккаунта Google или попросите того, кто управляет сервером, очистить каталог storage/antigravity и выключить модуль.',
     'antigravity.resumed' => 'Модели antigravity: возвращены в выбор. Если Google снова откажет, они будут сняты опять.',
     'models.provider_account' => 'Провайдер подписки %s просит владельца аккаунта что-то сделать (проверить аккаунт или принять условия) — его модели сняты с выбора, и я к нему не обращаюсь. Сделайте то, что он просит, и верните модели: /antigravity resume.',
+    'models.provider_said' => 'Слова провайдера: %s',
     'model.fallback_models.same_category' => 'следующая модель списка категории %s',
     'settings.about.claude_code_oauth_token' => 'токен claude setup-token для подписки Claude (важнее входа через /claude login; пусто — вход)',
     'settings.about.claude_code_extra_usage' => 'оплата сверх плана подписки Claude: stop — не платить (по умолчанию), notify — платить, allow — платить молча',

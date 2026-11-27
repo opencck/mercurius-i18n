@@ -2765,6 +2765,7 @@ return [
     'antigravity.no_logout' => 'The Antigravity CLI has no command to sign out. To disconnect the plan, revoke the access in the settings of the Google account, or ask whoever runs the server to clear the folder storage/antigravity and switch the module off.',
     'antigravity.resumed' => 'The antigravity: models are back on the choice. If Google refuses again, they go off again.',
     'models.provider_account' => 'The provider of the subscription %s asks the owner of the account to act (verify the account or accept the terms) — its models are off the choice and I do not call it. Do what it asks and put the models back: /antigravity resume.',
+    'models.provider_said' => 'The words of the provider: %s',
     'model.fallback_models.same_category' => 'the next model of the category list %s',
     'settings.about.claude_code_oauth_token' => 'a claude setup-token token for the Claude subscription (wins over the sign-in by /claude login; empty — the sign-in)',
     'settings.about.claude_code_extra_usage' => 'paid use beyond the plan of the Claude subscription: stop — do not pay (default), notify — pay, allow — pay silently',

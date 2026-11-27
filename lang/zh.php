@@ -2765,6 +2765,7 @@ return [
     'antigravity.no_logout' => 'Antigravity CLI 没有退出登录的命令。要断开套餐，请在 Google 账号设置中撤销访问权限，或请管理服务器的人清空 storage/antigravity 目录并关闭该模块。',
     'antigravity.resumed' => 'antigravity: 模型已恢复到选择中。如果 Google 再次拒绝，它们会再次被移除。',
     'models.provider_account' => '订阅 %s 的提供方要求账号所有者进行操作（验证账号或接受条款）——其模型已从选择中移除，我不会调用它。请完成它要求的操作，然后恢复模型：/antigravity resume。',
+    'models.provider_said' => '提供方的原话：%s',
     'model.fallback_models.same_category' => '类别列表 %s 中的下一个模型',
     'settings.about.claude_code_oauth_token' => 'Claude 订阅的 claude setup-token 令牌（优先于 /claude login 的登录；留空——使用登录）',
     'settings.about.claude_code_extra_usage' => 'Claude 订阅的套餐外付费：stop——不付费（默认），notify——付费，allow——静默付费',
