@@ -822,6 +822,7 @@ return [
     'mcp.files.entry_missing' => '.mcp.json 中没有条目"%s"（%s）——未移除任何内容。此文件的条目见 self_info mcp。',
     'tool.mcp_manage.entry_needed' => '需要 entry —— .mcp.json 条目（command、args、env 或 url、headers）—— 以及 name。',
     'tool.mcp_manage.entry_elsewhere' => '该条目位于上下文 %s，而本聊天在上下文 %s 中工作：这里不会有它的工具，它们只提供给其自身上下文的聊天（项目聊天的条目应写入项目的上下文）。',
+    'tool.mcp_manage.connections' => '连接（上下文：名称 —— 状态：原因）。提到密钥名称的错误表示该上下文的层中没有这个密钥 —— 所有者共享文件只使用智能体密钥（/secret *: <name> <value>），个人文件使用自己的，项目使用自己的以及向其开放的。',
     'tool.mcp_manage.entry' => '用于 entry：.mcp.json 条目 —— command、args、env（花括号中的密钥名，如 {mail-admin}）或 url 和 headers。已安装 MCP 的代码路径为 /workspace/mcp/<安装名>/current/…（不是 ${INSTALL_DIR}）。context：mine —— 个人文件（自己的邮箱、自己的服务器），project:<编号> —— 项目文件，owners —— 代理所有者的共享文件（仅限所有者；其中的 MCP 可成为模型提供方）；不带 context —— 本聊天的文件。条目等待批准卡片。',
     'mcp.install.already_installed' => '该 MCP 已安装为"%s"——无需重新安装。服务器、邮箱或其他设置是已安装 MCP 在 .mcp.json 中的一个条目：mcp_manage action=entry，带 name（条目名）和 entry（command 为 php，args 含路径 /workspace/mcp/%s/current/…，env 含 {SECRET_NAME}）；条目通过卡片批准。',
     'mcp.install.update_archive' => 'MCP「%s」来自压缩包：请通过 mcp_install fetch 和 install 用新压缩包更新。',
