@@ -1558,6 +1558,7 @@ return [
     'service.message_meta.eto_soobschenie' => '[这是消息 #%s%s]',
     'service.message_meta.location' => '位置',
     'service.message_meta.neizvestno_kto' => '作者未知',
+    'service.message_meta.selected' => '并选中了其中这一段',
     'service.message_meta.ono_otvechaet_na_soobschenie_kotoroe' => '它回复的是消息 #%s，作者为 %s%s',
     'service.message_meta.photo' => '照片',
     'service.message_meta.poll' => '投票',

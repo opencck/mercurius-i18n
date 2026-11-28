@@ -1558,6 +1558,7 @@ return [
     'service.message_meta.eto_soobschenie' => '[This is message #%s%s]',
     'service.message_meta.location' => 'location',
     'service.message_meta.neizvestno_kto' => 'unknown author',
+    'service.message_meta.selected' => 'with this piece of it selected',
     'service.message_meta.ono_otvechaet_na_soobschenie_kotoroe' => 'it replies to message #%s, written by %s%s',
     'service.message_meta.photo' => 'photo',
     'service.message_meta.poll' => 'poll',

@@ -1560,6 +1560,7 @@ return [
     'service.message_meta.eto_soobschenie' => '[Это сообщение #%s%s]',
     'service.message_meta.location' => 'геопозиция',
     'service.message_meta.neizvestno_kto' => 'неизвестно кто',
+    'service.message_meta.selected' => 'выделив в нём',
     'service.message_meta.ono_otvechaet_na_soobschenie_kotoroe' => 'оно отвечает на сообщение #%s, которое написал %s%s',
     'service.message_meta.photo' => 'фото',
     'service.message_meta.poll' => 'опрос',
