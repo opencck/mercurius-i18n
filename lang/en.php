@@ -718,6 +718,7 @@ return [
     'mail.tool.mailbox_arg' => 'The name of a mailbox: the name of its entry of .mcp.json. Without it — the mailbox of the project of this chat, else your only one.',
 
     // mcp
+    'mcp.files_owners_area' => 'The files lie in the shared area of the owners (the root of the sandbox): for the file tools and send_file — the path as above with area owners, without p<number>/.',
     'mcp.file_kept' => 'File %s (%d KB) kept: %s',
     'mcp.file_not_kept' => 'File %s was not kept: %s',
     'mcp.files_no_sandbox' => 'the sandbox is not available — files can be neither passed nor kept',

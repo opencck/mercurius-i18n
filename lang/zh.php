@@ -719,6 +719,7 @@ return [
     'mail.tool.mailbox_arg' => '邮箱名称，即其 .mcp.json 条目的名称。省略时——使用此聊天所属项目的邮箱，否则使用你唯一的邮箱。',
 
     // mcp
+    'mcp.files_owners_area' => '文件位于所有者共享区域（沙箱根目录）：文件工具和 send_file 使用上面的路径并加 area owners，不要加 p<编号>/。',
     'mcp.file_kept' => '文件 %s（%d KB）已保存：%s',
     'mcp.file_not_kept' => '文件 %s 未保存：%s',
     'mcp.files_no_sandbox' => '沙盒不可用——文件既无法传递也无法保存',
