@@ -2540,7 +2540,7 @@ return [
     'tool.sandbox.in_owners_area' => '在所有者共享区：',
     'tool.sandbox.area_owners_only' => '所有者共享区仅限智能体所有者使用。',
     'tool.sandbox.pesochnitsa_nedostupna_dlya_uchastnika' => '沙盒对该参与者不可用。',
-    'tool.search_files.about' => '在工作文件夹的文件中搜索：target=content——按正则表达式匹配行（grep -E），target=files——按名称查找文件（如 *.md 这样的模式）。path——文件夹（默认为工作文件夹），file_glob——内容搜索时在哪些文件中查找，limit——最多多少行（默认 50）。请用它代替 run_command 中的 grep 和 find。',
+    'tool.search_files.about' => '在工作文件夹的文件中搜索：target=content——按正则表达式匹配行（grep -E），target=files——按名称查找文件（如 *.md 这样的模式；不含 * ? [ 的词按名称的一部分查找，不区分大小写）。path——文件夹（默认为工作文件夹），file_glob——内容搜索时在哪些文件中查找，limit——最多多少行（默认 50）。请用它代替 run_command 中的 grep 和 find。',
     'tool.search_files.nothing' => '未找到任何内容。',
     'tool.search_files.pattern' => '内容搜索用的正则表达式，或文件搜索用的名称模式',
     'tool.self_info.about' => '按主题提供关于你自己的信息：其他智能体如何连接到你、渠道、命令、你当前的工具、模块、参与者的限制、自我改进、版本；模型以及如何接入其提供方——Gemini API 密钥、Vertex、ChatGPT、Claude 和 Google Antigravity 订阅（登录、配额）——主题 models；随智能体提供的 MCP（gemini-api——凭密钥使用的 Google 工具、ssh、mail）——主题 mcp；VPN、代理以及模型、浏览器和沙箱如何访问网络 —— 主题 proxy（不是 network：network 指智能体网络）；服务器的内存、处理器、磁盘及沙箱资源 —— 主题 resources。不带主题：返回主题列表。',
